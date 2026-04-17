@@ -1,20 +1,40 @@
 @import "tailwindcss";
-@import url("https://fonts.googleapis.com/css2?family=Lavishly+Yours&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=IM+Fell+French+Canon+SC&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap");
 
-.lavishly-yours-regular {
-  font-family: "Lavishly Yours", cursive;
-  font-weight: normal;
+@font-face {
+  font-family: "PTSerif-Regular";
   font-style: normal;
+  src: url("assets/font/PTSerif-Regular.ttf");
 }
 
-.pt-serif-regular {
-  font-family: "PT Serif", serif;
-  font-weight: normal;
+@font-face {
+  font-family: "IMFellFrenchCanonSC-Regular";
   font-style: normal;
+  src: url("assets/font/IMFellFrenchCanonSC-Regular.ttf");
 }
+
 @theme {
   --color-primary: #8d1812;
   --color-secondary: #d5af3c;
-  --color-bg-color: #ffffe6;
+  --color-bg-color: #e7e7e3;
+  --font-display: "PT Serif", sans serif;
+  --font-display-secondary: "IMFellFrenchCanonSC-Regular", sans serif;
+}
+
+.nav-title {
+  color: var(--color-primary);
+  font-size: 2.25rem;
+  font-weight: bold;
+  font-family: var(--font-display-secondary);
+  transition: 0.2s ease;
+}
+.nav-title:hover {
+  opacity: 50%;
+  color: black;
+}
+/* Dans ton CSS global */
+.dot {
+  @apply w-2.5 h-2.5 rounded-full bg-white/40 border-none cursor-pointer transition-all duration-300;
+}
+.dot.active {
+  @apply bg-white scale-125;
 }
