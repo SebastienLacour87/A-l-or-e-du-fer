@@ -1,0 +1,20 @@
+@import "tailwindcss";
+@import url("https://fonts.googleapis.com/css2?family=Lavishly+Yours&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=IM+Fell+French+Canon+SC&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+
+.lavishly-yours-regular {
+  font-family: "Lavishly Yours", cursive;
+  font-weight: normal;
+  font-style: normal;
+}
+
+.pt-serif-regular {
+  font-family: "PT Serif", serif;
+  font-weight: normal;
+  font-style: normal;
+}
+@theme {
+  --color-primary: #8d1812;
+  --color-secondary: #d5af3c;
+  --color-bg-color: #ffffe6;
+}
