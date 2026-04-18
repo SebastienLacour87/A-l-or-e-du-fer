@@ -24,17 +24,21 @@
   color: var(--color-primary);
   font-size: 2.25rem;
   font-weight: bold;
-  font-family: var(--font-display-secondary);
+  font-family: var(--font-display);
   transition: 0.2s ease;
 }
 .nav-title:hover {
   opacity: 50%;
   color: black;
 }
+
 /* Dans ton CSS global */
 .dot {
   @apply w-2.5 h-2.5 rounded-full bg-white/40 border-none cursor-pointer transition-all duration-300;
 }
 .dot.active {
   @apply bg-white scale-125;
+}
+.filter-btn.active {
+  @apply bg-primary text-white border-primary;
 }

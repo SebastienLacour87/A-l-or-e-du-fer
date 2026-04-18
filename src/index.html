@@ -4,15 +4,15 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>À-l-oree-du-fer</title>
+  <title>À-l-Oree-du-Fer</title>
   <link rel="shortcut icon" href="assets/images/LOGO-tete-seule.png" />
 
   <link rel="stylesheet" href="output.css" />
   <script src="index.js" defer></script>
 </head>
 
-<body class="bg-bg-color">
-  <header>
+<body class="bg-bg-color font-display">
+  <header id="main-header" class=" fixed top-0 left-0 w-full z-50 transition-transform duration-500 -translate-y-full">
     <section class=" w-full h-15 bg-black flex justify-end items-center gap-4 px-8">
       <div><a href="#contact" class=" text-white font-display text-2xl font-bold hover:text-primary border-r-2 pr-2"
           data-i18n="nav.contact">Contact</a>
@@ -34,7 +34,7 @@
             <a href="#" class="nav-title" data-i18n="nav.home">Accueil</a>
           </li>
           <li>
-            <a href="#" class="nav-title" data-i18n="nav.about">À propos</a>
+            <a href="#about" class="nav-title" data-i18n="nav.about">À propos</a>
           </li>
           <li><a href="#">
               <img src="assets/images/LOGO-tete-seule.png"
@@ -43,7 +43,7 @@
             </a></li>
 
           <li>
-            <a href="#" class="nav-title" data-i18n="nav.projects">Mes chantiers</a>
+            <a href="#galerie-photo" class="nav-title" data-i18n="nav.projects">Mes chantiers</a>
           </li>
           <li>
             <a href="#" class="nav-title" data-i18n="nav.contact">Contact</a>
@@ -54,7 +54,9 @@
     </section>
   </header>
   <main>
+
     <!-- Hero Carousel -->
+    <h1 class="sr-only">À l'orée du fer - Artisan ferronnier à Limoges</h1>
     <section class="relative overflow-hidden h-screen">
       <!--Image de fond fixe et flouée-->
       <div class="absolute inset-0 bg-primary bg-cover bg-center scale-100">
@@ -63,44 +65,253 @@
       <div class="relative z-10 h-full flex items-center justify-center">
 
         <!-- Track (slides) -->
-        <div id="carousel-track" class="flex h-full w-3/4  transition-transform duration-1000 ease-in-out">
-          <!-- Slide 1 -->
-          <div
-            class="min-w-full h-full overflow-hidden bg-[url(assets/images/hero-image.jpg)] bg-contain bg-center bg-no-repeat flex flex-col items-center justify-center pb-16 gap-5 px-6 text-center">
-            <a href="#"
-              class="mt-2 px-8 py-3 bg-primary text-secondary font-medium rounded-lg hover:bg-white/90 transition"
-              data-i18n="btn.discover">
-              Découvrir →
-            </a>
+        <div id="carousel-track"
+          class="flex h-full w-full  transition-transform duration-1000 ease-in-out will-change-transform">
+          <div class="min-w-full h-full overflow-hidden flex items-center px-12 gap-8">
+
+            <!-- Slide 1 -->
+            <div class="w-1/2 h-full  bg-[url(assets/images/hero-image.jpg)] bg-cover bg-center cursor-pointer"
+              data-lightbox="assets/images/hero-image.jpg">
+            </div>
+            <div class="w-1/2 flex flex-col items-center gap-6">
+              <h2 class="text-6xl font-display text-secondary">A l'Orée du Fer </h2>
+              <p class="text-secondary text-xl tracking-widest uppercase" data-i18n="title.pres">Atelier de ferronnerie
+                spécialisé</p>
+              <h2 class="text-bg-color text-4xl font-medium leading-tight" data-i18n="text.pres">Architecture intérieur
+                et extérieur</h2>
+              <p class="text-black text-xl" data-i18n="text.lineup">Découvrez des créations uniques faites à la main
+                avec
+                passion.</p>
+              <a href="#"
+                class="mt-2 px-8 py-3 bg-bg-color text-secondary font-medium rounded-lg hover:bg-black/90 transition"
+                data-i18n="btn.discover">
+                Découvrir →
+              </a>
+            </div>
           </div>
 
           <!-- Slide 2 -->
-          <div
-            class="min-w-full h-full overflow-hidden bg-[url(assets/images/tete-de-lit.jpg)] bg-contain bg-center bg-no-repeat flex flex-col items-center justify-center pb-16 gap-5 px-6 text-center">
-            <a href="#"
-              class="mt-2 px-8 py-3 bg-primary text-secondary font-medium rounded-lg hover:bg-white/90 transition"
-              data-i18n="btn.collection">
-              Voir la collection →
-            </a>
+          <div class="min-w-full h-full overflow-hidden flex items-center px-12 gap-8">
+            <div class="w-1/2 flex flex-col items-center gap-6">
+              <h2 class="text-6xl font-display text-secondary">A l'Orée du Fer </h2>
+              <p class="text-secondary text-xl tracking-widest uppercase" data-i18n="title.pres.2">Pièces de décoration,
+                Mobilier sur-mesure en
+                métal</p>
+              <h2 class="text-bg-color text-4xl font-medium leading-tight" data-i18n="text.pres.2">Bienvenue dans notre
+                atelier</h2>
+              <p class="text-black text-lg" data-i18n="text.lineup.2">Un savoir faire ancestral au service de vos
+                projets.</p>
+              <a href="#"
+                class="mt-2 px-8 py-3 bg-bg-color text-secondary font-medium rounded-lg hover:bg-black/90 transition"
+                data-i18n="btn.collection">
+                Voir la collection →
+              </a>
+            </div>
+            <div class="w-1/2 h-full  bg-[url(assets/images/tete-de-lit.jpg)] bg-cover bg-center"
+              data-lightbox="assets/images/tete-de-lit.jpg">
+            </div>
+
           </div>
           <!-- Slide 3 -->
-          <div
-            class="min-w-full h-full bg-[url(assets/images/pergolas.jpg)] bg-contain bg-center bg-no-repeat flex flex-col items-center justify-center pb-16 gap-5 px-6 text-center">
-            <a href="#"
-              class="mt-2 px-8 py-3 bg-primary text-secondary font-medium rounded-lg hover:bg-white/90 transition"
-              data-i18n="btn.contact">
-              Nous contacter →
-            </a>
+          <div class="min-w-full h-full overflow-hidden flex items-center px-12 gap-8">
+
+            <div class="w-1/2 h-full overflow-hidden bg-[url(assets/images/pergolas.jpg)] bg-cover bg-center"
+              data-lightbox="assets/images/pergolas.jpg">
+            </div>
+            <div class="w-1/2 flex flex-col items-center gap-6">
+              <h2 class="text-6xl font-display text-secondary">A l'Orée du Fer </h2>
+              <p class="text-secondary text-xl tracking-widest uppercase" data-i18n="title.pres.3">Arisant créateur en
+                serrurerie d'art</p>
+              <h2 class="text-bg-color text-4xl font-medium leading-tight text-center" data-i18n="text.pres.3">Concevoir
+                des créations
+                contemporaines dans
+                le
+                respect des techniques ancestrales</h2>
+              <p class="text-black text-lg" data-i18n="text.lineup.3">Contactez nous pour un devis personnaliser.</p>
+              <a href="#"
+                class="mt-2 px-8 py-3 bg-bg-color text-secondary font-medium rounded-lg hover:bg-black/90 transition"
+                data-i18n="btn.contact">
+                Nous contacter →
+              </a>
+
+            </div>
           </div>
         </div>
       </div>
 
       <!-- Dots -->
-      <div id="dots" class="absolute bottom-6 left-1/2 -translate-x-1/2 flex gap-2"></div>
+      <div id="dots" class="absolute bottom-6 left-1/2 -translate-x-1/2 flex gap-2 z-10"></div>
 
     </section>
+    <hr class="w-[90%] mt-10 mx-auto text-primary ">
+
+
+    <section id="about" class="grid grid-cols-2 my-10 w-full px-16 gap-8">
+      <div class="flex justify-center items-center">
+        <figure data-lightbox class="w-full">
+          <img src="assets/images/luc-au-travail.jpg" alt="Luc Desessarts en plein travail"
+            class="w-full h-full object-cover rounded-lg">
+          <figcaption class="text-2xl font-display text-primary font-bold mt-2" data-i18n="fig.caption">Luc Desessarts
+            en plein travail</figcaption>
+        </figure>
+      </div>
+      <div class="flex flex-col items-center justify-center">
+        <h2 class="text-4xl py-10 font-display font-bold text-primary" data-i18n="about.title">LA FERRONNERIE D'ART</h2>
+        <p class="text-xl leading-8 font-display-secondary tracking-tighter font-medium" data-i18n="about.p">
+          La Ferronnerie d'Art est l'art et la technique du travail du fer à la forge, à l'étampe ou au marteau dans un
+          but décoratif et/ou architectural. C'est un savoir-faire ancestral qui permet d'imaginer, de créer et de
+          concevoir des ferronneries : escaliers, rampes de style, grilles et portails, mobilier, gardecorps, structures
+          métalliques, marquises... Elle nécessite un grand savoir-faire et de nombreuses années d'expérience.
+        </p>
+      </div>
+    </section>
+
+    <hr class="w-[60%] mt-10 mb-10 mx-auto text-primary">
+
+    <!-- Section prise en charge + matériaux -->
+    <section class="w-full grid grid-cols-2 divide-x divide-primary mx-auto">
+
+      <!-- Colonne gauche -->
+      <div class="flex flex-col items-center px-16 py-10 text-center">
+        <h2 class="text-4xl text-primary font-display uppercase font-bold py-4">Une prise en charge globale : de la
+          conception à la pose</h2>
+        <h3 class="text-2xl font-display font-semibold py-4">Mon travail en 4 étapes au service de vos envies :</h3>
+        <p class="text-xl font-display-secondary py-4">❈ Etape 1 : Tout commence par un premier rendez-vous afin
+          d'écouter, comprendre et cerner les souhaits de mes clients. Dans le but d'établir un devis au plus juste.
+          Devis que je présente en personne, car il s'accompagne en général d'explication esthétique et technique, ainsi
+          que d'échantillons pour m'assurer que nous nous comprenons.</p>
+        <p class="text-xl font-display-secondary py-4">❈ Etape 2 : Après acceptation du devis, commence la phase de
+          création et de conception. Je propose une esthétique que nous affinons ensemble pour être au plus près de vos
+          attentes.</p>
+
+        <div class="flex gap-4 justify-center my-4">
+          <figure data-lightbox class="flex flex-col items-center gap-2">
+            <div class="w-44 h-64 overflow-hidden rounded-lg">
+              <img src="assets/images/concception.jpg" alt="base de travail" class="w-full h-full object-cover">
+            </div>
+            <figcaption class="text-sm text-black">étape 3</figcaption>
+          </figure>
+          <figure data-lightbox class="flex flex-col items-center gap-2">
+            <div class="w-44 h-64 overflow-hidden rounded-lg">
+              <img src="assets/images/travail%20artistique.jpg" alt="conceptualisation du projet"
+                class="w-full h-full object-cover">
+            </div>
+            <figcaption class="text-sm text-black">étape 3 bis</figcaption>
+          </figure>
+          <figure data-lightbox class="flex flex-col items-center gap-2">
+            <div class="w-44 h-64 overflow-hidden rounded-lg">
+              <img src="assets/images/realisation-finale.jpg" alt="réalisation finale"
+                class="w-full h-full object-cover">
+            </div>
+            <figcaption class="text-sm text-black">étape 4</figcaption>
+          </figure>
+        </div>
+
+        <p class="text-xl font-display-secondary py-4">❈ Etape 3 : Une fois validé par vos soins, vient le moment de la
+          fabrication dans le respect des règles techniques. Le dessin prend vie et passe de l'imaginaire au réel.</p>
+        <p class="text-xl font-display-secondary py-4">❈ Etape 4 : Pour finir, je me charge en personne de
+          l'installation sur site. Vous découvrez alors votre ouvrage tel que vous l'avez imaginé en lieu et place.</p>
+      </div>
+
+      <!-- Colonne droite -->
+      <div class="flex flex-col items-center px-16 py-10 text-center">
+        <h2 class="text-4xl text-primary font-display uppercase font-bold pb-10">Les matériaux</h2>
+        <div class="w-full h-80 overflow-hidden rounded-lg">
+          <img src="assets/images/fer-chaud.jpg" alt="fer chaud pendant que l'artisan le travaille"
+            class="w-full h-full object-cover" data-lightbox>
+        </div>
+        <p class="text-xl font-display-secondary py-4 mt-8 text-left">
+          Le ferronnier d'art est connu pour ses ouvrages en fer mais en fonction du rendu recherché il pourra
+          travailler également d'autres matériaux :
+        </p>
+        <ul class="text-xl font-display-secondary text-left w-full list-none space-y-2">
+          <li>• La feuille d'or</li>
+          <li>• Le bronze (alliance étain et cuivre)</li>
+          <li>• L'acier (alliance fer et carbone)</li>
+          <li>• Les aciers inoxydables</li>
+          <li>• Les métaux non ferreux (cuivre, aluminium, laiton)</li>
+          <li>• Le plomb</li>
+        </ul>
+      </div>
+    </section>
+    <hr class="w-[60%] my-10 mx-auto text-primary">
+    <section id="galerie-photo" my-8>
+
+
+      <!-- Grille Masonry -->
+      <div id="gallery" class="grid grid-cols-4 md:columns-3 lg:columns-4 gap-3">
+
+        <figure class="gallery-item overflow-hidden rounded-lg cursor-pointer group" data-category="autre"
+          data-lightbox>
+          <img src="assets/images/20250811_122229.jpg" alt="escalier forgé"
+            class="w-full h-96 object-cover group-hover:scale-105 transition duration-300">
+          <figcaption class="text-sm text-black hidden">Réalisation d'un escalier avec sa rampe</figcaption>
+        </figure>
+
+        <figure class="gallery-item overflow-hidden rounded-lg cursor-pointer group" data-category="mobilier"
+          data-lightbox>
+          <img src="assets/images/tete-de-lit.JPG" alt="Meuble en fer forgé"
+            class="w-full h-96 object-cover group-hover:scale-105 transition duration-300">
+          <figcaption class="text-sm text-black hidden">Lit réalisé sur mesure</figcaption>
+        </figure>
+
+        <figure class="gallery-item overflow-hidden rounded-lg cursor-pointer group" data-category="porte"
+          data-lightbox>
+          <img src="assets/images/marquise-soleil.jpg" alt="marquise de porte en forme de soleil"
+            class="w-full h-96 object-cover group-hover:scale-105 transition duration-300">
+          <figcaption class="text-sm text-black hidden">Grille de porte en forme de soleil</figcaption>
+        </figure>
+
+        <figure class="gallery-item overflow-hidden rounded-lg cursor-pointer group" data-category="rampe"
+          data-lightbox>
+          <img src="./assets/images/rampe-escalier-racine.jpg" alt="rampe d'escalier en forme de racine"
+            class="w-full h-96 object-cover group-hover:scale-105 transition duration-300">
+          <figcaption class="text-sm text-black hidden">Rampe d'escalier d'insparation végétale</figcaption>
+        </figure>
+
+        <figure class="gallery-item overflow-hidden rounded-lg cursor-pointer group" data-category="marquise"
+          data-lightbox>
+          <img src="./assets/images/marquise-lanterne.jpg" alt="marquise en fer forgé"
+            class="w-full h-96 object-cover group-hover:scale-105 transition duration-300">
+          <figcaption class="text-sm text-black hidden">Marquise réaliser en fer forgé</figcaption>
+        </figure>
+
+        <figure class="gallery-item overflow-hidden rounded-lg cursor-pointer group" data-category="porte"
+          data-lightbox>
+          <img src="./assets/images/porte-de-caveau.JPG" alt="Porte de caveau"
+            class="w-full h-96 object-cover group-hover:scale-105 transition duration-300">
+          <figcaption class="text-sm text-black hidden">Porte de caveau</figcaption>
+        </figure>
+
+        <figure class="gallery-item overflow-hidden rounded-lg cursor-pointer group" data-category="rampe"
+          data-lightbox>
+          <img src="./assets/images/rampe-escalier-circulaire.jpg" alt="rampe d'esclaier en colimaçon"
+            class="w-full h-96 object-cover group-hover:scale-105 transition duration-300">
+          <figcaption class="text-sm text-black hidden">Rampe d'escalier en colimaçon</figcaption>
+        </figure>
+
+        <figure class="gallery-item  overflow-hidden rounded-lg cursor-pointer group" data-category="marquise"
+          data-lightbox>
+          <img src="./assets/images/rampe et marquise.jpg" alt="rampe et marquise de perron"
+            class="w-full h-96 object-cover group-hover:scale-105 transition duration-300">
+          <figcaption class="text-sm text-black hidden">Rampe d'escalier et marquise de perron</figcaption>
+        </figure>
+        <!-- Ajoute autant de figures que nécessaire -->
+      </div>
+    </section>
+
+
   </main>
   <footer></footer>
+  <!-- Lightbox -->
+  <div id="lightbox" class="fixed inset-0 bg-black/80 z-50 hidden items-center justify-center p-8">
+    <button id="lightbox-close" class="absolute top-4 right-6 text-white text-4xl leading-none">&times;</button>
+    <div class="flex flex-col items-center gap-3">
+      <img id="lightbox-img" src="" alt="" class="max-h-[80vh] max-w-full rounded-lg object-contain">
+      <p id="lightbox-caption" class="text-white text-sm"></p>
+    </div>
+  </div>
+
 </body>
 
 </html>
