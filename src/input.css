@@ -42,3 +42,17 @@
 .filter-btn.active {
   @apply bg-primary text-white border-primary;
 }
+
+/* gestion de l'animation de la galerie */
+.gallery-item {
+  opacity: 0;
+  transform: translateY(30px);
+  transition:
+    opacity 0.6s ease,
+    transform 0.6s ease;
+}
+
+.gallery-item.visible {
+  opacity: 1;
+  transform: translateY(0);
+}

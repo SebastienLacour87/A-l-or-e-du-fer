@@ -4,14 +4,15 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>À-l-Oree-du-Fer</title>
-  <link rel="shortcut icon" href="assets/images/LOGO-tete-seule.png" />
+  <title>A-l-Oree-du-Fer</title>
+  <link rel="shortcut icon" href="assets/images/LOGO-tete-seule.webp" />
 
   <link rel="stylesheet" href="output.css" />
   <script src="index.js" defer></script>
+  <script src="i18n.js" defer></script>
 </head>
 
-<body class="bg-bg-color font-display">
+<body class="bg-bg-color font-display min-h-screen flex flex-col">
   <header id="main-header" class=" fixed top-0 left-0 w-full z-50 transition-transform duration-500 -translate-y-full">
     <section class=" w-full h-15 bg-black flex justify-end items-center gap-4 px-8">
       <div><a href="#contact" class=" text-white font-display text-2xl font-bold hover:text-primary border-r-2 pr-2"
@@ -28,7 +29,7 @@
 
     </section>
     <section class="w-full">
-      <nav class="flex justify-around items-center my-4 w-full">
+      <nav class="flex justify-around items-center my-1 w-full">
         <ul class="flex gap-8 items-center w-full justify-around">
           <li>
             <a href="#" class="nav-title" data-i18n="nav.home">Accueil</a>
@@ -36,11 +37,10 @@
           <li>
             <a href="#about" class="nav-title" data-i18n="nav.about">À propos</a>
           </li>
-          <li><a href="#">
-              <img src="assets/images/LOGO-tete-seule.png"
-                alt="Logo A l'orée du fer, portrait de Luc Desessarts stylisé"
-                class="h-20 w-20 hover:opacity-50 transition duration-200">
-            </a></li>
+          <li>
+            <img src="assets/images/LOGO-tete-seule.webp" alt="Logo A l'orée du fer, portrait de Luc Desessarts stylisé"
+              class="h-20 w-20">
+          </li>
 
           <li>
             <a href="#galerie-photo" class="nav-title" data-i18n="nav.projects">Mes chantiers</a>
@@ -53,7 +53,7 @@
 
     </section>
   </header>
-  <main>
+  <main class="flex-1">
 
     <!-- Hero Carousel -->
     <h1 class="sr-only">À l'orée du fer - Artisan ferronnier à Limoges</h1>
@@ -70,8 +70,8 @@
           <div class="min-w-full h-full overflow-hidden flex items-center px-12 gap-8">
 
             <!-- Slide 1 -->
-            <div class="w-1/2 h-full  bg-[url(assets/images/hero-image.jpg)] bg-cover bg-center cursor-pointer"
-              data-lightbox="assets/images/hero-image.jpg">
+            <div class="w-1/2 h-full  bg-[url(assets/images/hero-image.webp)] bg-cover bg-center cursor-pointer"
+              data-lightbox="assets/images/hero-image.webp">
             </div>
             <div class="w-1/2 flex flex-col items-center gap-6">
               <h2 class="text-6xl font-display text-secondary">A l'Orée du Fer </h2>
@@ -82,7 +82,7 @@
               <p class="text-black text-xl" data-i18n="text.lineup">Découvrez des créations uniques faites à la main
                 avec
                 passion.</p>
-              <a href="#"
+              <a href="#about"
                 class="mt-2 px-8 py-3 bg-bg-color text-secondary font-medium rounded-lg hover:bg-black/90 transition"
                 data-i18n="btn.discover">
                 Découvrir →
@@ -101,22 +101,22 @@
                 atelier</h2>
               <p class="text-black text-lg" data-i18n="text.lineup.2">Un savoir faire ancestral au service de vos
                 projets.</p>
-              <a href="#"
+              <a href="#gallery"
                 class="mt-2 px-8 py-3 bg-bg-color text-secondary font-medium rounded-lg hover:bg-black/90 transition"
                 data-i18n="btn.collection">
                 Voir la collection →
               </a>
             </div>
-            <div class="w-1/2 h-full  bg-[url(assets/images/tete-de-lit.jpg)] bg-cover bg-center"
-              data-lightbox="assets/images/tete-de-lit.jpg">
+            <div class="w-1/2 h-full  bg-[url(assets/images/tete-de-lit.webp)] bg-cover bg-center"
+              data-lightbox="assets/images/tete-de-lit.webp">
             </div>
 
           </div>
           <!-- Slide 3 -->
           <div class="min-w-full h-full overflow-hidden flex items-center px-12 gap-8">
 
-            <div class="w-1/2 h-full overflow-hidden bg-[url(assets/images/pergolas.jpg)] bg-cover bg-center"
-              data-lightbox="assets/images/pergolas.jpg">
+            <div class="w-1/2 h-full overflow-hidden bg-[url(assets/images/marquise-rampe.webp)] bg-cover bg-center"
+              data-lightbox="assets/images/marquise-rampe.webp">
             </div>
             <div class="w-1/2 flex flex-col items-center gap-6">
               <h2 class="text-6xl font-display text-secondary">A l'Orée du Fer </h2>
@@ -149,9 +149,10 @@
     <section id="about" class="grid grid-cols-2 my-10 w-full px-16 gap-8">
       <div class="flex justify-center items-center">
         <figure data-lightbox class="w-full">
-          <img src="assets/images/luc-au-travail.jpg" alt="Luc Desessarts en plein travail"
-            class="w-full h-full object-cover rounded-lg">
-          <figcaption class="text-2xl font-display text-primary font-bold mt-2" data-i18n="fig.caption">Luc Desessarts
+          <img src="assets/images/luc-au-travail.webp" alt="Luc Desessarts en plein travail"
+            class="w-auto h-110 object-cover rounded-lg mx-auto">
+          <figcaption class="text-2xl font-display text-primary font-bold mt-2 text-center" data-i18n="fig.caption">Luc
+            Desessarts
             en plein travail</figcaption>
         </figure>
       </div>
@@ -187,20 +188,20 @@
         <div class="flex gap-4 justify-center my-4">
           <figure data-lightbox class="flex flex-col items-center gap-2">
             <div class="w-44 h-64 overflow-hidden rounded-lg">
-              <img src="assets/images/concception.jpg" alt="base de travail" class="w-full h-full object-cover">
+              <img src="assets/images/concception.webp" alt="base de travail" class="w-full h-full object-cover">
             </div>
             <figcaption class="text-sm text-black">étape 3</figcaption>
           </figure>
           <figure data-lightbox class="flex flex-col items-center gap-2">
             <div class="w-44 h-64 overflow-hidden rounded-lg">
-              <img src="assets/images/travail%20artistique.jpg" alt="conceptualisation du projet"
+              <img src="assets/images/travail-artistique.webp" alt="conceptualisation du projet"
                 class="w-full h-full object-cover">
             </div>
             <figcaption class="text-sm text-black">étape 3 bis</figcaption>
           </figure>
           <figure data-lightbox class="flex flex-col items-center gap-2">
             <div class="w-44 h-64 overflow-hidden rounded-lg">
-              <img src="assets/images/realisation-finale.jpg" alt="réalisation finale"
+              <img src="assets/images/realisation-finale.webp" alt="réalisation finale"
                 class="w-full h-full object-cover">
             </div>
             <figcaption class="text-sm text-black">étape 4</figcaption>
@@ -217,7 +218,7 @@
       <div class="flex flex-col items-center px-16 py-10 text-center">
         <h2 class="text-4xl text-primary font-display uppercase font-bold pb-10">Les matériaux</h2>
         <div class="w-full h-80 overflow-hidden rounded-lg">
-          <img src="assets/images/fer-chaud.jpg" alt="fer chaud pendant que l'artisan le travaille"
+          <img src="assets/images/fer-chaud.webp" alt="fer chaud pendant que l'artisan le travaille"
             class="w-full h-full object-cover" data-lightbox>
         </div>
         <p class="text-xl font-display-secondary py-4 mt-8 text-left">
@@ -235,74 +236,121 @@
       </div>
     </section>
     <hr class="w-[60%] my-10 mx-auto text-primary">
-    <section id="galerie-photo" my-8>
+    <section id="galerie-photo" class="my-8">
+      <div>
+        <h2 class="text-5xl font-display text-primary pb-4 mx-40 text-center">Nos réalisations</h2>
+      </div>
 
 
-      <!-- Grille Masonry -->
-      <div id="gallery" class="grid grid-cols-4 md:columns-3 lg:columns-4 gap-3">
+      <!-- lien vers galerie dédié -->
+      <div id="gallery" class="flex flex-col mx-40  gap-3">
 
-        <figure class="gallery-item overflow-hidden rounded-lg cursor-pointer group" data-category="autre"
-          data-lightbox>
-          <img src="assets/images/20250811_122229.jpg" alt="escalier forgé"
-            class="w-full h-96 object-cover group-hover:scale-105 transition duration-300">
-          <figcaption class="text-sm text-black hidden">Réalisation d'un escalier avec sa rampe</figcaption>
-        </figure>
+        <a href="galerie-rampe.html" class="transition duration-1000 hover:scale-101">
+          <div class="grid grid-cols-2 gap-24 items-center justify-center mx-auto">
+            <h3 class="text-4xl font-extralight">Rampes et escaliers</h3>
+            <figure class="overflow-hidden rounded-lg cursor-pointer group" data-lightbox>
+              <img src="assets/images/esalier-rampe.webp" alt="escalier forgé" class="w-200 h-52 object-cover ">
+              <figcaption class="text-sm text-black hidden">Réalisation d'un escalier avec sa rampe</figcaption>
+            </figure>
 
-        <figure class="gallery-item overflow-hidden rounded-lg cursor-pointer group" data-category="mobilier"
-          data-lightbox>
-          <img src="assets/images/tete-de-lit.JPG" alt="Meuble en fer forgé"
-            class="w-full h-96 object-cover group-hover:scale-105 transition duration-300">
-          <figcaption class="text-sm text-black hidden">Lit réalisé sur mesure</figcaption>
-        </figure>
+          </div>
+        </a>
 
-        <figure class="gallery-item overflow-hidden rounded-lg cursor-pointer group" data-category="porte"
-          data-lightbox>
-          <img src="assets/images/marquise-soleil.jpg" alt="marquise de porte en forme de soleil"
-            class="w-full h-96 object-cover group-hover:scale-105 transition duration-300">
-          <figcaption class="text-sm text-black hidden">Grille de porte en forme de soleil</figcaption>
-        </figure>
+        <hr class="w-full my-4 mx-auto text-primary">
 
-        <figure class="gallery-item overflow-hidden rounded-lg cursor-pointer group" data-category="rampe"
-          data-lightbox>
-          <img src="./assets/images/rampe-escalier-racine.jpg" alt="rampe d'escalier en forme de racine"
-            class="w-full h-96 object-cover group-hover:scale-105 transition duration-300">
-          <figcaption class="text-sm text-black hidden">Rampe d'escalier d'insparation végétale</figcaption>
-        </figure>
+        <a href="galerie-mobilier.html" class="transition duration-1000 hover:scale-101">
+          <div class="grid grid-cols-2 gap-24 items-center justify-center mx-auto">
+            <h3 class="text-4xl font-thin font-display-secondary ">Mobiliers</h3>
+            <figure class="overflow-hidden rounded-lg cursor-pointer group" data-lightbox>
+              <img src="assets/images/tete-de-lit.webp" alt="Meuble en fer forgé" class="w-200 h-52 object-cover ">
+              <figcaption class="text-sm text-black hidden">Lit réalisé sur mesure</figcaption>
+            </figure>
+          </div>
+        </a>
 
-        <figure class="gallery-item overflow-hidden rounded-lg cursor-pointer group" data-category="marquise"
-          data-lightbox>
-          <img src="./assets/images/marquise-lanterne.jpg" alt="marquise en fer forgé"
-            class="w-full h-96 object-cover group-hover:scale-105 transition duration-300">
-          <figcaption class="text-sm text-black hidden">Marquise réaliser en fer forgé</figcaption>
-        </figure>
+        <hr class="w-full my-4 mx-auto text-primary">
 
-        <figure class="gallery-item overflow-hidden rounded-lg cursor-pointer group" data-category="porte"
-          data-lightbox>
-          <img src="./assets/images/porte-de-caveau.JPG" alt="Porte de caveau"
-            class="w-full h-96 object-cover group-hover:scale-105 transition duration-300">
-          <figcaption class="text-sm text-black hidden">Porte de caveau</figcaption>
-        </figure>
+        <a href="galerie-porte.html" class="transition duration-1000 hover:scale-101">
+          <div class="grid grid-cols-2 gap-24 items-center justify-center mx-auto">
+            <h3 class="text-4xl font-thin font-display-secondary ">Portes</h3>
+            <figure class="overflow-hidden rounded-lg cursor-pointer group" data-lightbox>
+              <img src="assets/images/realisation-finale.webp" alt="marquise de porte en forme de soleil"
+                class="w-200 h-52 object-cover ">
+              <figcaption class="text-sm text-black hidden">Grille de porte en forme de soleil</figcaption>
+            </figure>
+          </div>
+        </a>
 
-        <figure class="gallery-item overflow-hidden rounded-lg cursor-pointer group" data-category="rampe"
-          data-lightbox>
-          <img src="./assets/images/rampe-escalier-circulaire.jpg" alt="rampe d'esclaier en colimaçon"
-            class="w-full h-96 object-cover group-hover:scale-105 transition duration-300">
-          <figcaption class="text-sm text-black hidden">Rampe d'escalier en colimaçon</figcaption>
-        </figure>
+        <hr class="w-full my-4 mx-auto text-primary">
+        <a href="galerie-marquise.html" class="transition duration-1000 hover:scale-101">
+          <div class="grid grid-cols-2 gap-24 items-center justify-center mx-auto">
+            <h3 class="text-4xl font-thin font-display-secondary ">Marquises</h3>
+            <figure class="overflow-hidden rounded-lg cursor-pointer group" data-lightbox>
+              <img src="./assets/images/rampe-et-marquise.webp" alt="marquise en fer forgé"
+                class="w-200 h-52 object-cover ">
+              <figcaption class="text-sm text-black hidden">Marquise réaliser en fer forgé</figcaption>
+            </figure>
+          </div>
+        </a>
 
-        <figure class="gallery-item  overflow-hidden rounded-lg cursor-pointer group" data-category="marquise"
-          data-lightbox>
-          <img src="./assets/images/rampe et marquise.jpg" alt="rampe et marquise de perron"
-            class="w-full h-96 object-cover group-hover:scale-105 transition duration-300">
-          <figcaption class="text-sm text-black hidden">Rampe d'escalier et marquise de perron</figcaption>
-        </figure>
-        <!-- Ajoute autant de figures que nécessaire -->
+        <hr class="w-full my-4 mx-auto text-primary">
+
       </div>
     </section>
 
 
   </main>
-  <footer></footer>
+  <footer class="bg-primary grid grid-cols-2 py-12 px-16">
+    <div class=" flex flex-col gap-4 justify-start items-center">
+      <h2 class="text-2xl font-display text-secondary font-bold tracking-wide">Réalisation architecturale extérieur et
+        intérieur en
+        métal</h2>
+      <a href="mailto:lucdesessarts@gmail.com" class="text-xl hover:opacity-50">lucdesessarts@gmail.com</a>
+      <a href="index.html" class="text-xl hover:opacity-50">www.aloreedufer.com</a>
+      <a href="#contact"
+        class=" text-lg border-2 border-secondary p-2 rounded-lg hover:bg-secondary hover:text-primary transition">Contact</a>
+      <hr class="h-1 w-4/5 my-2 text-secondary">
+      <h4 class="text-2xl font-black">France</h4>
+      <p class="text-lg leading-10">2, rue de la terrasse<br>
+        87260 Pierre-Buffière<br>
+        06 80 50 90 09</p>
+    </div>
+    <div class="grid grid-cols-2 items-center justify-start">
+      <ul>
+        <li class="text-2xl text-secondary font-bold pt-4 hover:opacity-50 transition"><a href="#">Accueil</a></li>
+        <li class="text-2xl text-secondary font-bold pt-4 hover:opacity-50 transition"><a href="#about">À Propos</a>
+        </li>
+        <li class="text-2xl text-secondary font-bold pt-4 hover:opacity-50 transition"><a href="#gallery">Mes
+            Chantiers</a>
+        </li>
+        <li class="text-2xl text-secondary font-bold pt-4 hover:opacity-50 transition"><a href="#contact">Contact</a>
+        </li>
+        <li><a href="./mention-legale.html">Mentions Légales</a></li>
+        <li><a href="./politique-de-confidentialitee.html">Politique de Confidentialitée</a></li>
+        <li><a href="#">www.tentaclecode.com</a></li>
+      </ul>
+
+      <div class="w-1/2 flex flex-col gap-4 items-center justify-start">
+        <a href="https://www.metiers-art.com/A-L-OREE-DU-FER-Luc-DESESSARTS"
+          class="transition duration-300 hover:opacity-50">
+          <img src="./assets/icons/logo-cma.png" alt="logo métiers d'art Nouvelle-Aquitaine" class="w-20">
+        </a>
+        <a href="https://www.google.fr/aclk?sa=L&pf=1&ai=DChsSEwi8sN24pfqTAxX7pv0FHeTuH-4YACICCAEQABoCd2Y&co=1&ase=2&gclid=Cj0KCQjw-pHPBhCdARIsAHXYWP_4UoOcDXBUhsE54UTp-vsEd-TdRAanGVSuDk_dgo7yhAbEiVn-M_kaArzFEALw_wcB&cce=2&category=acrcp_v1_32&sig=AOD64_0JJVmZvtgr0VLqHo2ovO-ydh2Cdg&q&nis=4&adurl=https://formation.cma-nouvelleaquitaine.fr/?mtm_campaign%3Dfilrouge%26mtm_source%3Dsea%26gad_source%3D1%26gad_campaignid%3D23672237971%26gbraid%3D0AAAAAogJUfLcT6c8RGsiEncZvsvhoxbLf%26gclid%3DCj0KCQjw-pHPBhCdARIsAHXYWP_4UoOcDXBUhsE54UTp-vsEd-TdRAanGVSuDk_dgo7yhAbEiVn-M_kaArzFEALw_wcB&ved=2ahUKEwjPttO4pfqTAxXLoScCHTEPAvEQ0Qx6BAghEAE"
+          class="transition duration-300 hover:opacity-50">
+          <img src="./assets/icons/png-clipart-handicraft-logo-chambre-de-metiers-et-artisanat-empresa-artisan.png"
+            alt="logo chambre des métiers et artisanats" class="w-20">
+        </a>
+        <a href="https://www.facebook.com/aloreedufer?locale=fr_FR" class="transition duration-300 hover:opacity-50">
+          <img src="./assets/icons/square-facebook-brands-solid.png" alt="logo facebook" class="w-20">
+        </a>
+        <a href="https://www.instagram.com/aloreedufer/" class="transition duration-300 hover:opacity-50">
+          <img src="./assets/icons/square-instagram-brands-solid.png" alt="logo instagram" class="w-20">
+        </a>
+      </div>
+    </div>
+  </footer>
+
+
   <!-- Lightbox -->
   <div id="lightbox" class="fixed inset-0 bg-black/80 z-50 hidden items-center justify-center p-8">
     <button id="lightbox-close" class="absolute top-4 right-6 text-white text-4xl leading-none">&times;</button>
@@ -311,7 +359,6 @@
       <p id="lightbox-caption" class="text-white text-sm"></p>
     </div>
   </div>
-
 </body>
 
 </html>
