@@ -1,174 +1,473 @@
 <!doctype html>
 <html lang="fr">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Rampes et escalier - Galerie-photo</title>
+    <title>Rampes et escalier - Galerie-Photo</title>
     <link rel="shortcut icon" href="assets/images/LOGO-tete-seule.webp" />
-
     <link rel="stylesheet" href="output.css" />
     <script src="index.js" defer></script>
     <script src="gallery.js" defer></script>
-</head>
+  </head>
 
-<body class="bg-bg-color font-display">
-    <header id="main-header"
-        class=" fixed top-0 left-0 w-full z-50 transition-transform duration-500 -translate-y-full">
-        <section class=" w-full h-15 bg-black flex justify-end items-center gap-4 px-8">
-            <div><a href="#contact"
-                    class=" text-white font-display text-2xl font-bold hover:text-primary border-r-2 pr-2"
-                    data-i18n="nav.contact">Contact</a>
-            </div>
-
-            <div class=" flex gap-4">
-                <img src="assets/icons/france-svgrepo-com.svg" alt="drapeau français"
-                    class=" w-8 h-7 cursor-pointer hover:opacity-70 transition" onclick="setLang('fr')">
-
-                <img src="assets/icons/united-kingdom-svgrepo-com.svg" alt="drapeau britannique"
-                    class=" w-8 h-7 cursor-pointer hover:opacity-70 transition" onclick="setLang('en')">
-            </div>
-
-        </section>
-        <section class="w-full">
-            <nav class="flex justify-around items-center my-1 w-full">
-                <ul class="flex gap-8 items-center w-full justify-around">
-                    <li>
-                        <a href="index.html" class="nav-title" data-i18n="nav.home">Accueil</a>
-                    </li>
-                    <li>
-                        <a href="#about" class="nav-title" data-i18n="nav.about">À propos</a>
-                    </li>
-                    <li>
-                        <img src="assets/images/LOGO-tete-seule.webp"
-                            alt="Logo A l'orée du fer, portrait de Luc Desessarts stylisé" class="h-20 w-20">
-                    </li>
-
-                    <li>
-                        <a href="#galerie-photo" class="nav-title" data-i18n="nav.projects">Mes chantiers</a>
-                    </li>
-                    <li>
-                        <a href="#" class="nav-title" data-i18n="nav.contact">Contact</a>
-                    </li>
-                </ul>
-            </nav>
-
-        </section>
-    </header>
-    <main>
-        <section>
-            <h1 class="text-4xl font-display-secondary font-thin text-center my-40">Nos escaliers et rampes</h1>
-            <hr class="w-4/5 my-4 mx-auto text-primary">
-            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3 px-8 py-12 auto-rows-[400px]">
-
-                <figure class="gallery-item overflow-hidden rounded-lg cursor-pointer group" data-lightbox>
-                    <img src="assets/images/esalier-rampe.webp"
-                        alt="escalier en métal avec sa rampe réaliser sur mesure"
-                        class="w-full h-full object-cover group-hover:scale-105 transition duration-300">
-                    <figcaption class="text-sm text-black hidden">escalier en métal avec sa rampe réaliser sur mesure
-                    </figcaption>
-                </figure>
-
-                <figure class="gallery-item row-span-2 overflow-hidden rounded-lg cursor-pointer group" data-lightbox>
-                    <img src="assets/images/garde-corps.webp" alt="garde corps réaliser en fer forgé"
-                        class="w-full h-full object-cover group-hover:scale-105 transition duration-300">
-                    <figcaption class="text-sm text-black hidden">garde corps réaliser en fer forgé
-                    </figcaption>
-                </figure>
-
-                <figure class="gallery-item overflow-hidden rounded-lg cursor-pointer group" data-lightbox>
-                    <img src="assets/images/rampe-articulee.webp" alt="rampe d'esclaier métal et bois"
-                        class="w-full h-full object-cover group-hover:scale-105 transition duration-300">
-                    <figcaption class="text-sm text-black hidden">rampe d'esclaier métal et bois
-                    </figcaption>
-                </figure>
-
-                <figure class="gallery-item overflow-hidden rounded-lg cursor-pointer group" data-lightbox>
-                    <img src="assets/images/rampe-articulee-2.webp"
-                        alt="rampe d'esclaier métal et bois vue du haut de l'escalier"
-                        class="w-full h-full object-cover group-hover:scale-105 transition duration-300">
-                    <figcaption class="text-sm text-black hidden">rampe d'esclaier métal et bois vue du haut de
-                        l'escalier
-                    </figcaption>
-                </figure>
-
-                <figure class="gallery-item overflow-hidden rounded-lg cursor-pointer group" data-lightbox>
-                    <img src="assets/images/rampe-escalier-circulaire.webp" alt="rampe d'esclaier en colimaçon"
-                        class="w-full h-full object-cover group-hover:scale-105 transition duration-300">
-                    <figcaption class="text-sm text-black hidden">rampe d'esclaier en colimaçon
-                    </figcaption>
-                </figure>
-
-                <figure class="gallery-item col-span-2 overflow-hidden rounded-lg cursor-pointer group" data-lightbox>
-                    <img src="assets/images/rampe-escalier-racine.webp" alt="rampe d'esclaier d'inspiration végétale"
-                        class="w-full h-full object-cover group-hover:scale-105 transition duration-300">
-                    <figcaption class="text-sm text-black hidden">rampe d'esclaier d'inspiration végétale
-                </figure>
-
-                <figure class="gallery-item col-span-2 overflow-hidden rounded-lg cursor-pointer group" data-lightbox>
-                    <img src="assets/images/rampe-extérieur.webp" alt="rampe d'esclaier d'extérieur et garde corps"
-                        class="w-full h-full object-cover group-hover:scale-105 transition duration-300">
-                    <figcaption class="text-sm text-black hidden">rampe d'esclaier d'extérieur et garde corps
-                </figure>
-
-                <figure class="gallery-item overflow-hidden rounded-lg cursor-pointer group" data-lightbox>
-                    <img src="assets/images/rampe-circulaire-pres.webp"
-                        alt="rampe d'esclaier en colimaçon vue du haut de l'escalier"
-                        class="w-full h-full object-cover group-hover:scale-105 transition duration-300">
-                    <figcaption class="text-sm text-black hidden">rampe d'esclaier en colimaçon vue du haut de
-                        l'escalier
-                    </figcaption>
-                </figure>
-
-                <figure class="gallery-item overflow-hidden rounded-lg cursor-pointer group" data-lightbox>
-                    <img src="assets/images/rampe-escalier-bas.webp" alt="garde corps d'escalier"
-                        class="w-full h-full object-cover group-hover:scale-105 transition duration-300">
-                    <figcaption class="text-sm text-black hidden">garde corps d'escalier
-                </figure>
-            </div>
-        </section>
-        <section class="bg-black py-8 px-8">
-            <p class="text-white font-bold text-sm tracking-widest uppercase mb-4">Voir Aussi</p>
-            <div class="grid grid-cols-3 gap-1">
-
-
-                <a href="galerie-mobiler.html" class="relative overflow-hidden group h-40 cursor-pointer">
-                    <img src="assets/images/tete-de-lit.webp" alt="Meuble en fer forgé"
-                        class="w-full h-full object-cover brightness-50 group-hover:brightness-75 group-hover:scale-105 transition duration-500">
-                    <div class="absolute inset-0 flex flex-col justify-center px-6">
-                        <h3 class=" text-white text-2xl font-ligh">Mobiliers</h3>
-                        <span class="text-white/70 text-sm">voir +</span>
-                    </div>
-                </a>
-
-                <a href="galerie-porte.html" class="relative overflow-hidden group h-40 cursor-pointer">
-                    <img src="assets/images/realisation-finale.webp" alt="porte en forme de soleil"
-                        class="w-full h-full object-cover brightness-50 group-hover:brightness-75 group-hover:scale-105 transition duration-500">
-                    <div class="absolute inset-0 flex flex-col justify-center px-6">
-                        <h3 class="text-white text-2xl font-light">Portes</h3>
-                        <span class="text-white/70 text-sm">voir +</span>
-                    </div>
-                </a>
-
-                <a href="galerie-marquise.html" class="relative overflow-hidden group h-40 cursor-pointer">
-                    <img src="assets/images/rampe-et-marquise.webp" alt="Marquises"
-                        class="w-full h-full object-cover brightness-50 group-hover:brightness-75 group-hover:scale-105 transition duration-500">
-                    <div class="absolute inset-0 flex flex-col justify-center px-6">
-                        <h3 class="text-white text-2xl font-light">Marquises</h3>
-                        <span class="text-white/70 text-sm">voir +</span>
-                    </div>
-                </a>
-            </div>
-        </section>
-    </main>
-    <footer></footer>
-    <div id="lightbox" class="fixed inset-0 bg-black/80 z-50 hidden items-center justify-center p-8">
-        <button id="lightbox-close" class="absolute top-4 right-6 text-white text-4xl leading-none">&times;</button>
-        <div class="flex flex-col items-center gap-3">
-            <img id="lightbox-img" src="" alt="" class="max-h-[80vh] max-w-full rounded-lg object-contain">
-            <p id="lightbox-caption" class="text-white text-sm"></p>
+  <body class="bg-bg-color font-display">
+    <header
+      id="main-header"
+      class="fixed top-0 left-0 w-full z-50 transition-transform duration-500 -translate-y-full"
+    >
+      <section
+        class="w-full h-15 bg-black flex justify-end items-center gap-4 px-8"
+      >
+        <div>
+          <a
+            href="#contact"
+            class="text-white font-display text-2xl font-bold hover:text-primary border-r-2 pr-2"
+            data-i18n="nav.contact"
+            >Contact</a
+          >
         </div>
-    </div>
-</body>
+        <div class="flex gap-4">
+          <img
+            src="assets/icons/france-svgrepo-com.svg"
+            alt="drapeau français"
+            class="w-8 h-7 cursor-pointer hover:opacity-70 transition"
+            onclick="setLang('fr')"
+          />
+          <img
+            src="assets/icons/united-kingdom-svgrepo-com.svg"
+            alt="drapeau britannique"
+            class="w-8 h-7 cursor-pointer hover:opacity-70 transition"
+            onclick="setLang('en')"
+          />
+        </div>
+      </section>
+      <section class="w-full">
+        <nav class="flex justify-around items-center my-1 w-full">
+          <ul class="flex gap-8 items-center w-full justify-around">
+            <li>
+              <a href="index.html" class="nav-title" data-i18n="nav.home"
+                >Accueil</a
+              >
+            </li>
+            <li>
+              <a href="index.html#about" class="nav-title" data-i18n="nav.about"
+                >À propos</a
+              >
+            </li>
+            <li>
+              <img
+                src="assets/images/LOGO-tete-seule.webp"
+                srcset="
+                  assets/images/LOGO-tete-seule-400w.webp 400w,
+                  assets/images/LOGO-tete-seule-800w.webp 800w
+                "
+                sizes="80px"
+                alt="Logo A l'orée du fer, portrait de Luc Desessarts stylisé"
+                class="h-20 w-20"
+              />
+            </li>
+            <li>
+              <a
+                href="index.html#galerie-photo"
+                class="nav-title"
+                data-i18n="nav.projects"
+                >Mes chantiers</a
+              >
+            </li>
+            <li>
+              <a href="#" class="nav-title" data-i18n="nav.contact">Contact</a>
+            </li>
+          </ul>
+        </nav>
+      </section>
+    </header>
 
+    <main>
+      <section>
+        <h1 class="text-4xl font-display-secondary font-thin text-center my-40">
+          Nos escaliers et rampes
+        </h1>
+        <hr class="w-4/5 my-4 mx-auto text-primary" />
+        <div
+          class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3 px-8 py-12 auto-rows-[400px]"
+        >
+          <figure
+            class="gallery-item overflow-hidden rounded-lg cursor-pointer group"
+            data-lightbox
+          >
+            <img
+              src="assets/images/esalier-rampe.webp"
+              srcset="
+                assets/images/esalier-rampe-400w.webp   400w,
+                assets/images/esalier-rampe-800w.webp   800w,
+                assets/images/esalier-rampe-1200w.webp 1200w
+              "
+              sizes="(max-width: 640px) 50vw, (max-width: 1024px) 33vw, 25vw"
+              alt="escalier en métal avec sa rampe réaliser sur mesure"
+              class="w-full h-full object-cover group-hover:scale-105 transition duration-300"
+            />
+            <figcaption class="text-sm text-black hidden">
+              escalier en métal avec sa rampe réaliser sur mesure
+            </figcaption>
+          </figure>
+
+          <figure
+            class="gallery-item row-span-2 overflow-hidden rounded-lg cursor-pointer group"
+            data-lightbox
+          >
+            <img
+              src="assets/images/garde-corps.webp"
+              srcset="
+                assets/images/garde-corps-400w.webp   400w,
+                assets/images/garde-corps-800w.webp   800w,
+                assets/images/garde-corps-1200w.webp 1200w
+              "
+              sizes="(max-width: 640px) 50vw, (max-width: 1024px) 33vw, 25vw"
+              alt="garde corps réaliser en fer forgé"
+              class="w-full h-full object-cover group-hover:scale-105 transition duration-300"
+            />
+            <figcaption class="text-sm text-black hidden">
+              garde corps réaliser en fer forgé
+            </figcaption>
+          </figure>
+
+          <figure
+            class="gallery-item overflow-hidden rounded-lg cursor-pointer group"
+            data-lightbox
+          >
+            <img
+              src="assets/images/rampe-articulee.webp"
+              srcset="
+                assets/images/rampe-articulee-400w.webp   400w,
+                assets/images/rampe-articulee-800w.webp   800w,
+                assets/images/rampe-articulee-1200w.webp 1200w
+              "
+              sizes="(max-width: 640px) 50vw, (max-width: 1024px) 33vw, 25vw"
+              alt="rampe d'escalier métal et bois"
+              class="w-full h-full object-cover group-hover:scale-105 transition duration-300"
+            />
+            <figcaption class="text-sm text-black hidden">
+              rampe d'escalier métal et bois
+            </figcaption>
+          </figure>
+
+          <figure
+            class="gallery-item overflow-hidden rounded-lg cursor-pointer group"
+            data-lightbox
+          >
+            <img
+              src="assets/images/rampe-articulee-2.webp"
+              srcset="
+                assets/images/rampe-articulee-2-400w.webp   400w,
+                assets/images/rampe-articulee-2-800w.webp   800w,
+                assets/images/rampe-articulee-2-1200w.webp 1200w
+              "
+              sizes="(max-width: 640px) 50vw, (max-width: 1024px) 33vw, 25vw"
+              alt="rampe d'escalier métal et bois vue du haut de l'escalier"
+              class="w-full h-full object-cover group-hover:scale-105 transition duration-300"
+            />
+            <figcaption class="text-sm text-black hidden">
+              rampe d'escalier métal et bois vue du haut de l'escalier
+            </figcaption>
+          </figure>
+
+          <figure
+            class="gallery-item overflow-hidden rounded-lg cursor-pointer group"
+            data-lightbox
+          >
+            <img
+              src="assets/images/rampe-escalier-circulaire.webp"
+              srcset="
+                assets/images/rampe-escalier-circulaire-400w.webp   400w,
+                assets/images/rampe-escalier-circulaire-800w.webp   800w,
+                assets/images/rampe-escalier-circulaire-1200w.webp 1200w
+              "
+              sizes="(max-width: 640px) 50vw, (max-width: 1024px) 33vw, 25vw"
+              alt="rampe d'escalier en colimaçon"
+              class="w-full h-full object-cover group-hover:scale-105 transition duration-300"
+            />
+            <figcaption class="text-sm text-black hidden">
+              rampe d'escalier en colimaçon
+            </figcaption>
+          </figure>
+
+          <figure
+            class="gallery-item col-span-2 overflow-hidden rounded-lg cursor-pointer group"
+            data-lightbox
+          >
+            <img
+              src="assets/images/rampe-escalier-racine.webp"
+              srcset="
+                assets/images/rampe-escalier-racine-400w.webp   400w,
+                assets/images/rampe-escalier-racine-800w.webp   800w,
+                assets/images/rampe-escalier-racine-1200w.webp 1200w
+              "
+              sizes="(max-width: 640px) 100vw, (max-width: 1024px) 66vw, 50vw"
+              alt="rampe d'escalier d'inspiration végétale"
+              class="w-full h-full object-cover group-hover:scale-105 transition duration-300"
+            />
+            <figcaption class="text-sm text-black hidden">
+              rampe d'escalier d'inspiration végétale
+            </figcaption>
+          </figure>
+
+          <figure
+            class="gallery-item col-span-2 overflow-hidden rounded-lg cursor-pointer group"
+            data-lightbox
+          >
+            <img
+              src="assets/images/rampe-extérieur.webp"
+              srcset="
+                assets/images/rampe-extérieur-400w.webp   400w,
+                assets/images/rampe-extérieur-800w.webp   800w,
+                assets/images/rampe-extérieur-1200w.webp 1200w
+              "
+              sizes="(max-width: 640px) 100vw, (max-width: 1024px) 66vw, 50vw"
+              alt="rampe d'escalier d'extérieur et garde corps"
+              class="w-full h-full object-cover group-hover:scale-105 transition duration-300"
+            />
+            <figcaption class="text-sm text-black hidden">
+              rampe d'escalier d'extérieur et garde corps
+            </figcaption>
+          </figure>
+
+          <figure
+            class="gallery-item overflow-hidden rounded-lg cursor-pointer group"
+            data-lightbox
+          >
+            <img
+              src="assets/images/rampe-circulaire-pres.webp"
+              srcset="
+                assets/images/rampe-circulaire-pres-400w.webp   400w,
+                assets/images/rampe-circulaire-pres-800w.webp   800w,
+                assets/images/rampe-circulaire-pres-1200w.webp 1200w
+              "
+              sizes="(max-width: 640px) 50vw, (max-width: 1024px) 33vw, 25vw"
+              alt="rampe d'escalier en colimaçon vue du haut de l'escalier"
+              class="w-full h-full object-cover group-hover:scale-105 transition duration-300"
+            />
+            <figcaption class="text-sm text-black hidden">
+              rampe d'escalier en colimaçon vue du haut de l'escalier
+            </figcaption>
+          </figure>
+
+          <figure
+            class="gallery-item overflow-hidden rounded-lg cursor-pointer group"
+            data-lightbox
+          >
+            <img
+              src="assets/images/rampe-escalier-bas.webp"
+              srcset="
+                assets/images/rampe-escalier-bas-400w.webp   400w,
+                assets/images/rampe-escalier-bas-800w.webp   800w,
+                assets/images/rampe-escalier-bas-1200w.webp 1200w
+              "
+              sizes="(max-width: 640px) 50vw, (max-width: 1024px) 33vw, 25vw"
+              alt="garde corps d'escalier"
+              class="w-full h-full object-cover group-hover:scale-105 transition duration-300"
+            />
+            <figcaption class="text-sm text-black hidden">
+              garde corps d'escalier
+            </figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <!-- Voir aussi -->
+      <section class="bg-black py-8 px-8">
+        <p class="text-white font-bold text-sm tracking-widest uppercase mb-4">
+          Voir Aussi
+        </p>
+        <div class="grid grid-cols-3 gap-1">
+          <a
+            href="galerie-mobilier.html"
+            class="relative overflow-hidden group h-40 cursor-pointer"
+          >
+            <img
+              src="assets/images/tete-de-lit.webp"
+              srcset="
+                assets/images/tete-de-lit-400w.webp 400w,
+                assets/images/tete-de-lit-800w.webp 800w
+              "
+              sizes="33vw"
+              alt="Meuble en fer forgé"
+              class="w-full h-full object-cover brightness-50 group-hover:brightness-75 group-hover:scale-105 transition duration-500"
+            />
+            <div class="absolute inset-0 flex flex-col justify-center px-6">
+              <h3 class="text-white text-2xl font-light">
+                Mobiliers et Objets d'art
+              </h3>
+              <span class="text-white/70 text-sm">voir +</span>
+            </div>
+          </a>
+
+          <a
+            href="galerie-porte.html"
+            class="relative overflow-hidden group h-40 cursor-pointer"
+          >
+            <img
+              src="assets/images/realisation-finale.webp"
+              srcset="
+                assets/images/realisation-finale-400w.webp 400w,
+                assets/images/realisation-finale-800w.webp 800w
+              "
+              sizes="33vw"
+              alt="porte en forme de soleil"
+              class="w-full h-full object-cover brightness-50 group-hover:brightness-75 group-hover:scale-105 transition duration-500"
+            />
+            <div class="absolute inset-0 flex flex-col justify-center px-6">
+              <h3 class="text-white text-2xl font-light">Portes et Fenêtres</h3>
+              <span class="text-white/70 text-sm">voir +</span>
+            </div>
+          </a>
+
+          <a
+            href="galerie-marquise.html"
+            class="relative overflow-hidden group h-40 cursor-pointer"
+          >
+            <img
+              src="assets/images/rampe-et-marquise.webp"
+              srcset="
+                assets/images/rampe-et-marquise-400w.webp 400w,
+                assets/images/rampe-et-marquise-800w.webp 800w
+              "
+              sizes="33vw"
+              alt="Marquises"
+              class="w-full h-full object-cover brightness-50 group-hover:brightness-75 group-hover:scale-105 transition duration-500"
+            />
+            <div class="absolute inset-0 flex flex-col justify-center px-6">
+              <h3 class="text-white text-2xl font-light">
+                Marquises et Pergolas
+              </h3>
+              <span class="text-white/70 text-sm">voir +</span>
+            </div>
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="bg-primary grid grid-cols-2 py-12 px-16">
+      <div class="flex flex-col gap-4 justify-start items-center">
+        <h2
+          class="text-2xl font-display text-secondary font-bold tracking-wide"
+        >
+          Réalisation architecturale extérieur et intérieur en métal
+        </h2>
+        <a
+          href="mailto:lucdesessarts@gmail.com"
+          class="text-xl hover:opacity-50"
+          >lucdesessarts@gmail.com</a
+        >
+        <a href="index.html" class="text-xl hover:opacity-50"
+          >www.aloreedufer.com</a
+        >
+        <a
+          href="#contact"
+          class="text-lg border-2 border-secondary p-2 rounded-lg hover:bg-secondary hover:text-primary transition"
+          >Contact</a
+        >
+        <hr class="h-1 w-4/5 my-2 text-secondary" />
+        <h4 class="text-2xl font-black">France</h4>
+        <p class="text-lg leading-10">
+          2, rue de la terrasse<br />87260 Pierre-Buffière<br />06 80 50 90 09
+        </p>
+      </div>
+      <div class="grid grid-cols-2 items-center justify-start">
+        <ul>
+          <li
+            class="text-2xl text-secondary font-bold pt-4 hover:opacity-50 transition"
+          >
+            <a href="index.html">Accueil</a>
+          </li>
+          <li
+            class="text-2xl text-secondary font-bold pt-4 hover:opacity-50 transition"
+          >
+            <a href="index.html#about">À Propos</a>
+          </li>
+          <li
+            class="text-2xl text-secondary font-bold pt-4 hover:opacity-50 transition"
+          >
+            <a href="index.html#galerie-photo">Mes Chantiers</a>
+          </li>
+          <li
+            class="text-2xl text-secondary font-bold pt-4 hover:opacity-50 transition"
+          >
+            <a href="#contact">Contact</a>
+          </li>
+          <li class="mt-16">
+            <a href="./mention-legale.html">Mentions Légales</a>
+          </li>
+          <li>
+            <a href="./politique-de-confidentialitee.html"
+              >Politique de Confidentialitée</a
+            >
+          </li>
+          <li><a href="#">www.tentaclecode.com</a></li>
+        </ul>
+        <div class="w-1/2 flex flex-col gap-4 items-center justify-start">
+          <a
+            href="https://www.metiers-art.com/A-L-OREE-DU-FER-Luc-DESESSARTS"
+            class="transition duration-300 hover:opacity-50"
+          >
+            <img
+              src="./assets/icons/logo-cma.png"
+              alt="logo métiers d'art Nouvelle-Aquitaine"
+              class="w-20"
+            />
+          </a>
+          <a
+            href="https://formation.cma-nouvelleaquitaine.fr/"
+            class="transition duration-300 hover:opacity-50"
+          >
+            <img
+              src="./assets/icons/png-clipart-handicraft-logo-chambre-de-metiers-et-artisanat-empresa-artisan.png"
+              alt="logo chambre des métiers et artisanats"
+              class="w-20"
+            />
+          </a>
+          <a
+            href="https://www.facebook.com/aloreedufer?locale=fr_FR"
+            class="transition duration-300 hover:opacity-50"
+          >
+            <img
+              src="./assets/icons/square-facebook-brands-solid.png"
+              alt="logo facebook"
+              class="w-20"
+            />
+          </a>
+          <a
+            href="https://www.instagram.com/aloreedufer/"
+            class="transition duration-300 hover:opacity-50"
+          >
+            <img
+              src="./assets/icons/square-instagram-brands-solid.png"
+              alt="logo instagram"
+              class="w-20"
+            />
+          </a>
+        </div>
+      </div>
+    </footer>
+
+    <div
+      id="lightbox"
+      class="fixed inset-0 bg-black/80 z-50 hidden items-center justify-center p-8"
+    >
+      <button
+        id="lightbox-close"
+        class="absolute top-4 right-6 text-white text-4xl leading-none"
+      >
+        &times;
+      </button>
+      <div class="flex flex-col items-center gap-3">
+        <img
+          id="lightbox-img"
+          src=""
+          alt=""
+          class="max-h-[80vh] max-w-full rounded-lg object-contain"
+        />
+        <p id="lightbox-caption" class="text-white text-sm"></p>
+      </div>
+    </div>
+  </body>
 </html>

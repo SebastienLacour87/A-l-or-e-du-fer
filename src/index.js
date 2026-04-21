@@ -1,13 +1,6 @@
-//gestion de la nav
+// Gestion de la nav
 const header = document.getElementById("main-header");
 
-window.addEventListener("scroll", () => {
-  if (window.scrollY > 100) {
-    header.classList.remove("-translate-y-full");
-  } else {
-    header.classList.add("-translate-y-full");
-  }
-});
 window.addEventListener("scroll", () => {
   if (window.scrollY > 100) {
     header.classList.remove("-translate-y-full");
@@ -18,12 +11,12 @@ window.addEventListener("scroll", () => {
   }
 });
 
-// carousel.js
+// Carousel
 const track = document.getElementById("carousel-track");
 const dotsContainer = document.getElementById("dots");
 
 if (track && dotsContainer) {
-  const total = 3; // nombre de slides
+  const total = 3;
   let current = 0;
   let timer;
 
@@ -44,44 +37,45 @@ if (track && dotsContainer) {
 
   function resetTimer() {
     clearInterval(timer);
-    timer = setInterval(() => goTo(current + 1), 7000); // défilement auto toutes les 4s
+    timer = setInterval(() => goTo(current + 1), 7000);
   }
 
   resetTimer();
 }
-//lighbox pour les images
-// Images classiques <img>
 
+// Lightbox
 const lightbox = document.getElementById("lightbox");
 const lightboxImg = document.getElementById("lightbox-img");
 const lightboxClose = document.getElementById("lightbox-close");
 const lightboxCaption = document.getElementById("lightbox-caption");
 
-lightboxClose.addEventListener("click", closeLightbox);
-lightbox.addEventListener("click", (e) => {
-  if (e.target === lightbox) closeLightbox();
-});
-document.addEventListener("keydown", (e) => {
-  if (e.key === "Escape") closeLightbox();
-});
-
-document.querySelectorAll("figure[data-lightbox]").forEach((figure) => {
-  figure.style.cursor = "pointer";
-  const img = figure.querySelector("img");
-  const caption = figure.querySelector("figcaption");
-  figure.addEventListener("click", () => {
-    openLightbox(img.src, img.alt, caption ? caption.textContent : "");
+if (lightbox && lightboxImg && lightboxClose && lightboxCaption) {
+  lightboxClose.addEventListener("click", closeLightbox);
+  lightbox.addEventListener("click", (e) => {
+    if (e.target === lightbox) closeLightbox();
   });
-});
+  document.addEventListener("keydown", (e) => {
+    if (e.key === "Escape") closeLightbox();
+  });
 
-document.querySelectorAll("img[data-lightbox]").forEach((img) => {
-  img.classList.add("cursor-pointer");
-  img.addEventListener("click", () => openLightbox(img.src, img.alt));
-});
+  document.querySelectorAll("figure[data-lightbox]").forEach((figure) => {
+    figure.style.cursor = "pointer";
+    const img = figure.querySelector("img");
+    const caption = figure.querySelector("figcaption");
+    figure.addEventListener("click", () => {
+      openLightbox(img.src, img.alt, caption ? caption.textContent : "");
+    });
+  });
 
-document.querySelectorAll("div[data-lightbox]").forEach((div) => {
-  div.addEventListener("click", () => openLightbox(div.dataset.lightbox, ""));
-});
+  document.querySelectorAll("img[data-lightbox]").forEach((img) => {
+    img.classList.add("cursor-pointer");
+    img.addEventListener("click", () => openLightbox(img.src, img.alt));
+  });
+
+  document.querySelectorAll("div[data-lightbox]").forEach((div) => {
+    div.addEventListener("click", () => openLightbox(div.dataset.lightbox, ""));
+  });
+}
 
 function openLightbox(src, alt, caption = "") {
   lightboxImg.src = src;
@@ -95,4 +89,27 @@ function closeLightbox() {
   lightbox.classList.add("hidden");
   lightbox.classList.remove("flex");
   lightboxImg.src = "";
+}
+
+// Animation des menus galerie
+const slideItems = document.querySelectorAll(".slide-in");
+
+if (slideItems.length > 0) {
+  const slideObserver = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          slideItems.forEach((item) => {
+            setTimeout(() => {
+              item.classList.add("visible");
+            }, item.dataset.delay);
+          });
+          slideObserver.disconnect();
+        }
+      });
+    },
+    { threshold: 0.1 },
+  );
+
+  slideObserver.observe(slideItems[0]);
 }

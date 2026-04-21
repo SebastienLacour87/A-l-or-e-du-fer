@@ -1,0 +1,434 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mobilier - Galerie-Photo</title>
+    <link rel="shortcut icon" href="assets/images/LOGO-tete-seule.webp" />
+    <link rel="stylesheet" href="output.css" />
+    <script src="index.js" defer></script>
+    <script src="gallery.js" defer></script>
+    <script src="i18n.js" defer></script>
+  </head>
+  <body class="bg-bg-color font-display min-h-screen flex flex-col">
+    <header
+      id="main-header"
+      class="fixed top-0 left-0 w-full z-50 transition-transform duration-500 -translate-y-full"
+    >
+      <section
+        class="w-full h-15 bg-black flex justify-end items-center gap-4 px-8"
+      >
+        <div>
+          <a
+            href="#contact"
+            class="text-white font-display text-2xl font-bold hover:text-primary border-r-2 pr-2"
+            data-i18n="nav.contact"
+            >Contact</a
+          >
+        </div>
+        <div class="flex gap-4">
+          <img
+            src="assets/icons/france-svgrepo-com.svg"
+            alt="drapeau français"
+            class="w-8 h-7 cursor-pointer hover:opacity-70 transition"
+            onclick="setLang('fr')"
+          />
+          <img
+            src="assets/icons/united-kingdom-svgrepo-com.svg"
+            alt="drapeau britannique"
+            class="w-8 h-7 cursor-pointer hover:opacity-70 transition"
+            onclick="setLang('en')"
+          />
+        </div>
+      </section>
+      <section class="w-full">
+        <nav class="flex justify-around items-center my-1 w-full">
+          <ul class="flex gap-8 items-center w-full justify-around">
+            <li>
+              <a href="index.html" class="nav-title" data-i18n="nav.home"
+                >Accueil</a
+              >
+            </li>
+            <li>
+              <a href="index.html#about" class="nav-title" data-i18n="nav.about"
+                >À propos</a
+              >
+            </li>
+            <li>
+              <img
+                src="assets/images/LOGO-tete-seule.webp"
+                srcset="
+                  assets/images/LOGO-tete-seule-400w.webp 400w,
+                  assets/images/LOGO-tete-seule-800w.webp 800w
+                "
+                sizes="80px"
+                alt="Logo A l'orée du fer, portrait de Luc Desessarts stylisé"
+                class="h-20 w-20"
+              />
+            </li>
+            <li>
+              <a
+                href="index.html#galerie-photo"
+                class="nav-title"
+                data-i18n="nav.projects"
+                >Mes chantiers</a
+              >
+            </li>
+            <li>
+              <a href="#" class="nav-title" data-i18n="nav.contact">Contact</a>
+            </li>
+          </ul>
+        </nav>
+      </section>
+    </header>
+
+    <main>
+      <section>
+        <h1 class="text-4xl font-display-secondary font-thin text-center my-40">
+          Marquises et Pergolas
+        </h1>
+        <hr class="w-4/5 my-4 mx-auto text-primary" />
+        <div
+          class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3 px-8 py-12 auto-rows-[400px]"
+        >
+          <figure
+            class="gallery-item overflow-hidden rounded-lg cursor-pointer group"
+            data-lightbox
+          >
+            <img
+              src="assets/images/marquise-blache.webp"
+              srcset="
+                assets/images/marquise-blache-400w.webp   400w,
+                assets/images/marquise-blache-800w.webp   800w,
+                assets/images/marquise-blache-1200w.webp 1200w
+              "
+              sizes="(max-width: 640px) 50vw, (max-width: 1024px) 33vw, 25vw"
+              alt="marquise structure acier banc et verre"
+              class="w-full h-full object-cover group-hover:scale-105 transition duration-300"
+            />
+            <figcaption class="text-sm text-black hidden">
+              marquise structure acier banc et verre
+            </figcaption>
+          </figure>
+
+          <figure
+            class="gallery-item row-span-2 overflow-hidden rounded-lg cursor-pointer group"
+            data-lightbox
+          >
+            <img
+              src="assets/images/marquise-porte-rouge.webp"
+              srcset="
+                assets/images/marquise-porte-rouge-400w.webp   400w,
+                assets/images/marquise-porte-rouge-800w.webp   800w,
+                assets/images/marquise-porte-rouge-1200w.webp 1200w
+              "
+              sizes="(max-width: 640px) 50vw, (max-width: 1024px) 33vw, 25vw"
+              alt="marquise porte d'entrée"
+              class="w-full h-full object-cover group-hover:scale-105 transition duration-300"
+            />
+            <figcaption class="text-sm text-black hidden">
+              marquise porte d'entrée
+            </figcaption>
+          </figure>
+
+          <figure
+            class="gallery-item overflow-hidden rounded-lg cursor-pointer group"
+            data-lightbox
+          >
+            <img
+              src="assets/images/marquise-rampe.webp"
+              srcset="
+                assets/images/marquise-rampe-400w.webp   400w,
+                assets/images/marquise-rampe-800w.webp   800w,
+                assets/images/marquise-rampe-1200w.webp 1200w
+              "
+              sizes="(max-width: 640px) 50vw, (max-width: 1024px) 33vw, 25vw"
+              alt="marquise et rampe pour un perron"
+              class="w-full h-full object-cover group-hover:scale-105 transition duration-300"
+            />
+            <figcaption class="text-sm text-black hidden">
+              marquise et rampe pour un perron
+            </figcaption>
+          </figure>
+
+          <figure
+            class="gallery-item overflow-hidden rounded-lg cursor-pointer group"
+            data-lightbox
+          >
+            <img
+              src="assets/images/marquise-vitree.webp"
+              srcset="
+                assets/images/marquise-vitree-400w.webp   400w,
+                assets/images/marquise-vitree-800w.webp   800w,
+                assets/images/marquise-vitree-1200w.webp 1200w
+              "
+              sizes="(max-width: 640px) 50vw, (max-width: 1024px) 33vw, 25vw"
+              alt="marquise vitrée"
+              class="w-full h-full object-cover group-hover:scale-105 transition duration-300"
+            />
+            <figcaption class="text-sm text-black hidden">
+              marquise vitrée
+            </figcaption>
+          </figure>
+
+          <figure
+            class="gallery-item overflow-hidden rounded-lg cursor-pointer group"
+            data-lightbox
+          >
+            <img
+              src="assets/images/pergolas.webp"
+              srcset="
+                assets/images/pergolast-400w.webp  400w,
+                assets/images/pergolas-800w.webp   800w,
+                assets/images/pergolas-1200w.webp 1200w
+              "
+              sizes="(max-width: 640px) 50vw, (max-width: 1024px) 33vw, 25vw"
+              alt="pergolas avec lanterne"
+              class="w-full h-full object-cover group-hover:scale-105 transition duration-300"
+            />
+            <figcaption class="text-sm text-black hidden">
+              pergolas avec lanterne
+            </figcaption>
+          </figure>
+
+          <figure
+            class="gallery-item overflow-hidden rounded-lg cursor-pointer group"
+            data-lightbox
+          >
+            <img
+              src="assets/images/pergolas-terrasse.webp"
+              srcset="
+                assets/images/pergolas-terrasse-400w.webp   400w,
+                assets/images/pergolas-terrasse-800w.webp   800w,
+                assets/images/pergolas-terrasse-1200w.webp 1200w
+              "
+              sizes="(max-width: 640px) 50vw, (max-width: 1024px) 33vw, 25vw"
+              alt="pergolas pour une terrasse"
+              class="w-full h-full object-cover group-hover:scale-105 transition duration-300"
+            />
+            <figcaption class="text-sm text-black hidden">
+              pergolas pour une terrasse
+            </figcaption>
+          </figure>
+
+          <figure
+            class="gallery-item overflow-hidden rounded-lg cursor-pointer group"
+            data-lightbox
+          >
+            <img
+              src="assets/images/pergolas-vue-de-pres.webp"
+              srcset="
+                assets/images/pergolas-vue-de-pres-400w.webp   400w,
+                assets/images/pergolas-vue-de-pres-800w.webp   800w,
+                assets/images/pergolas-vue-de-pres-1200w.webp 1200w
+              "
+              sizes="(max-width: 640px) 50vw, (max-width: 1024px) 33vw, 25vw"
+              alt="pergolas avec lanterne vue de plus près"
+              class="w-full h-full object-cover group-hover:scale-105 transition duration-300"
+            />
+            <figcaption class="text-sm text-black hidden">
+              pergolas avec lanterne vue de plus près
+            </figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <!-- Voir aussi -->
+      <section class="bg-black py-8 px-8">
+        <p class="text-white font-bold text-sm tracking-widest uppercase mb-4">
+          Voir Aussi
+        </p>
+        <div class="grid grid-cols-3 gap-1">
+          <a
+            href="galerie-rampe.html"
+            class="relative overflow-hidden group h-40 cursor-pointer"
+          >
+            <img
+              src="assets/images/esalier-rampe.webp"
+              srcset="
+                assets/images/esalier-rampe-400w.webp 400w,
+                assets/images/esalier-rampe-800w.webp 800w
+              "
+              sizes="33vw"
+              alt="escalier en métal avec sa rampe"
+              class="w-full h-full object-cover brightness-50 group-hover:brightness-75 group-hover:scale-105 transition duration-500"
+            />
+            <div class="absolute inset-0 flex flex-col justify-center px-6">
+              <h3 class="text-white text-2xl font-light">
+                Rampes et Escaliers
+              </h3>
+              <span class="text-white/70 text-sm">voir +</span>
+            </div>
+          </a>
+
+          <a
+            href="galerie-porte.html"
+            class="relative overflow-hidden group h-40 cursor-pointer"
+          >
+            <img
+              src="assets/images/realisation-finale.webp"
+              srcset="
+                assets/images/realisation-finale-400w.webp 400w,
+                assets/images/realisation-finale-800w.webp 800w
+              "
+              sizes="33vw"
+              alt="porte en forme de soleil"
+              class="w-full h-full object-cover brightness-50 group-hover:brightness-75 group-hover:scale-105 transition duration-500"
+            />
+            <div class="absolute inset-0 flex flex-col justify-center px-6">
+              <h3 class="text-white text-2xl font-light">Portes et Fenêtres</h3>
+              <span class="text-white/70 text-sm">voir +</span>
+            </div>
+          </a>
+
+          <a
+            href="galerie-mobilier.html"
+            class="relative overflow-hidden group h-40 cursor-pointer"
+          >
+            <img
+              src="assets/images/tete-de-lit.webp"
+              srcset="
+                assets/images/tete-de-lit-400w.webp 400w,
+                assets/images/tete-de-lit-800w.webp 800w
+              "
+              sizes="33vw"
+              alt="Marquises"
+              class="w-full h-full object-cover brightness-50 group-hover:brightness-75 group-hover:scale-105 transition duration-500"
+            />
+            <div class="absolute inset-0 flex flex-col justify-center px-6">
+              <h3 class="text-white text-2xl font-light">
+                Mobilier et Objets d'art
+              </h3>
+              <span class="text-white/70 text-sm">voir +</span>
+            </div>
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="bg-primary grid grid-cols-2 py-12 px-16">
+      <div class="flex flex-col gap-4 justify-start items-center">
+        <h2
+          class="text-2xl font-display text-secondary font-bold tracking-wide"
+        >
+          Réalisation architecturale extérieur et intérieur en métal
+        </h2>
+        <a
+          href="mailto:lucdesessarts@gmail.com"
+          class="text-xl hover:opacity-50"
+          >lucdesessarts@gmail.com</a
+        >
+        <a href="index.html" class="text-xl hover:opacity-50"
+          >www.aloreedufer.com</a
+        >
+        <a
+          href="#contact"
+          class="text-lg border-2 border-secondary p-2 rounded-lg hover:bg-secondary hover:text-primary transition"
+          >Contact</a
+        >
+        <hr class="h-1 w-4/5 my-2 text-secondary" />
+        <h4 class="text-2xl font-black">France</h4>
+        <p class="text-lg leading-10">
+          2, rue de la terrasse<br />87260 Pierre-Buffière<br />06 80 50 90 09
+        </p>
+      </div>
+      <div class="grid grid-cols-2 items-center justify-start">
+        <ul>
+          <li
+            class="text-2xl text-secondary font-bold pt-4 hover:opacity-50 transition"
+          >
+            <a href="index.html">Accueil</a>
+          </li>
+          <li
+            class="text-2xl text-secondary font-bold pt-4 hover:opacity-50 transition"
+          >
+            <a href="index.html#about">À Propos</a>
+          </li>
+          <li
+            class="text-2xl text-secondary font-bold pt-4 hover:opacity-50 transition"
+          >
+            <a href="index.html#galerie-photo">Mes Chantiers</a>
+          </li>
+          <li
+            class="text-2xl text-secondary font-bold pt-4 hover:opacity-50 transition"
+          >
+            <a href="#contact">Contact</a>
+          </li>
+          <li class="mt-16">
+            <a href="./mention-legale.html">Mentions Légales</a>
+          </li>
+          <li>
+            <a href="./politique-de-confidentialitee.html"
+              >Politique de Confidentialitée</a
+            >
+          </li>
+          <li><a href="#">www.tentaclecode.com</a></li>
+        </ul>
+        <div class="w-1/2 flex flex-col gap-4 items-center justify-start">
+          <a
+            href="https://www.metiers-art.com/A-L-OREE-DU-FER-Luc-DESESSARTS"
+            class="transition duration-300 hover:opacity-50"
+          >
+            <img
+              src="./assets/icons/logo-cma.png"
+              alt="logo métiers d'art Nouvelle-Aquitaine"
+              class="w-20"
+            />
+          </a>
+          <a
+            href="https://formation.cma-nouvelleaquitaine.fr/"
+            class="transition duration-300 hover:opacity-50"
+          >
+            <img
+              src="./assets/icons/png-clipart-handicraft-logo-chambre-de-metiers-et-artisanat-empresa-artisan.png"
+              alt="logo chambre des métiers et artisanats"
+              class="w-20"
+            />
+          </a>
+          <a
+            href="https://www.facebook.com/aloreedufer?locale=fr_FR"
+            class="transition duration-300 hover:opacity-50"
+          >
+            <img
+              src="./assets/icons/square-facebook-brands-solid.png"
+              alt="logo facebook"
+              class="w-20"
+            />
+          </a>
+          <a
+            href="https://www.instagram.com/aloreedufer/"
+            class="transition duration-300 hover:opacity-50"
+          >
+            <img
+              src="./assets/icons/square-instagram-brands-solid.png"
+              alt="logo instagram"
+              class="w-20"
+            />
+          </a>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Lightbox -->
+    <div
+      id="lightbox"
+      class="fixed inset-0 bg-black/80 z-50 hidden items-center justify-center p-8"
+    >
+      <button
+        id="lightbox-close"
+        class="absolute top-4 right-6 text-white text-4xl leading-none"
+      >
+        &times;
+      </button>
+      <div class="flex flex-col items-center gap-3">
+        <img
+          id="lightbox-img"
+          src=""
+          alt=""
+          class="max-h-[80vh] max-w-full rounded-lg object-contain"
+        />
+        <p id="lightbox-caption" class="text-white text-sm"></p>
+      </div>
+    </div>
+  </body>
+</html>

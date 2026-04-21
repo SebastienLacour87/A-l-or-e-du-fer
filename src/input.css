@@ -56,3 +56,27 @@
   opacity: 1;
   transform: translateY(0);
 }
+
+/* gestion de l'animation des menus galerie */
+.slide-in {
+  opacity: 0;
+  transform: translateX(150px);
+  transition: 2.3s cubic-bezier(0.7, 0.1, 0.5, 0.9);
+  animation-duration: 23ms;
+}
+
+.slide-in.visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* gestion de l'animations des photos de la galerie */
+.gallery-item {
+  transform: scale(0);
+  transition: transform 1.9s cubic-bezier(0.1, 0.7, 0.5, 1);
+  animation-duration: 1.9s;
+}
+
+.gallery-item.visible {
+  transform: scale(1);
+}
