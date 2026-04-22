@@ -13,7 +13,7 @@ window.addEventListener("scroll", () => {
 
 // Carousel
 const track = document.getElementById("carousel-track");
-const dotsContainer = document.getElementById("dots");
+const dotsContainer = document.getElementById("dots-button-slider");
 
 if (track && dotsContainer) {
   const total = 3;

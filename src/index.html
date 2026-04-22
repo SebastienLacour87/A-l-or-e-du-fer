@@ -20,7 +20,7 @@
       >
         <div>
           <a
-            href="#contact"
+            href="contact.html"
             class="text-white font-display text-2xl font-bold hover:text-primary border-r-2 pr-2"
             data-i18n="nav.contact"
             >Contact</a
@@ -73,7 +73,9 @@
               >
             </li>
             <li>
-              <a href="#" class="nav-title" data-i18n="nav.contact">Contact</a>
+              <a href="contact.html" class="nav-title" data-i18n="nav.contact"
+                >Contact</a
+              >
             </li>
           </ul>
         </nav>
@@ -98,7 +100,7 @@
               class="min-w-full h-full overflow-hidden flex items-center px-12 gap-8"
             >
               <div
-                class="w-1/2 h-full bg-[url(assets/images/hero-image.webp)] bg-cover bg-center cursor-pointer"
+                class="w-1/2 h-full bg-[url(assets/images/hero-image-800w.webp)] bg-cover bg-center cursor-pointer"
                 data-lightbox="assets/images/hero-image.webp"
               ></div>
               <div class="w-1/2 flex flex-col items-center gap-6">
@@ -122,9 +124,9 @@
                 </p>
                 <a
                   href="#about"
-                  class="mt-2 px-8 py-3 bg-bg-color text-secondary font-medium rounded-lg hover:bg-black/90 transition"
+                  class="mt-2 px-8 py-3 bg-bg-color text-primary font-medium rounded-lg hover:bg-black/90 hover:text-secondary transition"
                   data-i18n="btn.discover"
-                  aria-labelledby="lien"
+                  aria-label="bouton lien vers la section a propos"
                   >Découvrir →</a
                 >
               </div>
@@ -155,14 +157,14 @@
                 </p>
                 <a
                   href="#gallery"
-                  class="mt-2 px-8 py-3 bg-bg-color text-secondary font-medium rounded-lg hover:bg-black/90 transition"
+                  class="mt-2 px-8 py-3 bg-bg-color text-primary font-medium rounded-lg hover:bg-black/90 hover:text-secondary transition"
                   data-i18n="btn.collection"
                   aria-labelledby="lien"
                   >Voir la collection →</a
                 >
               </div>
               <div
-                class="w-1/2 h-full bg-[url(assets/images/tete-de-lit.webp)] bg-cover bg-center"
+                class="w-1/2 h-full bg-[url(assets/images/tete-de-lit-800w.webp)] bg-cover bg-center"
                 data-lightbox="assets/images/tete-de-lit.webp"
               ></div>
             </div>
@@ -172,7 +174,7 @@
               class="min-w-full h-full overflow-hidden flex items-center px-12 gap-8"
             >
               <div
-                class="w-1/2 h-full overflow-hidden bg-[url(assets/images/marquise-rampe.webp)] bg-cover bg-center"
+                class="w-1/2 h-full overflow-hidden bg-[url(assets/images/marquise-rampe-800w.webp)] bg-cover bg-center"
                 data-lightbox="assets/images/marquise-rampe.webp"
               ></div>
               <div class="w-1/2 flex flex-col items-center gap-6">
@@ -183,7 +185,7 @@
                   class="text-bg-color text-2xl tracking-widest uppercase"
                   data-i18n="title.pres.3"
                 >
-                  Arisant créateur en serrurerie d'art
+                  Artisant créateur en serrurerie d'art
                 </p>
                 <h2
                   class="text-bg-color text-4xl font-medium leading-tight text-center"
@@ -197,7 +199,7 @@
                 </p>
                 <a
                   href="#"
-                  class="mt-2 px-8 py-3 bg-bg-color text-secondary font-medium rounded-lg hover:bg-black/90 transition"
+                  class="mt-2 px-8 py-3 bg-bg-color text-primary font-medium rounded-lg hover:bg-black/90 hover:text-secondary transition"
                   data-i18n="btn.contact"
                   aria-labelledby="lien"
                   >Nous contacter →</a
@@ -207,10 +209,10 @@
           </div>
         </div>
         <div
-          id="dots"
+          id="dots-button-slider"
           class="absolute bottom-6 left-1/2 -translate-x-1/2 flex gap-2 z-10"
-          aria-label="boutons"
-          aria-labelledby="bouton"
+          aria-label="button"
+          role="button"
         ></div>
       </section>
 
@@ -247,7 +249,7 @@
             LA FERRONNERIE D'ART
           </h2>
           <p
-            class="text-xl leading-8 font-display-secondary tracking-tighter font-medium"
+            class="text-xl leading-8 font-display font-normal tracking-wide"
             data-i18n="about.p"
           >
             La Ferronnerie d'Art est l'art et la technique du travail du fer à
@@ -268,13 +270,17 @@
         <div class="flex flex-col items-center px-16 py-10 text-center">
           <h2
             class="text-4xl text-primary font-display uppercase font-bold py-4"
+            data-i18n="working.title"
           >
             Une prise en charge globale : de la conception à la pose
           </h2>
-          <h3 class="text-2xl font-display font-semibold py-4">
+          <h3
+            class="text-2xl font-display font-semibold py-4"
+            data-i18n="working.subtitle"
+          >
             Mon travail en 4 étapes au service de vos envies :
           </h3>
-          <p class="text-xl font-display-secondary py-4">
+          <p class="text-xl font-display py-4" data-i18n="working.p">
             ❈ Etape 1 : Tout commence par un premier rendez-vous afin d'écouter,
             comprendre et cerner les souhaits de mes clients. Dans le but
             d'établir un devis au plus juste. Devis que je présente en personne,
@@ -282,7 +288,7 @@
             technique, ainsi que d'échantillons pour m'assurer que nous nous
             comprenons.
           </p>
-          <p class="text-xl font-display-secondary py-4">
+          <p class="text-xl font-display py-4" data-i18n="working.p2">
             ❈ Etape 2 : Après acceptation du devis, commence la phase de
             création et de conception. Je propose une esthétique que nous
             affinons ensemble pour être au plus près de vos attentes.
@@ -302,7 +308,12 @@
                   class="w-full h-full object-cover"
                 />
               </div>
-              <figcaption class="text-sm text-black">étape 3</figcaption>
+              <figcaption
+                class="text-sm text-black"
+                data-i18n="working.figcaption"
+              >
+                étape 3
+              </figcaption>
             </figure>
             <figure data-lightbox class="flex flex-col items-center gap-2">
               <div class="w-44 h-64 overflow-hidden rounded-lg">
@@ -317,7 +328,12 @@
                   class="w-full h-full object-cover"
                 />
               </div>
-              <figcaption class="text-sm text-black">étape 3 bis</figcaption>
+              <figcaption
+                class="text-sm text-black"
+                data-i18n="working.figcaption2"
+              >
+                étape 3 bis
+              </figcaption>
             </figure>
             <figure data-lightbox class="flex flex-col items-center gap-2">
               <div class="w-44 h-64 overflow-hidden rounded-lg">
@@ -332,16 +348,21 @@
                   class="w-full h-full object-cover"
                 />
               </div>
-              <figcaption class="text-sm text-black">étape 4</figcaption>
+              <figcaption
+                class="text-sm text-black"
+                data-i18n="working.figcaption3"
+              >
+                étape 4
+              </figcaption>
             </figure>
           </div>
 
-          <p class="text-xl font-display-secondary py-4">
+          <p class="text-xl font-display py-4" data-i18n="working.p3">
             ❈ Etape 3 : Une fois validé par vos soins, vient le moment de la
             fabrication dans le respect des règles techniques. Le dessin prend
             vie et passe de l'imaginaire au réel.
           </p>
-          <p class="text-xl font-display-secondary py-4">
+          <p class="text-xl font-display py-4" data-i18n="working.p4">
             ❈ Etape 4 : Pour finir, je me charge en personne de l'installation
             sur site. Vous découvrez alors votre ouvrage tel que vous l'avez
             imaginé en lieu et place.
@@ -351,6 +372,7 @@
         <div class="flex flex-col items-center px-16 py-10 text-center">
           <h2
             class="text-4xl text-primary font-display uppercase font-bold pb-10"
+            data-i18n="material.title"
           >
             Les matériaux
           </h2>
@@ -365,23 +387,29 @@
               sizes="(max-width: 768px) 100vw, 50vw"
               alt="fer chaud pendant que l'artisan le travaille"
               class="w-full h-full object-cover"
-              data-lightbox
             />
           </div>
-          <p class="text-xl font-display-secondary py-4 mt-8 text-left">
+          <p
+            class="text-xl font-display py-4 mt-8 text-left"
+            data-i18n="material.p"
+          >
             Le ferronnier d'art est connu pour ses ouvrages en fer mais en
             fonction du rendu recherché il pourra travailler également d'autres
             matériaux :
           </p>
-          <ul
-            class="text-xl font-display-secondary text-left w-full list-none space-y-2"
-          >
-            <li>• La feuille d'or</li>
-            <li>• Le bronze (alliance étain et cuivre)</li>
-            <li>• L'acier (alliance fer et carbone)</li>
-            <li>• Les aciers inoxydables</li>
-            <li>• Les métaux non ferreux (cuivre, aluminium, laiton)</li>
-            <li>• Le plomb</li>
+          <ul class="text-xl font-display text-left w-full list-none space-y-2">
+            <li data-i18n="material.li1">• La feuille d'or</li>
+            <li data-i18n="material.li2">
+              • Le bronze (alliance étain et cuivre)
+            </li>
+            <li data-i18n="material.li3">
+              • L'acier (alliance fer et carbone)
+            </li>
+            <li data-i18n="material.li4">• Les aciers inoxydables</li>
+            <li data-i18n="material.li5">
+              • Les métaux non ferreux (cuivre, aluminium, laiton)
+            </li>
+            <li data-i18n="material.li6">• Le plomb</li>
           </ul>
         </div>
       </section>
@@ -391,7 +419,10 @@
       <!-- Section galerie -->
       <section id="galerie-photo" class="my-8">
         <div>
-          <h2 class="text-5xl font-display text-primary pb-4 mx-40 text-center">
+          <h2
+            class="text-5xl font-display text-primary pb-4 mx-40 text-center"
+            data-i18n="gallery.title"
+          >
             Nos réalisations
           </h2>
         </div>
@@ -404,7 +435,12 @@
             <div
               class="grid grid-cols-2 gap-24 items-center justify-center mx-auto"
             >
-              <h3 class="text-4xl font-extralight">Rampes et escaliers</h3>
+              <h3
+                class="text-4xl font-extralight font-display-secondary"
+                data-i18n="gallery1.title"
+              >
+                Rampes et escaliers
+              </h3>
               <figure class="overflow-hidden rounded-lg cursor-pointer group">
                 <img
                   src="assets/images/esalier-rampe.webp"
@@ -416,9 +452,6 @@
                   alt="escalier forgé"
                   class="w-full h-52 object-cover"
                 />
-                <figcaption class="text-sm text-black hidden">
-                  Réalisation d'un escalier avec sa rampe
-                </figcaption>
               </figure>
             </div>
           </a>
@@ -433,7 +466,10 @@
             <div
               class="grid grid-cols-2 gap-24 items-center justify-center mx-auto"
             >
-              <h3 class="text-4xl font-thin font-display-secondary">
+              <h3
+                class="text-4xl font-thin font-display-secondary"
+                data-i18n="gallery2.title"
+              >
                 Mobiliers et Objets d'art
               </h3>
               <figure class="overflow-hidden rounded-lg cursor-pointer group">
@@ -447,9 +483,6 @@
                   alt="Meuble en fer forgé"
                   class="w-full h-52 object-cover"
                 />
-                <figcaption class="text-sm text-black hidden">
-                  Lit réalisé sur mesure
-                </figcaption>
               </figure>
             </div>
           </a>
@@ -464,7 +497,10 @@
             <div
               class="grid grid-cols-2 gap-24 items-center justify-center mx-auto"
             >
-              <h3 class="text-4xl font-thin font-display-secondary">
+              <h3
+                class="text-4xl font-thin font-display-secondary"
+                data-i18n="gallery3.title"
+              >
                 Portes et Fenêtres
               </h3>
               <figure class="overflow-hidden rounded-lg cursor-pointer group">
@@ -478,9 +514,6 @@
                   alt="marquise de porte en forme de soleil"
                   class="w-full h-52 object-cover"
                 />
-                <figcaption class="text-sm text-black hidden">
-                  Grille de porte en forme de soleil
-                </figcaption>
               </figure>
             </div>
           </a>
@@ -495,7 +528,10 @@
             <div
               class="grid grid-cols-2 gap-24 items-center justify-center mx-auto"
             >
-              <h3 class="text-4xl font-thin font-display-secondary">
+              <h3
+                class="text-4xl font-thin font-display-secondary"
+                data-i18n="gallery4.title"
+              >
                 Marquises et Pergolas
               </h3>
               <figure class="overflow-hidden rounded-lg cursor-pointer group">
@@ -509,9 +545,6 @@
                   alt="marquise en fer forgé"
                   class="w-full h-52 object-cover"
                 />
-                <figcaption class="text-sm text-black hidden">
-                  Marquise réaliser en fer forgé
-                </figcaption>
               </figure>
             </div>
           </a>
@@ -525,6 +558,7 @@
       <div class="flex flex-col gap-4 justify-start items-center">
         <h2
           class="text-2xl font-display text-secondary font-bold tracking-wide"
+          data-i18n="footer.title"
         >
           Réalisation architecturale extérieur et intérieur en métal
         </h2>
@@ -538,7 +572,7 @@
         >
         <a
           href="#contact"
-          class="text-lg border-2 border-secondary p-2 rounded-lg hover:bg-secondary hover:text-primary transition"
+          class="text-lg text-bg-color border-2 border-secondary p-2 rounded-lg hover:bg-secondary hover:text-primary transition"
           >Contact</a
         >
         <hr class="h-1 w-4/5 my-2 text-secondary" />
@@ -552,32 +586,38 @@
           <li
             class="text-2xl text-secondary font-bold pt-4 hover:opacity-50 transition"
           >
-            <a href="#">Accueil</a>
+            <a href="#" data-i18n="footer.nav.home">Accueil</a>
           </li>
           <li
             class="text-2xl text-secondary font-bold pt-4 hover:opacity-50 transition"
           >
-            <a href="#about">À Propos</a>
+            <a href="#about" data-i18n="footer.nav.about">À Propos</a>
           </li>
           <li
             class="text-2xl text-secondary font-bold pt-4 hover:opacity-50 transition"
           >
-            <a href="#gallery">Mes Chantiers</a>
+            <a href="#gallery" data-i18n="footer.nav.gallery">Mes Chantiers</a>
           </li>
           <li
             class="text-2xl text-secondary font-bold pt-4 hover:opacity-50 transition"
           >
-            <a href="#contact">Contact</a>
+            <a href="#contact" data-i18n="footer.nav.conatct">Contact</a>
           </li>
-          <li class="mt-16">
-            <a href="./mention-legale.html">Mentions Légales</a>
+          <li class="mt-16 text-bg-color text-lg hover:opacity-50 transition">
+            <a href="./mention-legale.html" data-i18n="footer.nav.mention"
+              >Mentions Légales</a
+            >
           </li>
-          <li>
-            <a href="./politique-de-confidentialitee.html"
+          <li class="text-bg-color text-lg hover:opacity-50 transition">
+            <a
+              href="./politique-de-confidentialitee.html"
+              data-i18n="footer.nav.confidentialite"
               >Politique de Confidentialitée</a
             >
           </li>
-          <li><a href="#">www.tentaclecode.com</a></li>
+          <li class="text-bg-color text-lg hover:opacity-50 transition">
+            <a href="#">www.tentaclecode.com</a>
+          </li>
         </ul>
         <div class="w-1/2 flex flex-col gap-4 items-center justify-start">
           <a

@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="output.css" />
     <script src="index.js" defer></script>
     <script src="gallery.js" defer></script>
+    <script src="i18n.js" defer></script>
   </head>
 
   <body class="bg-bg-color font-display">
@@ -20,7 +21,7 @@
       >
         <div>
           <a
-            href="#contact"
+            href="contact.html"
             class="text-white font-display text-2xl font-bold hover:text-primary border-r-2 pr-2"
             data-i18n="nav.contact"
             >Contact</a
@@ -75,7 +76,9 @@
               >
             </li>
             <li>
-              <a href="#" class="nav-title" data-i18n="nav.contact">Contact</a>
+              <a href="contact.html" class="nav-title" data-i18n="nav.contact"
+                >Contact</a
+              >
             </li>
           </ul>
         </nav>
@@ -84,7 +87,10 @@
 
     <main>
       <section>
-        <h1 class="text-4xl font-display-secondary font-thin text-center my-40">
+        <h1
+          class="text-4xl font-display-secondary font-thin text-center my-40"
+          data-i18n="gallery.ramps.title"
+        >
           Nos escaliers et rampes
         </h1>
         <hr class="w-4/5 my-4 mx-auto text-primary" />
@@ -106,7 +112,10 @@
               alt="escalier en métal avec sa rampe réaliser sur mesure"
               class="w-full h-full object-cover group-hover:scale-105 transition duration-300"
             />
-            <figcaption class="text-sm text-black hidden">
+            <figcaption
+              class="text-sm text-black hidden"
+              data-i18n="gallery.ramps.figcaption1"
+            >
               escalier en métal avec sa rampe réaliser sur mesure
             </figcaption>
           </figure>
@@ -126,7 +135,10 @@
               alt="garde corps réaliser en fer forgé"
               class="w-full h-full object-cover group-hover:scale-105 transition duration-300"
             />
-            <figcaption class="text-sm text-black hidden">
+            <figcaption
+              class="text-sm text-black hidden"
+              data-i18n="gallery.ramps.figcaption2"
+            >
               garde corps réaliser en fer forgé
             </figcaption>
           </figure>
@@ -146,7 +158,10 @@
               alt="rampe d'escalier métal et bois"
               class="w-full h-full object-cover group-hover:scale-105 transition duration-300"
             />
-            <figcaption class="text-sm text-black hidden">
+            <figcaption
+              class="text-sm text-black hidden"
+              data-i18n="gallery.ramps.figcaption3"
+            >
               rampe d'escalier métal et bois
             </figcaption>
           </figure>
@@ -166,7 +181,10 @@
               alt="rampe d'escalier métal et bois vue du haut de l'escalier"
               class="w-full h-full object-cover group-hover:scale-105 transition duration-300"
             />
-            <figcaption class="text-sm text-black hidden">
+            <figcaption
+              class="text-sm text-black hidden"
+              data-i18n="gallery.ramps.figcaption4"
+            >
               rampe d'escalier métal et bois vue du haut de l'escalier
             </figcaption>
           </figure>
@@ -186,7 +204,10 @@
               alt="rampe d'escalier en colimaçon"
               class="w-full h-full object-cover group-hover:scale-105 transition duration-300"
             />
-            <figcaption class="text-sm text-black hidden">
+            <figcaption
+              class="text-sm text-black hidden"
+              data-i18n="gallery.ramps.figcaption5"
+            >
               rampe d'escalier en colimaçon
             </figcaption>
           </figure>
@@ -206,7 +227,10 @@
               alt="rampe d'escalier d'inspiration végétale"
               class="w-full h-full object-cover group-hover:scale-105 transition duration-300"
             />
-            <figcaption class="text-sm text-black hidden">
+            <figcaption
+              class="text-sm text-black hidden"
+              data-i18n="gallery.ramps.figcaption6"
+            >
               rampe d'escalier d'inspiration végétale
             </figcaption>
           </figure>
@@ -226,7 +250,10 @@
               alt="rampe d'escalier d'extérieur et garde corps"
               class="w-full h-full object-cover group-hover:scale-105 transition duration-300"
             />
-            <figcaption class="text-sm text-black hidden">
+            <figcaption
+              class="text-sm text-black hidden"
+              data-i18n="gallery.ramps.figcaption7"
+            >
               rampe d'escalier d'extérieur et garde corps
             </figcaption>
           </figure>
@@ -246,7 +273,10 @@
               alt="rampe d'escalier en colimaçon vue du haut de l'escalier"
               class="w-full h-full object-cover group-hover:scale-105 transition duration-300"
             />
-            <figcaption class="text-sm text-black hidden">
+            <figcaption
+              class="text-sm text-black hidden"
+              data-i18n="gallery.ramps.figcaption8"
+            >
               rampe d'escalier en colimaçon vue du haut de l'escalier
             </figcaption>
           </figure>
@@ -266,7 +296,10 @@
               alt="garde corps d'escalier"
               class="w-full h-full object-cover group-hover:scale-105 transition duration-300"
             />
-            <figcaption class="text-sm text-black hidden">
+            <figcaption
+              class="text-sm text-black hidden"
+              data-i18n="gallery.ramps.figcaption9"
+            >
               garde corps d'escalier
             </figcaption>
           </figure>
@@ -275,7 +308,10 @@
 
       <!-- Voir aussi -->
       <section class="bg-black py-8 px-8">
-        <p class="text-white font-bold text-sm tracking-widest uppercase mb-4">
+        <p
+          class="text-white font-bold text-sm tracking-widest uppercase mb-4"
+          data-i18n="see.more"
+        >
           Voir Aussi
         </p>
         <div class="grid grid-cols-3 gap-1">
@@ -294,7 +330,10 @@
               class="w-full h-full object-cover brightness-50 group-hover:brightness-75 group-hover:scale-105 transition duration-500"
             />
             <div class="absolute inset-0 flex flex-col justify-center px-6">
-              <h3 class="text-white text-2xl font-light">
+              <h3
+                class="text-white text-2xl font-light"
+                data-i18n="btn.mobilier"
+              >
                 Mobiliers et Objets d'art
               </h3>
               <span class="text-white/70 text-sm">voir +</span>
@@ -316,7 +355,9 @@
               class="w-full h-full object-cover brightness-50 group-hover:brightness-75 group-hover:scale-105 transition duration-500"
             />
             <div class="absolute inset-0 flex flex-col justify-center px-6">
-              <h3 class="text-white text-2xl font-light">Portes et Fenêtres</h3>
+              <h3 class="text-white text-2xl font-light" data-i18n="btn.porte">
+                Portes et Fenêtres
+              </h3>
               <span class="text-white/70 text-sm">voir +</span>
             </div>
           </a>
@@ -336,7 +377,10 @@
               class="w-full h-full object-cover brightness-50 group-hover:brightness-75 group-hover:scale-105 transition duration-500"
             />
             <div class="absolute inset-0 flex flex-col justify-center px-6">
-              <h3 class="text-white text-2xl font-light">
+              <h3
+                class="text-white text-2xl font-light"
+                data-i18n="btn.pergolas"
+              >
                 Marquises et Pergolas
               </h3>
               <span class="text-white/70 text-sm">voir +</span>
@@ -350,25 +394,26 @@
       <div class="flex flex-col gap-4 justify-start items-center">
         <h2
           class="text-2xl font-display text-secondary font-bold tracking-wide"
+          data-i18n="footer.title"
         >
           Réalisation architecturale extérieur et intérieur en métal
         </h2>
         <a
           href="mailto:lucdesessarts@gmail.com"
-          class="text-xl hover:opacity-50"
+          class="text-2xl text-bg-color hover:opacity-50"
           >lucdesessarts@gmail.com</a
         >
-        <a href="index.html" class="text-xl hover:opacity-50"
+        <a href="index.html" class="text-2xl text-bg-color hover:opacity-50"
           >www.aloreedufer.com</a
         >
         <a
           href="#contact"
-          class="text-lg border-2 border-secondary p-2 rounded-lg hover:bg-secondary hover:text-primary transition"
+          class="text-lg text-bg-color border-2 border-secondary p-2 rounded-lg hover:bg-secondary hover:text-primary transition"
           >Contact</a
         >
         <hr class="h-1 w-4/5 my-2 text-secondary" />
-        <h4 class="text-2xl font-black">France</h4>
-        <p class="text-lg leading-10">
+        <p class="text-2xl text-bg-color font-black">France</p>
+        <p class="text-xl text-bg-color leading-10">
           2, rue de la terrasse<br />87260 Pierre-Buffière<br />06 80 50 90 09
         </p>
       </div>
@@ -377,32 +422,40 @@
           <li
             class="text-2xl text-secondary font-bold pt-4 hover:opacity-50 transition"
           >
-            <a href="index.html">Accueil</a>
+            <a href="index.html" data-i18n="footer.nav.home">Accueil</a>
           </li>
           <li
             class="text-2xl text-secondary font-bold pt-4 hover:opacity-50 transition"
           >
-            <a href="index.html#about">À Propos</a>
+            <a href="index.html#about" data-i18n="footer.nav.about">À Propos</a>
           </li>
           <li
             class="text-2xl text-secondary font-bold pt-4 hover:opacity-50 transition"
           >
-            <a href="index.html#galerie-photo">Mes Chantiers</a>
+            <a href="index.html#gallery" data-i18n="footer.nav.gallery"
+              >Mes Chantiers</a
+            >
           </li>
           <li
             class="text-2xl text-secondary font-bold pt-4 hover:opacity-50 transition"
           >
-            <a href="#contact">Contact</a>
+            <a href="#contact" data-i18n="footer.nav.conatct">Contact</a>
           </li>
-          <li class="mt-16">
-            <a href="./mention-legale.html">Mentions Légales</a>
+          <li class="mt-16 text-bg-color text-lg hover:opacity-50 transition">
+            <a href="./mention-legale.html" data-i18n="footer.nav.mention"
+              >Mentions Légales</a
+            >
           </li>
-          <li>
-            <a href="./politique-de-confidentialitee.html"
+          <li class="text-bg-color text-lg hover:opacity-50 transition">
+            <a
+              href="./politique-de-confidentialitee.html"
+              data-i18n="footer.nav.confidentialite"
               >Politique de Confidentialitée</a
             >
           </li>
-          <li><a href="#">www.tentaclecode.com</a></li>
+          <li class="text-bg-color text-lg hover:opacity-50 transition">
+            <a href="#">www.tentaclecode.com</a>
+          </li>
         </ul>
         <div class="w-1/2 flex flex-col gap-4 items-center justify-start">
           <a
@@ -416,7 +469,7 @@
             />
           </a>
           <a
-            href="https://formation.cma-nouvelleaquitaine.fr/"
+            href="https://www.google.fr/aclk?sa=L&pf=1&ai=DChsSEwi8sN24pfqTAxX7pv0FHeTuH-4YACICCAEQABoCd2Y&co=1&ase=2&gclid=Cj0KCQjw-pHPBhCdARIsAHXYWP_4UoOcDXBUhsE54UTp-vsEd-TdRAanGVSuDk_dgo7yhAbEiVn-M_kaArzFEALw_wcB&cce=2&category=acrcp_v1_32&sig=AOD64_0JJVmZvtgr0VLqHo2ovO-ydh2Cdg&q&nis=4&adurl=https://formation.cma-nouvelleaquitaine.fr/"
             class="transition duration-300 hover:opacity-50"
           >
             <img
