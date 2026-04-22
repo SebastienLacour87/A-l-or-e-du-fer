@@ -1,15 +1,15 @@
-// Gestion de la nav
-const header = document.getElementById("main-header");
+// // Gestion de la nav
+// const header = document.getElementById("main-header");
 
-window.addEventListener("scroll", () => {
-  if (window.scrollY > 100) {
-    header.classList.remove("-translate-y-full");
-    header.classList.add("bg-white/90", "backdrop-blur-sm", "shadow-md");
-  } else {
-    header.classList.add("-translate-y-full");
-    header.classList.remove("bg-white/90", "backdrop-blur-sm", "shadow-md");
-  }
-});
+// window.addEventListener("scroll", () => {
+//   if (window.scrollY > 100) {
+//     header.classList.remove("-translate-y-full");
+//     header.classList.add("bg-white/90", "backdrop-blur-sm", "shadow-md");
+//   } else {
+//     header.classList.add("-translate-y-full");
+//     header.classList.remove("bg-white/90", "backdrop-blur-sm", "shadow-md");
+//   }
+// });
 
 // Carousel
 const track = document.getElementById("carousel-track");

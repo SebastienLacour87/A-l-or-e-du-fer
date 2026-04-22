@@ -13,10 +13,10 @@
   <body class="bg-bg-color font-display min-h-screen flex flex-col">
     <header
       id="main-header"
-      class="fixed top-0 left-0 w-full z-50 transition-transform duration-500 -translate-y-full"
+      class="fixed top-0 w-full z-50 bg-white/90 backdrop-blur-sm shadow-md"
     >
       <section
-        class="w-full h-15 bg-black flex justify-end items-center gap-4 px-8"
+        class="w-full h-11 bg-black flex justify-end items-center gap-4 px-8"
       >
         <div>
           <a
@@ -45,14 +45,6 @@
         <nav class="flex justify-around items-center my-1 w-full">
           <ul class="flex gap-8 items-center w-full justify-around">
             <li>
-              <a href="#" class="nav-title" data-i18n="nav.home">Accueil</a>
-            </li>
-            <li>
-              <a href="#about" class="nav-title" data-i18n="nav.about"
-                >À propos</a
-              >
-            </li>
-            <li>
               <img
                 src="assets/images/LOGO-tete-seule.webp"
                 srcset="
@@ -61,8 +53,16 @@
                 "
                 sizes="80px"
                 alt="Logo A l'orée du fer, portrait de Luc Desessarts stylisé"
-                class="h-20 w-20"
+                class="h-15 w-15"
               />
+            </li>
+            <li>
+              <a href="#" class="nav-title" data-i18n="nav.home">Accueil</a>
+            </li>
+            <li>
+              <a href="#about" class="nav-title" data-i18n="nav.about"
+                >À propos</a
+              >
             </li>
             <li>
               <a
@@ -72,11 +72,11 @@
                 >Mes chantiers</a
               >
             </li>
-            <li>
+            <!-- <li>
               <a href="contact.html" class="nav-title" data-i18n="nav.contact"
                 >Contact</a
               >
-            </li>
+            </li> -->
           </ul>
         </nav>
       </section>
@@ -164,7 +164,7 @@
                 >
               </div>
               <div
-                class="w-1/2 h-full bg-[url(assets/images/tete-de-lit-800w.webp)] bg-cover bg-center"
+                class="w-1/2 h-full bg-[url(assets/images/tete-de-lit-800w.webp)] bg-cover bg-center cursor-pointer"
                 data-lightbox="assets/images/tete-de-lit.webp"
               ></div>
             </div>
@@ -174,7 +174,7 @@
               class="min-w-full h-full overflow-hidden flex items-center px-12 gap-8"
             >
               <div
-                class="w-1/2 h-full overflow-hidden bg-[url(assets/images/marquise-rampe-800w.webp)] bg-cover bg-center"
+                class="w-1/2 h-full overflow-hidden bg-[url(assets/images/marquise-rampe-800w.webp)] bg-cover bg-center cursor-pointer"
                 data-lightbox="assets/images/marquise-rampe.webp"
               ></div>
               <div class="w-1/2 flex flex-col items-center gap-6">
