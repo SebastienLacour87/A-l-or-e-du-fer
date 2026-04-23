@@ -4,6 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Rampes et escalier - Galerie-Photo</title>
+    <meta
+      name="description"
+      content="Galerie rampes et escaliers — Rampes d'escalier et structures métalliques réalisées sur mesure par Luc Desessarts, artisan ferronnier en Haute-Vienne (87)."
+    />
     <link rel="shortcut icon" href="assets/images/LOGO-tete-seule.webp" />
     <link rel="stylesheet" href="output.css" />
     <script src="index.js" defer></script>
@@ -11,10 +15,10 @@
     <script src="i18n.js" defer></script>
   </head>
 
-  <body class="bg-bg-color font-display">
+  <body class="bg-bg-color font-display min-h-screen flex flex-col">
     <header
       id="main-header"
-      class="fixed top-0 left-0 w-full z-50 transition-transform duration-500 -translate-y-full"
+      class="top-0 w-full z-50 bg-white/90 backdrop-blur-sm shadow-md"
     >
       <section
         class="w-full h-15 bg-black flex justify-end items-center gap-4 px-8"
@@ -46,6 +50,18 @@
         <nav class="flex justify-around items-center my-1 w-full">
           <ul class="flex gap-8 items-center w-full justify-around">
             <li>
+              <img
+                src="assets/images/LOGO-tete-seule.webp"
+                srcset="
+                  assets/images/LOGO-tete-seule-400w.webp 400w,
+                  assets/images/LOGO-tete-seule-800w.webp 800w
+                "
+                sizes="80px"
+                alt="Logo A l'orée du fer, portrait de Luc Desessarts stylisé"
+                class="h-15 w-15"
+              />
+            </li>
+            <li>
               <a href="index.html" class="nav-title" data-i18n="nav.home"
                 >Accueil</a
               >
@@ -56,28 +72,11 @@
               >
             </li>
             <li>
-              <img
-                src="assets/images/LOGO-tete-seule.webp"
-                srcset="
-                  assets/images/LOGO-tete-seule-400w.webp 400w,
-                  assets/images/LOGO-tete-seule-800w.webp 800w
-                "
-                sizes="80px"
-                alt="Logo A l'orée du fer, portrait de Luc Desessarts stylisé"
-                class="h-20 w-20"
-              />
-            </li>
-            <li>
               <a
                 href="index.html#galerie-photo"
                 class="nav-title"
                 data-i18n="nav.projects"
                 >Mes chantiers</a
-              >
-            </li>
-            <li>
-              <a href="contact.html" class="nav-title" data-i18n="nav.contact"
-                >Contact</a
               >
             </li>
           </ul>
@@ -407,7 +406,7 @@
           >www.aloreedufer.com</a
         >
         <a
-          href="#contact"
+          href="contact.html"
           class="text-lg text-bg-color border-2 border-secondary p-2 rounded-lg hover:bg-secondary hover:text-primary transition"
           >Contact</a
         >
@@ -439,7 +438,7 @@
           <li
             class="text-2xl text-secondary font-bold pt-4 hover:opacity-50 transition"
           >
-            <a href="#contact" data-i18n="footer.nav.conatct">Contact</a>
+            <a href="contact.html" data-i18n="footer.nav.conatct">Contact</a>
           </li>
           <li class="mt-16 text-bg-color text-lg hover:opacity-50 transition">
             <a href="./mention-legale.html" data-i18n="footer.nav.mention"
