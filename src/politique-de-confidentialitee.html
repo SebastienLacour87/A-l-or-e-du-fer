@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="fr">
 
 <head>
   <meta charset="UTF-8" />
@@ -9,15 +9,15 @@
     content="Politique de confidentialité de À l'Orée du Fer — consultez nos engagements concernant la protection et l'utilisation de vos données personnelles." />
   <link rel="shortcut icon" href="assets/images/LOGO-tete-seule.webp" />
   <link rel="stylesheet" href="output.css" />
-  <script src="index.js" defer></script>
   <script src="i18n.js" defer></script>
 </head>
 
 <body class="bg-bg-color font-display min-h-screen flex flex-col">
   <header id="main-header" class="top-0 w-full z-50 bg-white/90 backdrop-blur-sm shadow-md">
-    <section class="w-full h-15 bg-black flex justify-end items-center gap-4 px-8">
+    <section class="w-full h-11 bg-black flex justify-end items-center gap-4 px-8">
       <div>
-        <a href="contact.html" class="text-white font-display text-2xl font-bold hover:text-primary border-r-2 pr-2"
+        <a href="contact.html"
+          class="text-white font-display text-xl sm:text-2xl font-bold hover:text-primary border-r-2 pr-2"
           data-i18n="nav.contact">Contact</a>
       </div>
       <div class="flex gap-4">
@@ -28,22 +28,29 @@
       </div>
     </section>
     <section class="w-full">
-      <nav class="flex justify-around items-center my-1 w-full">
+      <nav class="flex justify-around items-center px-4 md:px-0 my-1 w-full">
         <ul class="flex gap-8 items-center w-full justify-around">
           <li>
             <img src="assets/images/LOGO-tete-seule.webp" srcset="
                   assets/images/LOGO-tete-seule-400w.webp 400w,
                   assets/images/LOGO-tete-seule-800w.webp 800w
-                " sizes="80px" alt="Logo A l'orée du fer, portrait de Luc Desessarts stylisé" class="h-15 w-15" />
+                " sizes="80px" alt="Logo A l'orée du fer, portrait de Luc Desessarts stylisé"
+              class="hidden sm:block sm:h-15 sm:w-15" />
           </li>
           <li>
-            <a href="index.html" class="nav-title" data-i18n="nav.home">Accueil</a>
+            <a href="index.html"
+              class="text-xl font-display text-primary font-bold hover:text-black/50 sm:text-2xl md:text-4xl transition"
+              data-i18n="nav.home">Accueil</a>
           </li>
           <li>
-            <a href="index.html#about" class="nav-title" data-i18n="nav.about">À propos</a>
+            <a href="index.html#about"
+              class="text-xl font-display text-primary font-bold hover:text-black/50 sm:text-2xl md:text-4xl transition"
+              data-i18n="nav.about">À propos</a>
           </li>
           <li>
-            <a href="index.html#galerie-photo" class="nav-title" data-i18n="nav.projects">Mes chantiers</a>
+            <a href="index.html#galerie-photo"
+              class="text-xl font-display text-primary font-bold hover:text-black/50 sm:text-2xl md:text-4xl transition"
+              data-i18n="nav.projects">Mes chantiers</a>
           </li>
         </ul>
       </nav>
@@ -225,62 +232,90 @@
       </p>
     </section>
   </main>
-  <footer class="bg-primary grid grid-cols-2 py-12 px-16">
-    <div class="flex flex-col gap-4 justify-start items-center">
-      <h2 class="text-2xl font-display text-secondary font-bold tracking-wide" data-i18n="footer.title">
+  <footer class="bg-primary grid grid-cols-1 md:grid-cols-2 py-12 px-6 md:px-16 gap-8 md:gap-0">
+    <div class="flex flex-col gap-4 justify-start items-center text-center">
+      <h2 class="text-xl md:text-2xl font-display text-secondary font-bold tracking-wide" data-i18n="footer.title">
         Réalisation architecturale extérieur et intérieur en métal
       </h2>
-      <a href="mailto:lucdesessarts@gmail.com"
-        class="text-2xl text-bg-color hover:opacity-50">lucdesessarts@gmail.com</a>
-      <a href="index.html" class="text-2xl text-bg-color hover:opacity-50">www.aloreedufer.com</a>
+      <a href="mailto:lucdesessarts@gmail.com" class="text-lg md:text-2xl text-bg-color hover:opacity-50">
+        lucdesessarts@gmail.com
+      </a>
+      <a href="index.html" class="text-lg md:text-2xl text-bg-color hover:opacity-50">
+        www.aloreedufer.com
+      </a>
       <a href="contact.html"
-        class="text-lg text-bg-color border-2 border-secondary p-2 rounded-lg hover:bg-secondary hover:text-primary transition">Contact</a>
+        class="text-lg text-bg-color border-2 border-secondary p-2 rounded-lg hover:bg-secondary hover:text-primary transition">
+        Contact
+      </a>
       <hr class="h-1 w-4/5 my-2 text-secondary" />
-      <p class="text-2xl text-bg-color font-black">France</p>
-      <p class="text-xl text-bg-color leading-10">
+      <p class="text-xl md:text-2xl text-bg-color font-black">France</p>
+      <p class="text-lg md:text-xl text-bg-color leading-10 text-center">
         2, rue de la terrasse<br />87260 Pierre-Buffière<br />06 80 50 90 09
       </p>
     </div>
-    <div class="grid grid-cols-2 items-center justify-start">
+
+    <div class="grid grid-cols-2 items-start justify-start gap-4">
       <ul>
-        <li class="text-2xl text-secondary font-bold pt-4 hover:opacity-50 transition">
+        <li class="text-lg md:text-2xl text-bg-color md:text-secondary font-bold pt-4 hover:opacity-50 transition">
           <a href="index.html" data-i18n="footer.nav.home">Accueil</a>
         </li>
-        <li class="text-2xl text-secondary font-bold pt-4 hover:opacity-50 transition">
+        <li class="text-lg md:text-2xl text-bg-color md:text-secondary font-bold pt-4 hover:opacity-50 transition">
           <a href="index.html#about" data-i18n="footer.nav.about">À Propos</a>
         </li>
-        <li class="text-2xl text-secondary font-bold pt-4 hover:opacity-50 transition">
+        <li class="text-lg md:text-2xl text-bg-color md:text-secondary font-bold pt-4 hover:opacity-50 transition">
           <a href="index.html#gallery" data-i18n="footer.nav.gallery">Mes Chantiers</a>
         </li>
-        <li class="text-2xl text-secondary font-bold pt-4 hover:opacity-50 transition">
+        <li class="text-lg md:text-2xl text-bg-color md:text-secondary font-bold pt-4 hover:opacity-50 transition">
           <a href="contact.html" data-i18n="footer.nav.conatct">Contact</a>
         </li>
-        <li class="mt-16 text-bg-color text-lg hover:opacity-50 transition">
+        <li class="mt-8 md:mt-16 text-bg-color text-base md:text-lg hover:opacity-50 transition">
           <a href="./mention-legale.html" data-i18n="footer.nav.mention">Mentions Légales</a>
         </li>
-        <li class="text-bg-color text-lg hover:opacity-50 transition">
-          <a href="./politique-de-confidentialitee.html" data-i18n="footer.nav.confidentialite">Politique de
-            Confidentialitée</a>
+        <li class="text-bg-color text-base md:text-lg hover:opacity-50 transition">
+          <a href="./politique-de-confidentialitee.html" data-i18n="footer.nav.confidentialite">
+            Politique de Confidentialitée
+          </a>
         </li>
-        <li class="text-bg-color text-lg hover:opacity-50 transition">
+        <li class="text-bg-color text-base md:text-lg hover:opacity-50 transition">
           <a href="#">www.tentaclecode.com</a>
         </li>
       </ul>
-      <div class="w-1/2 flex flex-col gap-4 items-center justify-start">
+
+      <div class="flex flex-col gap-4 items-center justify-start">
         <a href="https://www.metiers-art.com/A-L-OREE-DU-FER-Luc-DESESSARTS"
           class="transition duration-300 hover:opacity-50">
-          <img src="./assets/icons/logo-cma.png" alt="logo métiers d'art Nouvelle-Aquitaine" class="w-20" />
+          <img src="./assets/icons/logo-cma.png" srcset="
+                ./assets/icons/logo-cma-400w.png   400w,
+                ./assets/icons/logo-cma-800w.png   800w,
+                ./assets/icons/logo-cma-1200w.png 1200w
+              " sizes="(max-width: 768px) 56px, 80px" alt="logo métiers d'art Nouvelle-Aquitaine"
+            class="w-14 md:w-20" />
         </a>
-        <a href="https://www.google.fr/aclk?sa=L&pf=1&ai=DChsSEwi8sN24pfqTAxX7pv0FHeTuH-4YACICCAEQABoCd2Y&co=1&ase=2&gclid=Cj0KCQjw-pHPBhCdARIsAHXYWP_4UoOcDXBUhsE54UTp-vsEd-TdRAanGVSuDk_dgo7yhAbEiVn-M_kaArzFEALw_wcB&cce=2&category=acrcp_v1_32&sig=AOD64_0JJVmZvtgr0VLqHo2ovO-ydh2Cdg&q&nis=4&adurl=https://formation.cma-nouvelleaquitaine.fr/"
-          class="transition duration-300 hover:opacity-50">
+
+        <a href="https://formation.cma-nouvelleaquitaine.fr/" class="transition duration-300 hover:opacity-50">
           <img src="./assets/icons/png-clipart-handicraft-logo-chambre-de-metiers-et-artisanat-empresa-artisan.png"
-            alt="logo chambre des métiers et artisanats" class="w-20" />
+            srcset="
+                ./assets/icons/png-clipart-handicraft-logo-chambre-de-metiers-et-artisanat-empresa-artisan-400w.png   400w,
+                ./assets/icons/png-clipart-handicraft-logo-chambre-de-metiers-et-artisanat-empresa-artisan-800w.png   800w,
+                ./assets/icons/png-clipart-handicraft-logo-chambre-de-metiers-et-artisanat-empresa-artisan-1200w.png 1200w
+              " sizes="(max-width: 768px) 56px, 80px" alt="logo chambre des métiers et artisanats"
+            class="w-14 md:w-20" />
         </a>
+
         <a href="https://www.facebook.com/aloreedufer?locale=fr_FR" class="transition duration-300 hover:opacity-50">
-          <img src="./assets/icons/square-facebook-brands-solid.png" alt="logo facebook" class="w-20" />
+          <img src="./assets/icons/square-facebook-brands-solid.png" srcset="
+                ./assets/icons/square-facebook-brands-solid-400w.png   400w,
+                ./assets/icons/square-facebook-brands-solid-800w.png   800w,
+                ./assets/icons/square-facebook-brands-solid-1200w.png 1200w
+              " sizes="(max-width: 768px) 56px, 80px" alt="logo facebook" class="w-14 md:w-20" />
         </a>
+
         <a href="https://www.instagram.com/aloreedufer/" class="transition duration-300 hover:opacity-50">
-          <img src="./assets/icons/square-instagram-brands-solid.png" alt="logo instagram" class="w-20" />
+          <img src="./assets/icons/square-instagram-brands-solid.png" srcset="
+                ./assets/icons/square-instagram-brands-solid-400w.png   400w,
+                ./assets/icons/square-instagram-brands-solid-800w.png   800w,
+                ./assets/icons/square-instagram-brands-solid-1200w.png 1200w
+              " sizes="(max-width: 768px) 56px, 80px" alt="logo instagram" class="w-14 md:w-20" />
         </a>
       </div>
     </div>

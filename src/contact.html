@@ -1,446 +1,292 @@
 <!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Contact - À l'Orée du Fer</title>
-    <meta
-      name="description"
-      content="Contactez Luc Desessarts, artisan ferronnier à Pierre-Buffière (87). Demande de devis, renseignement ou réclamation — répondez à votre projet en métal forgé sur mesure."
-    />
-    <link rel="shortcut icon" href="assets/images/LOGO-tete-seule.webp" />
-    <link rel="stylesheet" href="output.css" />
-    <script src="i18n.js" defer></script>
-    <script src="contact.js" defer></script>
-  </head>
-  <body class="bg-bg-color font-display min-h-screen flex flex-col">
-    <header
-      id="main-header"
-      class="top-0 w-full z-50 bg-white/90 backdrop-blur-sm shadow-md"
-    >
-      <section
-        class="w-full h-15 bg-black flex justify-end items-center gap-4 px-8"
-      >
-        <div>
-          <a
-            href="contact.html"
-            class="text-white font-display text-2xl font-bold hover:text-primary border-r-2 pr-2"
-            data-i18n="nav.contact"
-            >Contact</a
-          >
-        </div>
-        <div class="flex gap-4">
-          <img
-            src="assets/icons/france-svgrepo-com.svg"
-            alt="drapeau français"
-            class="w-8 h-7 cursor-pointer hover:opacity-70 transition"
-            onclick="setLang('fr')"
-          />
-          <img
-            src="assets/icons/united-kingdom-svgrepo-com.svg"
-            alt="drapeau britannique"
-            class="w-8 h-7 cursor-pointer hover:opacity-70 transition"
-            onclick="setLang('en')"
-          />
-        </div>
-      </section>
-      <section class="w-full">
-        <nav class="flex justify-around items-center my-1 w-full">
-          <ul class="flex gap-8 items-center w-full justify-around">
-            <li>
-              <img
-                src="assets/images/LOGO-tete-seule.webp"
-                srcset="
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact - À l'Orée du Fer</title>
+  <meta name="description"
+    content="Contactez Luc Desessarts, artisan ferronnier à Pierre-Buffière (87). Demande de devis, renseignement ou réclamation — répondez à votre projet en métal forgé sur mesure." />
+  <link rel="shortcut icon" href="assets/images/LOGO-tete-seule.webp" />
+  <link rel="stylesheet" href="output.css" />
+  <script src="i18n.js" defer></script>
+  <script src="contact.js" defer></script>
+</head>
+
+<body class="bg-bg-color font-display min-h-screen flex flex-col">
+  <header id="main-header" class="top-0 w-full z-50 bg-white/90 backdrop-blur-sm shadow-md">
+    <section class="w-full h-11 bg-black flex justify-end items-center gap-4 px-8">
+      <div>
+        <a href="contact.html"
+          class="text-white font-display text-xl sm:text-2xl font-bold hover:text-primary border-r-2 pr-2"
+          data-i18n="nav.contact">Contact</a>
+      </div>
+      <div class="flex gap-4">
+        <img src="assets/icons/france-svgrepo-com.svg" alt="drapeau français"
+          class="w-8 h-7 cursor-pointer hover:opacity-70 transition" onclick="setLang('fr')" />
+        <img src="assets/icons/united-kingdom-svgrepo-com.svg" alt="drapeau britannique"
+          class="w-8 h-7 cursor-pointer hover:opacity-70 transition" onclick="setLang('en')" />
+      </div>
+    </section>
+    <section class="w-full">
+      <nav class="flex justify-around items-center px-4 md:px-0 my-1 w-full">
+        <ul class="flex gap-8 items-center w-full justify-around">
+          <li>
+            <img src="assets/images/LOGO-tete-seule.webp" srcset="
                   assets/images/LOGO-tete-seule-400w.webp 400w,
                   assets/images/LOGO-tete-seule-800w.webp 800w
-                "
-                sizes="80px"
-                alt="Logo A l'orée du fer, portrait de Luc Desessarts stylisé"
-                class="h-15 w-15"
-              />
-            </li>
-            <li>
-              <a href="index.html" class="nav-title" data-i18n="nav.home"
-                >Accueil</a
-              >
-            </li>
-            <li>
-              <a href="index.html#about" class="nav-title" data-i18n="nav.about"
-                >À propos</a
-              >
-            </li>
-            <li>
-              <a
-                href="index.html#galerie-photo"
-                class="nav-title"
-                data-i18n="nav.projects"
-                >Mes chantiers</a
-              >
-            </li>
-          </ul>
-        </nav>
-      </section>
-    </header>
+                " sizes="80px" alt="Logo A l'orée du fer, portrait de Luc Desessarts stylisé"
+              class="hidden sm:block sm:h-15 sm:w-15" />
+          </li>
+          <li>
+            <a href="index.html"
+              class="text-xl font-display text-primary font-bold hover:text-black/50 sm:text-2xl md:text-4xl transition"
+              data-i18n="nav.home">Accueil</a>
+          </li>
+          <li>
+            <a href="index.html#about"
+              class="text-xl font-display text-primary font-bold hover:text-black/50 sm:text-2xl md:text-4xl transition"
+              data-i18n="nav.about">À propos</a>
+          </li>
+          <li>
+            <a href="index.html#galerie-photo"
+              class="text-xl font-display text-primary font-bold hover:text-black/50 sm:text-2xl md:text-4xl transition"
+              data-i18n="nav.projects">Mes chantiers</a>
+          </li>
+        </ul>
+      </nav>
+    </section>
+  </header>
 
-    <main class="flex-1 pb-16 w-full">
-      <div
-        class="bg-linear-to-r from-primary to-primary/60 flex flex-col items-start py-10 px-16 my-0"
-      >
-        <h1
-          class="text-5xl font-display text-bg-color font-thin text-center mb-4"
-          data-i18n="contact.title"
-        >
-          Contactez-nous
-        </h1>
-        <p class="font-display text-bg-color text-xl" data-i18n="contact.p">
-          Pour plus de renseignement, entrez vos coordonées et votre demande
-          ci-dessous, et nous vous recontacterons
-        </p>
-      </div>
+  <main class="flex-1 pb-16 w-full">
+    <div class="bg-linear-to-r from-primary to-primary/60 flex flex-col items-start py-10 px-16 my-0">
+      <h1 class="text-3xl md:text-5xl font-display text-bg-color font-thin text-center mb-4" data-i18n="contact.title">
+        Contactez-nous
+      </h1>
+      <p class="font-display text-bg-color text-base md:text-xl" data-i18n="contact.p">
+        Pour plus de renseignement, entrez vos coordonées et votre demande
+        ci-dessous, et nous vous recontacterons
+      </p>
+    </div>
 
-      <section class="grid grid-cols-2 w-full px-16 pt-20">
-        <div class="mx-auto">
-          <hr class="w-4/5 text-primary mx-auto" />
-          <img
-            src="assets/images/BANNIERE-RUGBY.webp"
-            alt="bannière de contact"
-            srcset="
+    <section class="grid grid-cols-1 md:grid-cols-2 w-full px-6 md:px-16 pt-10 md:pt-20 gap-8 md:gap-0">
+      <div class="mx-auto w-full">
+        <hr class="w-4/5 text-primary mx-auto" />
+        <img src="assets/images/BANNIERE-RUGBY.webp" alt="bannière de contact" srcset="
               assets/images/BANNIERE-RUGBY-400w.webp   400w,
               assets/images/BANNIERE-RUGBY-800w.webp   800w,
               assets/images/BANNIERE-RUGBY-1200w.webp 1200w
-            "
-            class="w-full py-10 px-6 pt-50"
-          />
-        </div>
-        <div>
-          <form
-            name="contact"
-            method="POST"
-            data-netlify="true"
-            netlify-honeypot="bot-field"
-            action="/merci.html"
-            class="flex flex-col gap-6"
-            id="contact-form"
-            novalidate
-          >
-            <!-- Honeypot anti-spam Netlify -->
-            <p class="hidden">
-              <label>Ne pas remplir : <input name="bot-field" /></label>
+            " sizes="(max-width: 768px) 95vw, 45vw" class="w-full py-6 md:py-10 px-0 md:px-6 md:pt-50" />
+      </div>
+      <div>
+        <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/src/merci.html"
+          class="flex flex-col gap-6" id="contact-form" novalidate>
+          <!-- Honeypot anti-spam Netlify -->
+          <p class="hidden">
+            <label>Ne pas remplir : <input name="bot-field" /></label>
+          </p>
+          <input type="hidden" name="form-name" value="contact" />
+
+          <!-- Objet -->
+          <div class="flex flex-col gap-2">
+            <label for="objet" class="font-display font-bold text-lg md:text-x"
+              data-i18n="contact.objet.label">Objet</label>
+            <select id="objet" name="objet" required
+              class="border border-primary rounded-lg px-4 py-3 bg-white font-display text-base md:text-lg focus:outline-none focus:ring-2 focus:ring-primary">
+              <option value="" disabled selected data-i18n="contact.objet.placeholder">
+                -- Sélectionnez un objet --
+              </option>
+              <option value="devis" data-i18n="contact.objet.devis">
+                Demande de devis
+              </option>
+              <option value="renseignement" data-i18n="contact.objet.renseignement">
+                Renseignement
+              </option>
+              <option value="reclamation" data-i18n="contact.objet.reclamation">
+                Réclamation
+              </option>
+              <option value="autre" data-i18n="contact.objet.autre">
+                Autre
+              </option>
+            </select>
+          </div>
+
+          <!-- Nom -->
+          <div class="flex flex-col gap-2">
+            <label for="nom" class="font-display font-bold text-lg md:text-xl" data-i18n="contact.nom.label">Nom <span
+                class="text-primary">*</span></label>
+            <input type="text" id="nom" name="nom" required placeholder="Votre nom et prénom"
+              data-i18n-placeholder="contact.nom.placeholder"
+              class="border border-primary rounded-lg px-4 py-3 bg-white font-display text-base md:text-lg focus:outline-none focus:ring-2 focus:ring-primary" />
+          </div>
+
+          <!-- Société (optionnel) -->
+          <div class="flex flex-col gap-2">
+            <label for="societe" class="font-display font-bold text-lg md:text-xl">
+              <span data-i18n="contact.societe.label">Société</span>
+              <span class="text-sm md:text-base font-normal text-gray-400 ml-2"
+                data-i18n="contact.optionnel">(optionnel)</span>
+            </label>
+            <input type="text" id="societe" name="societe" placeholder="Nom de votre société"
+              data-i18n-placeholder="contact.societe.placeholder"
+              class="border border-primary rounded-lg px-4 py-3 bg-white font-display text-base md:text-lg focus:outline-none focus:ring-2 focus:ring-primary" />
+          </div>
+
+          <!-- Email -->
+          <div class="flex flex-col gap-2">
+            <label for="email" class="font-display font-bold text-lg md:text-xl" data-i18n="contact.email.label">Email
+              <span class="text-primary">*</span></label>
+            <input type="email" id="email" name="email" required placeholder="votre@email.com"
+              data-i18n-placeholder="contact.email.placeholder"
+              class="border border-primary rounded-lg px-4 py-3 bg-white font-display text-base md:text-lg focus:outline-none focus:ring-2 focus:ring-primary" />
+            <p id="email-error" class="text-red-500 text-sm hidden" data-i18n="contact.email.error">
+              Veuillez saisir une adresse email valide.
             </p>
-            <input type="hidden" name="form-name" value="contact" />
+          </div>
 
-            <!-- Objet -->
-            <div class="flex flex-col gap-2">
-              <label
-                for="objet"
-                class="font-display font-bold text-xl"
-                data-i18n="contact.objet.label"
-                >Objet</label
-              >
-              <select
-                id="objet"
-                name="objet"
-                required
-                class="border border-primary rounded-lg px-4 py-3 bg-white font-display text-lg focus:outline-none focus:ring-2 focus:ring-primary"
-              >
-                <option
-                  value=""
-                  disabled
-                  selected
-                  data-i18n="contact.objet.placeholder"
-                >
-                  -- Sélectionnez un objet --
-                </option>
-                <option value="devis" data-i18n="contact.objet.devis">
-                  Demande de devis
-                </option>
-                <option
-                  value="renseignement"
-                  data-i18n="contact.objet.renseignement"
-                >
-                  Renseignement
-                </option>
-                <option
-                  value="reclamation"
-                  data-i18n="contact.objet.reclamation"
-                >
-                  Réclamation
-                </option>
-                <option value="autre" data-i18n="contact.objet.autre">
-                  Autre
-                </option>
-              </select>
-            </div>
+          <!-- Téléphone -->
+          <div class="flex flex-col gap-2">
+            <label for="telephone" class="font-display font-bold text-lg md:text-xl"
+              data-i18n="contact.tel.label">Téléphone <span class="text-primary">*</span></label>
+            <input type="tel" id="telephone" name="telephone" required placeholder="06 00 00 00 00"
+              data-i18n-placeholder="contact.tel.placeholder"
+              class="border border-primary rounded-lg px-4 py-3 bg-white font-display text-base md:text-lg focus:outline-none focus:ring-2 focus:ring-primary" />
+            <p id="tel-error" class="text-red-500 text-sm hidden" data-i18n="contact.tel.error">
+              Veuillez saisir un numéro de téléphone valide.
+            </p>
+          </div>
 
-            <!-- Nom -->
-            <div class="flex flex-col gap-2">
-              <label
-                for="nom"
-                class="font-display font-bold text-xl"
-                data-i18n="contact.nom.label"
-                >Nom <span class="text-primary">*</span></label
-              >
-              <input
-                type="text"
-                id="nom"
-                name="nom"
-                required
-                placeholder="Votre nom et prénom"
-                data-i18n-placeholder="contact.nom.placeholder"
-                class="border border-primary rounded-lg px-4 py-3 bg-white font-display text-lg focus:outline-none focus:ring-2 focus:ring-primary"
-              />
-            </div>
+          <!-- Message -->
+          <div class="flex flex-col gap-2">
+            <label for="message" class="font-display font-bold text-lg md:text-xl"
+              data-i18n="contact.message.label">Message <span class="text-primary">*</span></label>
+            <textarea id="message" name="message" required rows="6"
+              placeholder="Décrivez votre projet ou votre demande..."
+              data-i18n-placeholder="contact.message.placeholder"
+              class="border border-primary rounded-lg px-4 py-3 bg-white font-display text-base md:text-lg focus:outline-none focus:ring-2 focus:ring-primary resize-none"></textarea>
+          </div>
 
-            <!-- Société (optionnel) -->
-            <div class="flex flex-col gap-2">
-              <label for="societe" class="font-display font-bold text-xl">
-                <span data-i18n="contact.societe.label">Société</span>
-                <span
-                  class="text-base font-normal text-gray-400 ml-2"
-                  data-i18n="contact.optionnel"
-                  >(optionnel)</span
-                >
+          <!-- Consentement RGPD -->
+          <div class="flex flex-col gap-3">
+            <div class="flex items-start gap-3">
+              <input type="checkbox" id="rgpd" name="rgpd" required
+                class="mt-1 w-5 h-5 accent-primary cursor-pointer shrink-0" />
+              <label for="rgpd" class="text-base md:text-lg text-gray-600 cursor-pointe" data-i18n="contact.rgpd">
+                En cochant cette case et en soumettant ce formulaire,
+                j'accepte que mes données personnelles soient utilisées pour
+                me recontacter dans le cadre de ma demande indiquée dans ce
+                formulaire. Aucun autre traitement ne sera effectué avec mes
+                informations.
               </label>
-              <input
-                type="text"
-                id="societe"
-                name="societe"
-                placeholder="Nom de votre société"
-                data-i18n-placeholder="contact.societe.placeholder"
-                class="border border-primary rounded-lg px-4 py-3 bg-white font-display text-lg focus:outline-none focus:ring-2 focus:ring-primary"
-              />
             </div>
-
-            <!-- Email -->
-            <div class="flex flex-col gap-2">
-              <label
-                for="email"
-                class="font-display font-bold text-xl"
-                data-i18n="contact.email.label"
-                >Email <span class="text-primary">*</span></label
-              >
-              <input
-                type="email"
-                id="email"
-                name="email"
-                required
-                placeholder="votre@email.com"
-                data-i18n-placeholder="contact.email.placeholder"
-                class="border border-primary rounded-lg px-4 py-3 bg-white font-display text-lg focus:outline-none focus:ring-2 focus:ring-primary"
-              />
-              <p
-                id="email-error"
-                class="text-red-500 text-sm hidden"
-                data-i18n="contact.email.error"
-              >
-                Veuillez saisir une adresse email valide.
-              </p>
-            </div>
-
-            <!-- Téléphone -->
-            <div class="flex flex-col gap-2">
-              <label
-                for="telephone"
-                class="font-display font-bold text-xl"
-                data-i18n="contact.tel.label"
-                >Téléphone <span class="text-primary">*</span></label
-              >
-              <input
-                type="tel"
-                id="telephone"
-                name="telephone"
-                required
-                placeholder="06 00 00 00 00"
-                data-i18n-placeholder="contact.tel.placeholder"
-                class="border border-primary rounded-lg px-4 py-3 bg-white font-display text-lg focus:outline-none focus:ring-2 focus:ring-primary"
-              />
-              <p
-                id="tel-error"
-                class="text-red-500 text-sm hidden"
-                data-i18n="contact.tel.error"
-              >
-                Veuillez saisir un numéro de téléphone valide.
-              </p>
-            </div>
-
-            <!-- Message -->
-            <div class="flex flex-col gap-2">
-              <label
-                for="message"
-                class="font-display font-bold text-xl"
-                data-i18n="contact.message.label"
-                >Message <span class="text-primary">*</span></label
-              >
-              <textarea
-                id="message"
-                name="message"
-                required
-                rows="6"
-                placeholder="Décrivez votre projet ou votre demande..."
-                data-i18n-placeholder="contact.message.placeholder"
-                class="border border-primary rounded-lg px-4 py-3 bg-white font-display text-lg focus:outline-none focus:ring-2 focus:ring-primary resize-none"
-              ></textarea>
-            </div>
-
-            <!-- Consentement RGPD -->
-            <div class="flex flex-col gap-3">
-              <div class="flex items-start gap-3">
-                <input
-                  type="checkbox"
-                  id="rgpd"
-                  name="rgpd"
-                  required
-                  class="mt-1 w-5 h-5 accent-primary cursor-pointer shrink-0"
-                />
-                <label
-                  for="rgpd"
-                  class="text-lg text-gray-600 cursor-pointer"
-                  data-i18n="contact.rgpd"
-                >
-                  En cochant cette case et en soumettant ce formulaire,
-                  j'accepte que mes données personnelles soient utilisées pour
-                  me recontacter dans le cadre de ma demande indiquée dans ce
-                  formulaire. Aucun autre traitement ne sera effectué avec mes
-                  informations.
-                </label>
-              </div>
-              <p
-                id="rgpd-error"
-                class="text-red-500 text-sm hidden"
-                data-i18n="contact.rgpd.error"
-              >
-                Vous devez accepter les conditions pour envoyer le formulaire.
-              </p>
-            </div>
-
-            <!-- Bouton envoi -->
-            <button
-              type="submit"
-              class="bg-primary text-white font-display font-bold text-xl py-4 px-8 rounded-lg hover:bg-primary/80 transition self-start"
-              data-i18n="contact.submit"
-            >
-              Envoyer
-            </button>
-            <p class="text-lg text-gray-400">
-              Les champs marqués d'un <span class="text-primary">*</span> sont
-              obligatoires.
+            <p id="rgpd-error" class="text-red-500 text-sm hidden" data-i18n="contact.rgpd.error">
+              Vous devez accepter les conditions pour envoyer le formulaire.
             </p>
-          </form>
-        </div>
-      </section>
-    </main>
+          </div>
 
-    <footer class="bg-primary grid grid-cols-2 py-12 px-16">
-      <!-- ton footer existant -->
-      <div class="flex flex-col gap-4 justify-start items-center">
-        <h2
-          class="text-2xl font-display text-secondary font-bold tracking-wide"
-          data-i18n="footer.title"
-        >
-          Réalisation architecturale extérieur et intérieur en métal
-        </h2>
-        <a
-          href="mailto:lucdesessarts@gmail.com"
-          class="text-2xl text-bg-color hover:opacity-50"
-          >lucdesessarts@gmail.com</a
-        >
-        <a href="index.html" class="text-2xl text-bg-color hover:opacity-50"
-          >www.aloreedufer.com</a
-        >
-        <a
-          href="#contact"
-          class="text-lg text-bg-color border-2 border-secondary p-2 rounded-lg hover:bg-secondary hover:text-primary transition"
-          >Contact</a
-        >
-        <hr class="h-1 w-4/5 my-2 text-secondary" />
-        <p class="text-2xl text-bg-color font-black">France</p>
-        <p class="text-xl text-bg-color leading-10">
-          2, rue de la terrasse<br />87260 Pierre-Buffière<br />06 80 50 90 09
-        </p>
+          <!-- Bouton envoi -->
+          <button type="submit"
+            class="bg-primary text-white font-display font-bold text-lg md:text-xl py-3 md:py-4 px-6 md:px-8 rounded-lg hover:bg-primary/80 transition self-start"
+            data-i18n="contact.submit">
+            Envoyer
+          </button>
+          <p class="text-base md:text-lg text-gray-400">
+            Les champs marqués d'un <span class="text-primary">*</span> sont
+            obligatoires.
+          </p>
+        </form>
       </div>
-      <div class="grid grid-cols-2 items-center justify-start">
-        <ul>
-          <li
-            class="text-2xl text-secondary font-bold pt-4 hover:opacity-50 transition"
-          >
-            <a href="index.html" data-i18n="footer.nav.home">Accueil</a>
-          </li>
-          <li
-            class="text-2xl text-secondary font-bold pt-4 hover:opacity-50 transition"
-          >
-            <a href="index.html#about" data-i18n="footer.nav.about">À Propos</a>
-          </li>
-          <li
-            class="text-2xl text-secondary font-bold pt-4 hover:opacity-50 transition"
-          >
-            <a href="index.html#gallery" data-i18n="footer.nav.gallery"
-              >Mes Chantiers</a
-            >
-          </li>
-          <li
-            class="text-2xl text-secondary font-bold pt-4 hover:opacity-50 transition"
-          >
-            <a href="#contact" data-i18n="footer.nav.conatct">Contact</a>
-          </li>
-          <li class="mt-16 text-bg-color text-lg hover:opacity-50 transition">
-            <a href="./mention-legale.html" data-i18n="footer.nav.mention"
-              >Mentions Légales</a
-            >
-          </li>
-          <li class="text-bg-color text-lg hover:opacity-50 transition">
-            <a
-              href="./politique-de-confidentialitee.html"
-              data-i18n="footer.nav.confidentialite"
-              >Politique de Confidentialitée</a
-            >
-          </li>
-          <li class="text-bg-color text-lg hover:opacity-50 transition">
-            <a href="#">www.tentaclecode.com</a>
-          </li>
-        </ul>
-        <div class="w-1/2 flex flex-col gap-4 items-center justify-start">
-          <a
-            href="https://www.metiers-art.com/A-L-OREE-DU-FER-Luc-DESESSARTS"
-            class="transition duration-300 hover:opacity-50"
-          >
-            <img
-              src="./assets/icons/logo-cma.png"
-              alt="logo métiers d'art Nouvelle-Aquitaine"
-              class="w-20"
-            />
+    </section>
+  </main>
+
+  <footer class="bg-primary grid grid-cols-1 md:grid-cols-2 py-12 px-6 md:px-16 gap-8 md:gap-0">
+    <div class="flex flex-col gap-4 justify-start items-center text-center">
+      <h2 class="text-xl md:text-2xl font-display text-secondary font-bold tracking-wide" data-i18n="footer.title">
+        Réalisation architecturale extérieur et intérieur en métal
+      </h2>
+      <a href="mailto:lucdesessarts@gmail.com" class="text-lg md:text-2xl text-bg-color hover:opacity-50">
+        lucdesessarts@gmail.com
+      </a>
+      <a href="index.html" class="text-lg md:text-2xl text-bg-color hover:opacity-50">
+        www.aloreedufer.com
+      </a>
+      <a href="contact.html"
+        class="text-lg text-bg-color border-2 border-secondary p-2 rounded-lg hover:bg-secondary hover:text-primary transition">
+        Contact
+      </a>
+      <hr class="h-1 w-4/5 my-2 text-secondary" />
+      <p class="text-xl md:text-2xl text-bg-color font-black">France</p>
+      <p class="text-lg md:text-xl text-bg-color leading-10 text-center">
+        2, rue de la terrasse<br />87260 Pierre-Buffière<br />06 80 50 90 09
+      </p>
+    </div>
+
+    <div class="grid grid-cols-2 items-start justify-start gap-4">
+      <ul>
+        <li class="text-lg md:text-2xl text-bg-color md:text-secondary font-bold pt-4 hover:opacity-50 transition">
+          <a href="index.html" data-i18n="footer.nav.home">Accueil</a>
+        </li>
+        <li class="text-lg md:text-2xl text-bg-color md:text-secondary font-bold pt-4 hover:opacity-50 transition">
+          <a href="index.html#about" data-i18n="footer.nav.about">À Propos</a>
+        </li>
+        <li class="text-lg md:text-2xl text-bg-color md:text-secondary font-bold pt-4 hover:opacity-50 transition">
+          <a href="index.html#gallery" data-i18n="footer.nav.gallery">Mes Chantiers</a>
+        </li>
+        <li class="text-lg md:text-2xl text-bg-color md:text-secondary font-bold pt-4 hover:opacity-50 transition">
+          <a href="contact.html" data-i18n="footer.nav.conatct">Contact</a>
+        </li>
+        <li class="mt-8 md:mt-16 text-bg-color text-base md:text-lg hover:opacity-50 transition">
+          <a href="./mention-legale.html" data-i18n="footer.nav.mention">Mentions Légales</a>
+        </li>
+        <li class="text-bg-color text-base md:text-lg hover:opacity-50 transition">
+          <a href="./politique-de-confidentialitee.html" data-i18n="footer.nav.confidentialite">
+            Politique de Confidentialitée
           </a>
-          <a
-            href="https://formation.cma-nouvelleaquitaine.fr/"
-            class="transition duration-300 hover:opacity-50"
-          >
-            <img
-              src="./assets/icons/png-clipart-handicraft-logo-chambre-de-metiers-et-artisanat-empresa-artisan.png"
-              alt="logo chambre des métiers et artisanats"
-              class="w-20"
-            />
-          </a>
-          <a
-            href="https://www.facebook.com/aloreedufer?locale=fr_FR"
-            class="transition duration-300 hover:opacity-50"
-          >
-            <img
-              src="./assets/icons/square-facebook-brands-solid.png"
-              alt="logo facebook"
-              class="w-20"
-            />
-          </a>
-          <a
-            href="https://www.instagram.com/aloreedufer/"
-            class="transition duration-300 hover:opacity-50"
-          >
-            <img
-              src="./assets/icons/square-instagram-brands-solid.png"
-              alt="logo instagram"
-              class="w-20"
-            />
-          </a>
-        </div>
+        </li>
+        <li class="text-bg-color text-base md:text-lg hover:opacity-50 transition">
+          <a href="#">www.tentaclecode.com</a>
+        </li>
+      </ul>
+
+      <div class="flex flex-col gap-4 items-center justify-start">
+        <a href="https://www.metiers-art.com/A-L-OREE-DU-FER-Luc-DESESSARTS"
+          class="transition duration-300 hover:opacity-50">
+          <img src="./assets/icons/logo-cma.png" srcset="
+                ./assets/icons/logo-cma-400w.png   400w,
+                ./assets/icons/logo-cma-800w.png   800w,
+                ./assets/icons/logo-cma-1200w.png 1200w
+              " sizes="(max-width: 768px) 56px, 80px" alt="logo métiers d'art Nouvelle-Aquitaine"
+            class="w-14 md:w-20" />
+        </a>
+
+        <a href="https://formation.cma-nouvelleaquitaine.fr/" class="transition duration-300 hover:opacity-50">
+          <img src="./assets/icons/png-clipart-handicraft-logo-chambre-de-metiers-et-artisanat-empresa-artisan.png"
+            srcset="
+                ./assets/icons/png-clipart-handicraft-logo-chambre-de-metiers-et-artisanat-empresa-artisan-400w.png   400w,
+                ./assets/icons/png-clipart-handicraft-logo-chambre-de-metiers-et-artisanat-empresa-artisan-800w.png   800w,
+                ./assets/icons/png-clipart-handicraft-logo-chambre-de-metiers-et-artisanat-empresa-artisan-1200w.png 1200w
+              " sizes="(max-width: 768px) 56px, 80px" alt="logo chambre des métiers et artisanats"
+            class="w-14 md:w-20" />
+        </a>
+
+        <a href="https://www.facebook.com/aloreedufer?locale=fr_FR" class="transition duration-300 hover:opacity-50">
+          <img src="./assets/icons/square-facebook-brands-solid.png" srcset="
+                ./assets/icons/square-facebook-brands-solid-400w.png   400w,
+                ./assets/icons/square-facebook-brands-solid-800w.png   800w,
+                ./assets/icons/square-facebook-brands-solid-1200w.png 1200w
+              " sizes="(max-width: 768px) 56px, 80px" alt="logo facebook" class="w-14 md:w-20" />
+        </a>
+
+        <a href="https://www.instagram.com/aloreedufer/" class="transition duration-300 hover:opacity-50">
+          <img src="./assets/icons/square-instagram-brands-solid.png" srcset="
+                ./assets/icons/square-instagram-brands-solid-400w.png   400w,
+                ./assets/icons/square-instagram-brands-solid-800w.png   800w,
+                ./assets/icons/square-instagram-brands-solid-1200w.png 1200w
+              " sizes="(max-width: 768px) 56px, 80px" alt="logo instagram" class="w-14 md:w-20" />
+        </a>
       </div>
-    </footer>
-  </body>
+    </div>
+  </footer>
+</body>
+
 </html>
