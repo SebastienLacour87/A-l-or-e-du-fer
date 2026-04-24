@@ -21,12 +21,12 @@
       class="top-0 w-full z-50 bg-white/90 backdrop-blur-sm shadow-md"
     >
       <section
-        class="w-full h-15 bg-black flex justify-end items-center gap-4 px-8"
+        class="w-full h-11 bg-black flex justify-end items-center gap-4 px-8"
       >
         <div>
           <a
             href="contact.html"
-            class="text-white font-display text-2xl font-bold hover:text-primary border-r-2 pr-2"
+            class="text-white font-display text-xl sm:text-2xl font-bold hover:text-primary border-r-2 pr-2"
             data-i18n="nav.contact"
             >Contact</a
           >
@@ -47,7 +47,7 @@
         </div>
       </section>
       <section class="w-full">
-        <nav class="flex justify-around items-center my-1 w-full">
+        <nav class="flex justify-around items-center px-4 md:px-0 my-1 w-full">
           <ul class="flex gap-8 items-center w-full justify-around">
             <li>
               <img
@@ -58,23 +58,29 @@
                 "
                 sizes="80px"
                 alt="Logo A l'orée du fer, portrait de Luc Desessarts stylisé"
-                class="h-15 w-15"
+                class="hidden sm:block sm:h-15 sm:w-15"
               />
             </li>
             <li>
-              <a href="index.html" class="nav-title" data-i18n="nav.home"
+              <a
+                href="index.html"
+                class="text-xl font-display text-primary font-bold hover:text-black/50 sm:text-2xl md:text-4xl transition"
+                data-i18n="nav.home"
                 >Accueil</a
               >
             </li>
             <li>
-              <a href="index.html#about" class="nav-title" data-i18n="nav.about"
+              <a
+                href="#about"
+                class="text-xl font-display text-primary font-bold hover:text-black/50 sm:text-2xl md:text-4xl transition"
+                data-i18n="nav.about"
                 >À propos</a
               >
             </li>
             <li>
               <a
-                href="index.html#galerie-photo"
-                class="nav-title"
+                href="#galerie-photo"
+                class="text-xl font-display text-primary font-bold hover:text-black/50 sm:text-2xl md:text-4xl transition"
                 data-i18n="nav.projects"
                 >Mes chantiers</a
               >
@@ -83,18 +89,17 @@
         </nav>
       </section>
     </header>
-
     <main>
       <section>
         <h1
-          class="text-4xl font-display-secondary font-thin text-center my-40"
+          class="text-2xl md:text-4xl font-display-secondary font-thin text-center my-10 md:my-40"
           data-i18n="gallery.ramps.title"
         >
           Nos escaliers et rampes
         </h1>
         <hr class="w-4/5 my-4 mx-auto text-primary" />
         <div
-          class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3 px-8 py-12 auto-rows-[400px]"
+          class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-3 px-8 py-12 auto-rows-[400px]"
         >
           <figure
             class="gallery-item overflow-hidden rounded-lg cursor-pointer group"
@@ -120,7 +125,7 @@
           </figure>
 
           <figure
-            class="gallery-item row-span-2 overflow-hidden rounded-lg cursor-pointer group"
+            class="gallery-item md:row-span-2 overflow-hidden rounded-lg cursor-pointer group"
             data-lightbox
           >
             <img
@@ -212,7 +217,7 @@
           </figure>
 
           <figure
-            class="gallery-item col-span-2 overflow-hidden rounded-lg cursor-pointer group"
+            class="gallery-item md:col-span-2 overflow-hidden rounded-lg cursor-pointer group"
             data-lightbox
           >
             <img
@@ -235,7 +240,7 @@
           </figure>
 
           <figure
-            class="gallery-item col-span-2 overflow-hidden rounded-lg cursor-pointer group"
+            class="gallery-item md:col-span-2 overflow-hidden rounded-lg cursor-pointer group"
             data-lightbox
           >
             <img
@@ -316,7 +321,7 @@
         <div class="grid grid-cols-3 gap-1">
           <a
             href="galerie-mobilier.html"
-            class="relative overflow-hidden group h-40 cursor-pointer"
+            class="relative overflow-hidden group h-30 md:h-40 cursor-pointer"
           >
             <img
               src="assets/images/tete-de-lit.webp"
@@ -330,7 +335,7 @@
             />
             <div class="absolute inset-0 flex flex-col justify-center px-6">
               <h3
-                class="text-white text-2xl font-light"
+                class="text-white hidden text-2xl font-light md:block"
                 data-i18n="btn.mobilier"
               >
                 Mobiliers et Objets d'art
@@ -341,7 +346,7 @@
 
           <a
             href="galerie-porte.html"
-            class="relative overflow-hidden group h-40 cursor-pointer"
+            class="relative overflow-hidden group h-30 md:h-40 cursor-pointer"
           >
             <img
               src="assets/images/realisation-finale.webp"
@@ -354,7 +359,10 @@
               class="w-full h-full object-cover brightness-50 group-hover:brightness-75 group-hover:scale-105 transition duration-500"
             />
             <div class="absolute inset-0 flex flex-col justify-center px-6">
-              <h3 class="text-white text-2xl font-light" data-i18n="btn.porte">
+              <h3
+                class="text-white hidden text-2xl font-light md:block"
+                data-i18n="btn.porte"
+              >
                 Portes et Fenêtres
               </h3>
               <span class="text-white/70 text-sm">voir +</span>
@@ -363,7 +371,7 @@
 
           <a
             href="galerie-marquise.html"
-            class="relative overflow-hidden group h-40 cursor-pointer"
+            class="relative overflow-hidden group h-30 md:h-40 cursor-pointer"
           >
             <img
               src="assets/images/rampe-et-marquise.webp"
@@ -376,10 +384,7 @@
               class="w-full h-full object-cover brightness-50 group-hover:brightness-75 group-hover:scale-105 transition duration-500"
             />
             <div class="absolute inset-0 flex flex-col justify-center px-6">
-              <h3
-                class="text-white text-2xl font-light"
-                data-i18n="btn.pergolas"
-              >
+              <h3 class="text-white hidden text-2xl font-light md:black">
                 Marquises et Pergolas
               </h3>
               <span class="text-white/70 text-sm">voir +</span>
@@ -389,112 +394,153 @@
       </section>
     </main>
 
-    <footer class="bg-primary grid grid-cols-2 py-12 px-16">
-      <div class="flex flex-col gap-4 justify-start items-center">
+    <footer
+      class="bg-primary grid grid-cols-1 md:grid-cols-2 py-12 px-6 md:px-16 gap-8 md:gap-0"
+    >
+      <div class="flex flex-col gap-4 justify-start items-center text-center">
         <h2
-          class="text-2xl font-display text-secondary font-bold tracking-wide"
+          class="text-xl md:text-2xl font-display text-secondary font-bold tracking-wide"
           data-i18n="footer.title"
         >
           Réalisation architecturale extérieur et intérieur en métal
         </h2>
         <a
           href="mailto:lucdesessarts@gmail.com"
-          class="text-2xl text-bg-color hover:opacity-50"
-          >lucdesessarts@gmail.com</a
+          class="text-lg md:text-2xl text-bg-color hover:opacity-50"
         >
-        <a href="index.html" class="text-2xl text-bg-color hover:opacity-50"
-          >www.aloreedufer.com</a
+          lucdesessarts@gmail.com
+        </a>
+        <a
+          href="index.html"
+          class="text-lg md:text-2xl text-bg-color hover:opacity-50"
         >
+          www.aloreedufer.com
+        </a>
         <a
           href="contact.html"
           class="text-lg text-bg-color border-2 border-secondary p-2 rounded-lg hover:bg-secondary hover:text-primary transition"
-          >Contact</a
         >
+          Contact
+        </a>
         <hr class="h-1 w-4/5 my-2 text-secondary" />
-        <p class="text-2xl text-bg-color font-black">France</p>
-        <p class="text-xl text-bg-color leading-10">
+        <p class="text-xl md:text-2xl text-bg-color font-black">France</p>
+        <p class="text-lg md:text-xl text-bg-color leading-10 text-center">
           2, rue de la terrasse<br />87260 Pierre-Buffière<br />06 80 50 90 09
         </p>
       </div>
-      <div class="grid grid-cols-2 items-center justify-start">
+
+      <div class="grid grid-cols-2 items-start justify-start gap-4">
         <ul>
           <li
-            class="text-2xl text-secondary font-bold pt-4 hover:opacity-50 transition"
+            class="text-lg md:text-2xl text-bg-color md:text-secondary font-bold pt-4 hover:opacity-50 transition"
           >
-            <a href="index.html" data-i18n="footer.nav.home">Accueil</a>
+            <a href="#" data-i18n="footer.nav.home">Accueil</a>
           </li>
           <li
-            class="text-2xl text-secondary font-bold pt-4 hover:opacity-50 transition"
+            class="text-lg md:text-2xl text-bg-color md:text-secondary font-bold pt-4 hover:opacity-50 transition"
           >
-            <a href="index.html#about" data-i18n="footer.nav.about">À Propos</a>
+            <a href="#about" data-i18n="footer.nav.about">À Propos</a>
           </li>
           <li
-            class="text-2xl text-secondary font-bold pt-4 hover:opacity-50 transition"
+            class="text-lg md:text-2xl text-bg-color md:text-secondary font-bold pt-4 hover:opacity-50 transition"
           >
-            <a href="index.html#gallery" data-i18n="footer.nav.gallery"
-              >Mes Chantiers</a
-            >
+            <a href="#gallery" data-i18n="footer.nav.gallery">Mes Chantiers</a>
           </li>
           <li
-            class="text-2xl text-secondary font-bold pt-4 hover:opacity-50 transition"
+            class="text-lg md:text-2xl text-bg-color md:text-secondaryfont-bold pt-4 hover:opacity-50 transition"
           >
             <a href="contact.html" data-i18n="footer.nav.conatct">Contact</a>
           </li>
-          <li class="mt-16 text-bg-color text-lg hover:opacity-50 transition">
+          <li
+            class="mt-8 md:mt-16 text-bg-color text-base md:text-lg hover:opacity-50 transition"
+          >
             <a href="./mention-legale.html" data-i18n="footer.nav.mention"
               >Mentions Légales</a
             >
           </li>
-          <li class="text-bg-color text-lg hover:opacity-50 transition">
+          <li
+            class="text-bg-color text-base md:text-lg hover:opacity-50 transition"
+          >
             <a
               href="./politique-de-confidentialitee.html"
               data-i18n="footer.nav.confidentialite"
-              >Politique de Confidentialitée</a
             >
+              Politique de Confidentialitée
+            </a>
           </li>
-          <li class="text-bg-color text-lg hover:opacity-50 transition">
+          <li
+            class="text-bg-color text-base md:text-lg hover:opacity-50 transition"
+          >
             <a href="#">www.tentaclecode.com</a>
           </li>
         </ul>
-        <div class="w-1/2 flex flex-col gap-4 items-center justify-start">
+
+        <div class="flex flex-col gap-4 items-center justify-start">
           <a
             href="https://www.metiers-art.com/A-L-OREE-DU-FER-Luc-DESESSARTS"
             class="transition duration-300 hover:opacity-50"
           >
             <img
               src="./assets/icons/logo-cma.png"
+              srcset="
+                ./assets/icons/logo-cma-400w.png   400w,
+                ./assets/icons/logo-cma-800w.png   800w,
+                ./assets/icons/logo-cma-1200w.png 1200w
+              "
+              sizes="(max-width: 768px) 56px, 80px"
               alt="logo métiers d'art Nouvelle-Aquitaine"
-              class="w-20"
+              class="w-14 md:w-20"
             />
           </a>
+
           <a
-            href="https://www.google.fr/aclk?sa=L&pf=1&ai=DChsSEwi8sN24pfqTAxX7pv0FHeTuH-4YACICCAEQABoCd2Y&co=1&ase=2&gclid=Cj0KCQjw-pHPBhCdARIsAHXYWP_4UoOcDXBUhsE54UTp-vsEd-TdRAanGVSuDk_dgo7yhAbEiVn-M_kaArzFEALw_wcB&cce=2&category=acrcp_v1_32&sig=AOD64_0JJVmZvtgr0VLqHo2ovO-ydh2Cdg&q&nis=4&adurl=https://formation.cma-nouvelleaquitaine.fr/"
+            href="https://formation.cma-nouvelleaquitaine.fr/"
             class="transition duration-300 hover:opacity-50"
           >
             <img
               src="./assets/icons/png-clipart-handicraft-logo-chambre-de-metiers-et-artisanat-empresa-artisan.png"
+              srcset="
+                ./assets/icons/png-clipart-handicraft-logo-chambre-de-metiers-et-artisanat-empresa-artisan-400w.png   400w,
+                ./assets/icons/png-clipart-handicraft-logo-chambre-de-metiers-et-artisanat-empresa-artisan-800w.png   800w,
+                ./assets/icons/png-clipart-handicraft-logo-chambre-de-metiers-et-artisanat-empresa-artisan-1200w.png 1200w
+              "
+              sizes="(max-width: 768px) 56px, 80px"
               alt="logo chambre des métiers et artisanats"
-              class="w-20"
+              class="w-14 md:w-20"
             />
           </a>
+
           <a
             href="https://www.facebook.com/aloreedufer?locale=fr_FR"
             class="transition duration-300 hover:opacity-50"
           >
             <img
               src="./assets/icons/square-facebook-brands-solid.png"
+              srcset="
+                ./assets/icons/square-facebook-brands-solid-400w.png   400w,
+                ./assets/icons/square-facebook-brands-solid-800w.png   800w,
+                ./assets/icons/square-facebook-brands-solid-1200w.png 1200w
+              "
+              sizes="(max-width: 768px) 56px, 80px"
               alt="logo facebook"
-              class="w-20"
+              class="w-14 md:w-20"
             />
           </a>
+
           <a
             href="https://www.instagram.com/aloreedufer/"
             class="transition duration-300 hover:opacity-50"
           >
             <img
               src="./assets/icons/square-instagram-brands-solid.png"
+              srcset="
+                ./assets/icons/square-instagram-brands-solid-400w.png   400w,
+                ./assets/icons/square-instagram-brands-solid-800w.png   800w,
+                ./assets/icons/square-instagram-brands-solid-1200w.png 1200w
+              "
+              sizes="(max-width: 768px) 56px, 80px"
               alt="logo instagram"
-              class="w-20"
+              class="w-14 md:w-20"
             />
           </a>
         </div>
