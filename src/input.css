@@ -3,13 +3,19 @@
 @font-face {
   font-family: "PTSerif-Regular";
   font-style: normal;
-  src: url("assets/font/PTSerif-Regular.ttf");
+  font-display: swap;
+  src:
+    url("assets/font/PTSerif-Regular.ttf") format("truetype"),
+    url("assets/font/PTSerif-Regular.woff2") format("woff2");
 }
 
 @font-face {
   font-family: "IMFellFrenchCanonSC-Regular";
   font-style: normal;
-  src: url("assets/font/IMFellFrenchCanonSC-Regular.ttf");
+  font-display: swap;
+  src:
+    url("assets/font/IMFellFrenchCanonSC-Regular.ttf") format("truetype"),
+    url("assets/font/IMFellFrenchCanonSC-Regular.woff2") format("woff2");
 }
 
 @theme {

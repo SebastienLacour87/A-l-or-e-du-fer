@@ -2,12 +2,13 @@
 <html lang="fr">
 
 <head>
-  <meta charset="UTF-8" />
+  <meta charset=" UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Portes et Fenêtre - Galerie-Photo</title>
   <meta name="description"
     content="Galerie portes et fenêtres — Découvrez les réalisations sur mesure de Luc Desessarts : portails, portes vitrées, fenêtres intérieures en fer forgé et métal." />
   <link rel="shortcut icon" href="assets/images/LOGO-tete-seule.webp" />
+  <link rel="preload" href="assets/font/IMFellFrenchCanonSC-Regular.woff2" as="font" type="font/woff2" crossorigin />
   <link rel="stylesheet" href="output.css" />
   <script src="index.js" defer></script>
   <script src="gallery.js" defer></script>
@@ -36,7 +37,7 @@
             <img src="assets/images/LOGO-tete-seule.webp" srcset="
                   assets/images/LOGO-tete-seule-400w.webp 400w,
                   assets/images/LOGO-tete-seule-800w.webp 800w
-                " sizes="80px" alt="Logo A l'orée du fer, portrait de Luc Desessarts stylisé"
+                " sizes="80px" alt="Logo A l'orée du fer, portrait de Luc Desessarts stylisé" loading="lazy"
               class="hidden sm:block sm:h-15 sm:w-15" />
           </li>
           <li>
@@ -72,7 +73,7 @@
                 assets/images/fenetre-800w.webp   800w,
                 assets/images/fenetre-1200w.webp 1200w
               " sizes="(max-width: 640px) 50vw, (max-width: 1024px) 33vw, 25vw"
-            alt="Fenêtre d'intérieur réaliser sur mesure"
+            alt="Fenêtre d'intérieur réaliser sur mesure" loading="lazy"
             class="w-full h-full object-cover group-hover:scale-105 transition duration-300" />
           <figcaption class="text-sm text-black hidden" data-i18n="gallery.door.figcaption">
             Fenêtre d'intérieur réaliser sur mesure
@@ -85,7 +86,7 @@
                 assets/images/porte-de-caveau-800w.webp   800w,
                 assets/images/porte-de-caveau-1200w.webp 1200w
               " sizes="(max-width: 640px) 50vw, (max-width: 1024px) 33vw, 25vw"
-            alt="Porte réaliser en fer forgé pour une chapelle"
+            alt="Porte réaliser en fer forgé pour une chapelle" loading="lazy"
             class="w-full h-full object-cover group-hover:scale-105 transition duration-300" />
           <figcaption class="text-sm text-black hidden" data-i18n="gallery.door.figcaption2">
             Porte réaliser en fer forgé pour une chapelle
@@ -98,7 +99,7 @@
                 assets/images/porte-vitrail-800w.webp   800w,
                 assets/images/porte-vitrail-1200w.webp 1200w
               " sizes="(max-width: 640px) 50vw, (max-width: 1024px) 33vw, 25vw"
-            alt="porte vitrail dont la partie basse s'ouvre indépendamment de la partie haute"
+            alt="porte vitrail dont la partie basse s'ouvre indépendamment de la partie haute" loading="lazy"
             class="w-full h-full object-cover group-hover:scale-105 transition duration-300" />
           <figcaption class="text-sm text-black hidden" data-i18n="gallery.door.figcaption3">
             porte vitrail dont la partie basse s'ouvre indépendamment de la
@@ -112,7 +113,7 @@
                 assets/images/realisation-finale-800w.webp  800w,
                 assets/images/realisation-final-1200w.webp 1200w
               " sizes="(max-width: 640px) 50vw, (max-width: 1024px) 33vw, 25vw"
-            alt="grille de porte d'entrée dont la forme rappel le soleil"
+            alt="grille de porte d'entrée dont la forme rappel le soleil" loading="lazy"
             class="w-full h-full object-cover group-hover:scale-105 transition duration-300" />
           <figcaption class="text-sm text-black hidden" data-i18n="gallery.door.figcaption4">
             grille de porte d'entrée dont la forme rappel le soleil
@@ -125,7 +126,7 @@
                 assets/images/struture-vitree-800w.webp   800w,
                 assets/images/struture-vitree-1200w.webp 1200w
               " sizes="(max-width: 640px) 50vw, (max-width: 1024px) 33vw, 25vw"
-            alt="structure métallique pour fenêtre intérieur"
+            alt="structure métallique pour fenêtre intérieur" loading="lazy"
             class="w-full h-full object-cover group-hover:scale-105 transition duration-300" />
           <figcaption class="text-sm text-black hidden" data-i18n="gallery.door.figcaption5">
             structure métallique pour fenêtre intérieur
@@ -138,7 +139,7 @@
                 assets/images/portail-800w.webp   800w,
                 assets/images/portail-1200w.webp 1200w
               " sizes="(max-width: 640px) 50vw, (max-width: 1024px) 33vw, 25vw" alt="portail réaliser en fer forgé"
-            class="w-full h-full object-cover group-hover:scale-105 transition duration-300" />
+            loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition duration-300" />
           <figcaption class="text-sm text-black hidden" data-i18n="gallery.door.figcaption6">
             portail réaliser en fer forgé
           </figcaption>
@@ -150,7 +151,7 @@
                 assets/images/porte-vitree-metal-800w.webp   800w,
                 assets/images/porte-vitree-metal-1200w.webp 1200w
               " sizes="(max-width: 640px) 50vw, (max-width: 1024px) 33vw, 25vw" alt="porte vitrée en métal"
-            class="w-full h-full object-cover group-hover:scale-105 transition duration-300" />
+            loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition duration-300" />
           <figcaption class="text-sm text-black hidden" data-i18n="gallery.door.figcaption7">
             porte vitrée en métal
           </figcaption>
@@ -168,7 +169,7 @@
           <img src="assets/images/esalier-rampe.webp" srcset="
                 assets/images/esalier-rampe-400w.webp 400w,
                 assets/images/esalier-rampe-800w.webp 800w
-              " sizes="33vw" alt="escalier en métal avec sa rampe"
+              " sizes="33vw" alt="escalier en métal avec sa rampe" loading="lazy"
             class="w-full h-full object-cover brightness-50 group-hover:brightness-75 group-hover:scale-105 transition duration-500" />
           <div class="absolute inset-0 flex flex-col justify-center px-6">
             <h3 class="text-white hidden text-2xl font-light md:block" data-i18n="btn.rampe">
@@ -182,7 +183,7 @@
           <img src="assets/images/tete-de-lit.webp" srcset="
                 assets/images/tete-de-lit-400w.webp 400w,
                 assets/images/tete-de-lit-800w.webp 800w
-              " sizes="33vw" alt="porte en forme de soleil"
+              " sizes="33vw" alt="porte en forme de soleil" loading="lazy"
             class="w-full h-full object-cover brightness-50 group-hover:brightness-75 group-hover:scale-105 transition duration-500" />
           <div class="absolute inset-0 flex flex-col justify-center px-6">
             <h3 class="text-white hidden text-2xl font-light md:block" data-i18n="btn.mobilier">
@@ -196,7 +197,7 @@
           <img src="assets/images/rampe-et-marquise.webp" srcset="
                 assets/images/rampe-et-marquise-400w.webp 400w,
                 assets/images/rampe-et-marquise-800w.webp 800w
-              " sizes="33vw" alt="Marquises"
+              " sizes="33vw" alt="Marquises" loading="lazy"
             class="w-full h-full object-cover brightness-50 group-hover:brightness-75 group-hover:scale-105 transition duration-500" />
           <div class="absolute inset-0 flex flex-col justify-center px-6">
             <h3 class="text-white hidden text-2xl font-light md:block" data-i18n="btn.pergolas">
@@ -260,38 +261,38 @@
       <div class="flex flex-col gap-4 items-center justify-start">
         <a href="https://www.metiers-art.com/A-L-OREE-DU-FER-Luc-DESESSARTS"
           class="transition duration-300 hover:opacity-50">
-          <img src="./assets/icons/logo-cma.png" srcset="
-                ./assets/icons/logo-cma-400w.png   400w,
-                ./assets/icons/logo-cma-800w.png   800w,
-                ./assets/icons/logo-cma-1200w.png 1200w
-              " sizes="(max-width: 768px) 56px, 80px" alt="logo métiers d'art Nouvelle-Aquitaine"
+          <img src="./assets/icons/logo-cma.webp" srcset="
+                ./assets/icons/logo-cma-400w.webp   400w,
+                ./assets/icons/logo-cma-800w.webp   800w,
+                ./assets/icons/logo-cma-1200w.webp 1200w
+              " sizes="(max-width: 768px) 56px, 80px" alt="logo métiers d'art Nouvelle-Aquitaine" loading="lazy"
             class="w-14 md:w-20" />
         </a>
 
         <a href="https://formation.cma-nouvelleaquitaine.fr/" class="transition duration-300 hover:opacity-50">
-          <img src="./assets/icons/png-clipart-handicraft-logo-chambre-de-metiers-et-artisanat-empresa-artisan.png"
+          <img src="./assets/icons/png-clipart-handicraft-logo-chambre-de-metiers-et-artisanat-empresa-artisan.webp"
             srcset="
-                ./assets/icons/png-clipart-handicraft-logo-chambre-de-metiers-et-artisanat-empresa-artisan-400w.png   400w,
-                ./assets/icons/png-clipart-handicraft-logo-chambre-de-metiers-et-artisanat-empresa-artisan-800w.png   800w,
-                ./assets/icons/png-clipart-handicraft-logo-chambre-de-metiers-et-artisanat-empresa-artisan-1200w.png 1200w
-              " sizes="(max-width: 768px) 56px, 80px" alt="logo chambre des métiers et artisanats"
+                ./assets/icons/png-clipart-handicraft-logo-chambre-de-metiers-et-artisanat-empresa-artisan-400w.webp   400w,
+                ./assets/icons/png-clipart-handicraft-logo-chambre-de-metiers-et-artisanat-empresa-artisan-800w.webp   800w,
+                ./assets/icons/png-clipart-handicraft-logo-chambre-de-metiers-et-artisanat-empresa-artisan-1200w.webp 1200w
+              " sizes="(max-width: 768px) 56px, 80px" alt="logo chambre des métiers et artisanats" loading="lazy"
             class="w-14 md:w-20" />
         </a>
 
         <a href="https://www.facebook.com/aloreedufer?locale=fr_FR" class="transition duration-300 hover:opacity-50">
-          <img src="./assets/icons/square-facebook-brands-solid.png" srcset="
-                ./assets/icons/square-facebook-brands-solid-400w.png   400w,
-                ./assets/icons/square-facebook-brands-solid-800w.png   800w,
-                ./assets/icons/square-facebook-brands-solid-1200w.png 1200w
-              " sizes="(max-width: 768px) 56px, 80px" alt="logo facebook" class="w-14 md:w-20" />
+          <img src="./assets/icons/square-facebook-brands-solid.webp" srcset="
+                ./assets/icons/square-facebook-brands-solid-400w.webp   400w,
+                ./assets/icons/square-facebook-brands-solid-800w.webp   800w,
+                ./assets/icons/square-facebook-brands-solid-1200w.webp 1200w
+              " sizes="(max-width: 768px) 56px, 80px" alt="logo facebook" loading="lazy" class="w-14 md:w-20" />
         </a>
 
         <a href="https://www.instagram.com/aloreedufer/" class="transition duration-300 hover:opacity-50">
-          <img src="./assets/icons/square-instagram-brands-solid.png" srcset="
-                ./assets/icons/square-instagram-brands-solid-400w.png   400w,
-                ./assets/icons/square-instagram-brands-solid-800w.png   800w,
-                ./assets/icons/square-instagram-brands-solid-1200w.png 1200w
-              " sizes="(max-width: 768px) 56px, 80px" alt="logo instagram" class="w-14 md:w-20" />
+          <img src="./assets/icons/square-instagram-brands-solid.webp" srcset="
+                ./assets/icons/square-instagram-brands-solid-400w.webp   400w,
+                ./assets/icons/square-instagram-brands-solid-800w.webp   800w,
+                ./assets/icons/square-instagram-brands-solid-1200w.webp 1200w
+              " sizes="(max-width: 768px) 56px, 80px" alt="logo instagram" loading="lazy" class="w-14 md:w-20" />
         </a>
       </div>
     </div>

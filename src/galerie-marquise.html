@@ -8,6 +8,7 @@
   <meta name="description"
     content="Galerie marquises et pergolas — Structures d'ombrage en métal forgé réalisées sur mesure par Luc Desessarts, artisan ferronnier à Pierre-Buffière (87)." />
   <link rel="shortcut icon" href="assets/images/LOGO-tete-seule.webp" />
+  <link rel="preload" href="assets/font/IMFellFrenchCanonSC-Regular.woff2" as="font" type="font/woff2" crossorigin />
   <link rel="stylesheet" href="output.css" />
   <script src="index.js" defer></script>
   <script src="gallery.js" defer></script>
@@ -36,7 +37,7 @@
             <img src="assets/images/LOGO-tete-seule.webp" srcset="
                   assets/images/LOGO-tete-seule-400w.webp 400w,
                   assets/images/LOGO-tete-seule-800w.webp 800w
-                " sizes="80px" alt="Logo A l'orée du fer, portrait de Luc Desessarts stylisé"
+                " sizes="80px" alt="Logo A l'orée du fer, portrait de Luc Desessarts stylisé" loading="lazy"
               class="hidden sm:block sm:h-15 sm:w-15" />
           </li>
           <li>
@@ -61,7 +62,8 @@
 
   <main>
     <section>
-      <h1 class="text-4xl font-display-secondary font-thin text-center my-40" data-i18n="gallery.pergoles.title">
+      <h1 class="text-2xl md:text-4xl font-display-secondary font-thin text-center my-10 md:my-40"
+        data-i18n="gallery.pergolas.title">
         Marquises et Pergolas
       </h1>
       <hr class="w-4/5 my-4 mx-auto text-primary" />
@@ -72,7 +74,7 @@
                 assets/images/marquise-blache-800w.webp   800w,
                 assets/images/marquise-blache-1200w.webp 1200w
               " sizes="(max-width: 640px) 50vw, (max-width: 1024px) 33vw, 25vw"
-            alt="marquise structure acier banc et verre"
+            alt="marquise structure acier banc et verre" loading="lazy"
             class="w-full h-full object-cover group-hover:scale-105 transition duration-300" />
           <figcaption class="text-sm text-black hidden" data-i18n="gallery.pergolas.figcaption">
             marquise structure acier banc et verre
@@ -85,6 +87,7 @@
                 assets/images/marquise-porte-rouge-800w.webp   800w,
                 assets/images/marquise-porte-rouge-1200w.webp 1200w
               " sizes="(max-width: 640px) 50vw, (max-width: 1024px) 33vw, 25vw" alt="marquise porte d'entrée"
+            loading="lazy"
             class="w-full h-full object-cover object-center group-hover:scale-105 transition duration-300" />
           <figcaption class="text-sm text-black hidden" data-i18n="gallery.pergolas.figcaption2">
             marquise porte d'entrée
@@ -97,7 +100,7 @@
                 assets/images/marquise-rampe-800w.webp   800w,
                 assets/images/marquise-rampe-1200w.webp 1200w
               " sizes="(max-width: 640px) 50vw, (max-width: 1024px) 33vw, 25vw" alt="marquise et rampe pour un perron"
-            class="w-full h-full object-cover group-hover:scale-105 transition duration-300" />
+            loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition duration-300" />
           <figcaption class="text-sm text-black hidden" data-i18n="gallery.pergolas.figcaption3">
             marquise et rampe pour un perron
           </figcaption>
@@ -108,7 +111,7 @@
                 assets/images/marquise-vitree-400w.webp   400w,
                 assets/images/marquise-vitree-800w.webp   800w,
                 assets/images/marquise-vitree-1200w.webp 1200w
-              " sizes="(max-width: 640px) 50vw, (max-width: 1024px) 33vw, 25vw" alt="marquise vitrée"
+              " sizes="(max-width: 640px) 50vw, (max-width: 1024px) 33vw, 25vw" alt="marquise vitrée" loading="lazy"
             class="w-full h-full object-cover group-hover:scale-105 transition duration-300" />
           <figcaption class="text-sm text-black hidden" data-i18n="gallery.pergolas.figcaption4">
             marquise vitrée
@@ -117,11 +120,11 @@
 
         <figure class="gallery-item overflow-hidden rounded-lg cursor-pointer group" data-lightbox>
           <img src="assets/images/pergolas.webp" srcset="
-                assets/images/pergolast-400w.webp  400w,
-                assets/images/pergolas-800w.webp   800w,
+                assets/images/pergolas-400w.webp  400w,
+                assets/images/pergolas-800w.webp  800w,
                 assets/images/pergolas-1200w.webp 1200w
               " sizes="(max-width: 640px) 50vw, (max-width: 1024px) 33vw, 25vw" alt="pergolas avec lanterne"
-            class="w-full h-full object-cover group-hover:scale-105 transition duration-300" />
+            loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition duration-300" />
           <figcaption class="text-sm text-black hidden" data-i18n="gallery.pergolas.figcaption5">
             pergolas avec lanterne
           </figcaption>
@@ -133,7 +136,7 @@
                 assets/images/pergolas-terrasse-800w.webp   800w,
                 assets/images/pergolas-terrasse-1200w.webp 1200w
               " sizes="(max-width: 640px) 50vw, (max-width: 1024px) 33vw, 25vw" alt="pergolas pour une terrasse"
-            class="w-full h-full object-cover group-hover:scale-105 transition duration-300" />
+            loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition duration-300" />
           <figcaption class="text-sm text-black hidden" data-i18n="gallery.pergolas.figcaption6">
             pergolas pour une terrasse
           </figcaption>
@@ -145,7 +148,7 @@
                 assets/images/pergolas-vue-de-pres-800w.webp   800w,
                 assets/images/pergolas-vue-de-pres-1200w.webp 1200w
               " sizes="(max-width: 640px) 50vw, (max-width: 1024px) 33vw, 25vw"
-            alt="pergolas avec lanterne vue de plus près"
+            alt="pergolas avec lanterne vue de plus près" loading="lazy"
             class="w-full h-full object-cover group-hover:scale-105 transition duration-300" />
           <figcaption class="text-sm text-black hidden" data-i18n="gallery.pergolas.figcaption7">
             pergolas avec lanterne vue de plus près
@@ -163,8 +166,8 @@
         <a href="galerie-rampe.html" class="relative overflow-hidden group h-30 md:h-40  cursor-pointer">
           <img src="assets/images/esalier-rampe.webp" srcset="
                 assets/images/esalier-rampe-400w.webp 400w,
-                assets/images/esalier-rampe-800w.webp 800w
-              " sizes="33vw" alt="escalier en métal avec sa rampe"
+                assets/images/esalier-rampe-800w.webp 800w 
+              " sizes="33vw" alt="escalier en métal avec sa rampe" loading="lazy"
             class="w-full h-full object-cover brightness-50 group-hover:brightness-75 group-hover:scale-105 transition duration-500" />
           <div class="absolute inset-0 flex flex-col justify-center px-6">
             <h3 class="text-white hidden text-2xl font-light md:block" data-i18n="btn.rampe">
@@ -178,7 +181,7 @@
           <img src="assets/images/realisation-finale.webp" srcset="
                 assets/images/realisation-finale-400w.webp 400w,
                 assets/images/realisation-finale-800w.webp 800w
-              " sizes="33vw" alt="porte en forme de soleil"
+              " sizes="33vw" alt="porte en forme de soleil" loading="lazy"
             class="w-full h-full object-cover brightness-50 group-hover:brightness-75 group-hover:scale-105 transition duration-500" />
           <div class="absolute inset-0 flex flex-col justify-center px-6">
             <h3 class="text-white hidden text-2xl font-light md:block" data-i18n="btn.porte">
@@ -192,7 +195,7 @@
           <img src="assets/images/tete-de-lit.webp" srcset="
                 assets/images/tete-de-lit-400w.webp 400w,
                 assets/images/tete-de-lit-800w.webp 800w
-              " sizes="33vw" alt="Marquises"
+              " sizes="33vw" alt="Marquises" loading="lazy"
             class="w-full h-full object-cover brightness-50 group-hover:brightness-75 group-hover:scale-105 transition duration-500" />
           <div class="absolute inset-0 flex flex-col justify-center px-6">
             <h3 class="text-white hidden text-2xl font-light md:block" data-i18n="btn.mobilier">
@@ -222,8 +225,8 @@
       </a>
       <hr class="h-1 w-4/5 my-2 text-secondary" />
       <p class="text-xl md:text-2xl text-bg-color font-black">France</p>
-      <p class="text-lg md:text-xl text-bg-color leading-10 text-center">
-        2, rue de la terrasse<br />87260 Pierre-Buffière<br />06 80 50 90 09
+      <p class="text-lg md:text-xl text-bg-color leading-10 text-center">webp 2, rue de la terrasse<br />87260
+        Pierre-Buffière<br />06 80 50 90 09
       </p>
     </div>
 
@@ -257,38 +260,38 @@
       <div class="flex flex-col gap-4 items-center justify-start">
         <a href="https://www.metiers-art.com/A-L-OREE-DU-FER-Luc-DESESSARTS"
           class="transition duration-300 hover:opacity-50">
-          <img src="./assets/icons/logo-cma.png" srcset="
-                ./assets/icons/logo-cma-400w.png   400w,
-                ./assets/icons/logo-cma-800w.png   800w,
-                ./assets/icons/logo-cma-1200w.png 1200w
-              " sizes="(max-width: 768px) 56px, 80px" alt="logo métiers d'art Nouvelle-Aquitaine"
+          <img src="./assets/icons/logo-cma.webp" srcset="
+                ./assets/icons/logo-cma-400w.webp   400w,
+                ./assets/icons/logo-cma-800w.webp   800w,
+                ./assets/icons/logo-cma-1200w.webp 1200w
+              " sizes="(max-width: 768px) 56px, 80px" alt="logo métiers d'art Nouvelle-Aquitaine" loading="lazy"
             class="w-14 md:w-20" />
         </a>
 
         <a href="https://formation.cma-nouvelleaquitaine.fr/" class="transition duration-300 hover:opacity-50">
-          <img src="./assets/icons/png-clipart-handicraft-logo-chambre-de-metiers-et-artisanat-empresa-artisan.png"
+          <img src="./assets/icons/png-clipart-handicraft-logo-chambre-de-metiers-et-artisanat-empresa-artisan.webp"
             srcset="
-                ./assets/icons/png-clipart-handicraft-logo-chambre-de-metiers-et-artisanat-empresa-artisan-400w.png   400w,
-                ./assets/icons/png-clipart-handicraft-logo-chambre-de-metiers-et-artisanat-empresa-artisan-800w.png   800w,
-                ./assets/icons/png-clipart-handicraft-logo-chambre-de-metiers-et-artisanat-empresa-artisan-1200w.png 1200w
-              " sizes="(max-width: 768px) 56px, 80px" alt="logo chambre des métiers et artisanats"
+                ./assets/icons/png-clipart-handicraft-logo-chambre-de-metiers-et-artisanat-empresa-artisan-400w.webp   400w,
+                ./assets/icons/png-clipart-handicraft-logo-chambre-de-metiers-et-artisanat-empresa-artisan-800w.webp   800w,
+                ./assets/icons/png-clipart-handicraft-logo-chambre-de-metiers-et-artisanat-empresa-artisan-1200w.webp 1200w
+              " sizes="(max-width: 768px) 56px, 80px" alt="logo chambre des métiers et artisanats" loading="lazy"
             class="w-14 md:w-20" />
         </a>
 
         <a href="https://www.facebook.com/aloreedufer?locale=fr_FR" class="transition duration-300 hover:opacity-50">
-          <img src="./assets/icons/square-facebook-brands-solid.png" srcset="
-                ./assets/icons/square-facebook-brands-solid-400w.png   400w,
-                ./assets/icons/square-facebook-brands-solid-800w.png   800w,
-                ./assets/icons/square-facebook-brands-solid-1200w.png 1200w
-              " sizes="(max-width: 768px) 56px, 80px" alt="logo facebook" class="w-14 md:w-20" />
+          <img src="./assets/icons/square-facebook-brands-solid.webp" srcset="
+                ./assets/icons/square-facebook-brands-solid-400w.webp   400w,
+                ./assets/icons/square-facebook-brands-solid-800w.webp   800w,
+                ./assets/icons/square-facebook-brands-solid-1200w.webp 1200w
+              " sizes="(max-width: 768px) 56px, 80px" alt="logo facebook" loading="lazy" class="w-14 md:w-20" />
         </a>
 
         <a href="https://www.instagram.com/aloreedufer/" class="transition duration-300 hover:opacity-50">
-          <img src="./assets/icons/square-instagram-brands-solid.png" srcset="
-                ./assets/icons/square-instagram-brands-solid-400w.png   400w,
-                ./assets/icons/square-instagram-brands-solid-800w.png   800w,
-                ./assets/icons/square-instagram-brands-solid-1200w.png 1200w
-              " sizes="(max-width: 768px) 56px, 80px" alt="logo instagram" class="w-14 md:w-20" />
+          <img src="./assets/icons/square-instagram-brands-solid.webp" srcset="
+                ./assets/icons/square-instagram-brands-solid-400w.webp   400w,
+                ./assets/icons/square-instagram-brands-solid-800w.webp   800w,
+                ./assets/icons/square-instagram-brands-solid-1200w.webp 1200w
+              " sizes="(max-width: 768px) 56px, 80px" alt="logo instagram" loading="lazy" class="w-14 md:w-20" />
         </a>
       </div>
     </div>

@@ -8,6 +8,7 @@
   <meta name="description"
     content="Galerie rampes et escaliers — Rampes d'escalier et structures métalliques réalisées sur mesure par Luc Desessarts, artisan ferronnier en Haute-Vienne (87)." />
   <link rel="shortcut icon" href="assets/images/LOGO-tete-seule.webp" />
+  <link rel="preload" href="assets/font/IMFellFrenchCanonSC-Regular.woff2" as="font" type="font/woff2" crossorigin />
   <link rel="stylesheet" href="output.css" />
   <script src="index.js" defer></script>
   <script src="gallery.js" defer></script>
@@ -36,7 +37,7 @@
             <img src="assets/images/LOGO-tete-seule.webp" srcset="
                   assets/images/LOGO-tete-seule-400w.webp 400w,
                   assets/images/LOGO-tete-seule-800w.webp 800w
-                " sizes="80px" alt="Logo A l'orée du fer, portrait de Luc Desessarts stylisé"
+                " sizes="80px" alt="Logo A l'orée du fer, portrait de Luc Desessarts stylisé" loading="lazy"
               class="hidden sm:block sm:h-15 sm:w-15" />
           </li>
           <li>
@@ -72,7 +73,7 @@
                 assets/images/esalier-rampe-800w.webp   800w,
                 assets/images/esalier-rampe-1200w.webp 1200w
               " sizes="(max-width: 640px) 50vw, (max-width: 1024px) 33vw, 25vw"
-            alt="escalier en métal avec sa rampe réaliser sur mesure"
+            alt="escalier en métal avec sa rampe réaliser sur mesure" loading="lazy"
             class="w-full h-full object-cover group-hover:scale-105 transition duration-300" />
           <figcaption class="text-sm text-black hidden" data-i18n="gallery.ramps.figcaption1">
             escalier en métal avec sa rampe réaliser sur mesure
@@ -85,7 +86,7 @@
                 assets/images/garde-corps-800w.webp   800w,
                 assets/images/garde-corps-1200w.webp 1200w
               " sizes="(max-width: 640px) 50vw, (max-width: 1024px) 33vw, 25vw" alt="garde corps réaliser en fer forgé"
-            class="w-full h-full object-cover group-hover:scale-105 transition duration-300" />
+            loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition duration-300" />
           <figcaption class="text-sm text-black hidden" data-i18n="gallery.ramps.figcaption2">
             garde corps réaliser en fer forgé
           </figcaption>
@@ -97,7 +98,7 @@
                 assets/images/rampe-articulee-800w.webp   800w,
                 assets/images/rampe-articulee-1200w.webp 1200w
               " sizes="(max-width: 640px) 50vw, (max-width: 1024px) 33vw, 25vw" alt="rampe d'escalier métal et bois"
-            class="w-full h-full object-cover group-hover:scale-105 transition duration-300" />
+            loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition duration-300" />
           <figcaption class="text-sm text-black hidden" data-i18n="gallery.ramps.figcaption3">
             rampe d'escalier métal et bois
           </figcaption>
@@ -109,7 +110,7 @@
                 assets/images/rampe-articulee-2-800w.webp   800w,
                 assets/images/rampe-articulee-2-1200w.webp 1200w
               " sizes="(max-width: 640px) 50vw, (max-width: 1024px) 33vw, 25vw"
-            alt="rampe d'escalier métal et bois vue du haut de l'escalier"
+            alt="rampe d'escalier métal et bois vue du haut de l'escalier" loading="lazy"
             class="w-full h-full object-cover group-hover:scale-105 transition duration-300" />
           <figcaption class="text-sm text-black hidden" data-i18n="gallery.ramps.figcaption4">
             rampe d'escalier métal et bois vue du haut de l'escalier
@@ -122,7 +123,7 @@
                 assets/images/rampe-escalier-circulaire-800w.webp   800w,
                 assets/images/rampe-escalier-circulaire-1200w.webp 1200w
               " sizes="(max-width: 640px) 50vw, (max-width: 1024px) 33vw, 25vw" alt="rampe d'escalier en colimaçon"
-            class="w-full h-full object-cover group-hover:scale-105 transition duration-300" />
+            loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition duration-300" />
           <figcaption class="text-sm text-black hidden" data-i18n="gallery.ramps.figcaption5">
             rampe d'escalier en colimaçon
           </figcaption>
@@ -134,7 +135,7 @@
                 assets/images/rampe-escalier-racine-800w.webp   800w,
                 assets/images/rampe-escalier-racine-1200w.webp 1200w
               " sizes="(max-width: 640px) 100vw, (max-width: 1024px) 66vw, 50vw"
-            alt="rampe d'escalier d'inspiration végétale"
+            alt="rampe d'escalier d'inspiration végétale" loading="lazy"
             class="w-full h-full object-cover group-hover:scale-105 transition duration-300" />
           <figcaption class="text-sm text-black hidden" data-i18n="gallery.ramps.figcaption6">
             rampe d'escalier d'inspiration végétale
@@ -147,7 +148,7 @@
                 assets/images/rampe-extérieur-800w.webp   800w,
                 assets/images/rampe-extérieur-1200w.webp 1200w
               " sizes="(max-width: 640px) 100vw, (max-width: 1024px) 66vw, 50vw"
-            alt="rampe d'escalier d'extérieur et garde corps"
+            alt="rampe d'escalier d'extérieur et garde corps" loading="lazy"
             class="w-full h-full object-cover group-hover:scale-105 transition duration-300" />
           <figcaption class="text-sm text-black hidden" data-i18n="gallery.ramps.figcaption7">
             rampe d'escalier d'extérieur et garde corps
@@ -160,7 +161,7 @@
                 assets/images/rampe-circulaire-pres-800w.webp   800w,
                 assets/images/rampe-circulaire-pres-1200w.webp 1200w
               " sizes="(max-width: 640px) 50vw, (max-width: 1024px) 33vw, 25vw"
-            alt="rampe d'escalier en colimaçon vue du haut de l'escalier"
+            alt="rampe d'escalier en colimaçon vue du haut de l'escalier" loading="lazy"
             class="w-full h-full object-cover group-hover:scale-105 transition duration-300" />
           <figcaption class="text-sm text-black hidden" data-i18n="gallery.ramps.figcaption8">
             rampe d'escalier en colimaçon vue du haut de l'escalier
@@ -173,7 +174,7 @@
                 assets/images/rampe-escalier-bas-800w.webp   800w,
                 assets/images/rampe-escalier-bas-1200w.webp 1200w
               " sizes="(max-width: 640px) 50vw, (max-width: 1024px) 33vw, 25vw" alt="garde corps d'escalier"
-            class="w-full h-full object-cover group-hover:scale-105 transition duration-300" />
+            loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition duration-300" />
           <figcaption class="text-sm text-black hidden" data-i18n="gallery.ramps.figcaption9">
             garde corps d'escalier
           </figcaption>
@@ -191,7 +192,7 @@
           <img src="assets/images/tete-de-lit.webp" srcset="
                 assets/images/tete-de-lit-400w.webp 400w,
                 assets/images/tete-de-lit-800w.webp 800w
-              " sizes="33vw" alt="Meuble en fer forgé"
+              " sizes="33vw" alt="Meuble en fer forgé" loading="lazy"
             class="w-full h-full object-cover brightness-50 group-hover:brightness-75 group-hover:scale-105 transition duration-500" />
           <div class="absolute inset-0 flex flex-col justify-center px-6">
             <h3 class="text-white hidden text-2xl font-light md:block" data-i18n="btn.mobilier">
@@ -205,7 +206,7 @@
           <img src="assets/images/realisation-finale.webp" srcset="
                 assets/images/realisation-finale-400w.webp 400w,
                 assets/images/realisation-finale-800w.webp 800w
-              " sizes="33vw" alt="porte en forme de soleil"
+              " sizes="33vw" alt="porte en forme de soleil" loading="lazy"
             class="w-full h-full object-cover brightness-50 group-hover:brightness-75 group-hover:scale-105 transition duration-500" />
           <div class="absolute inset-0 flex flex-col justify-center px-6">
             <h3 class="text-white hidden text-2xl font-light md:block" data-i18n="btn.porte">
@@ -219,7 +220,7 @@
           <img src="assets/images/rampe-et-marquise.webp" srcset="
                 assets/images/rampe-et-marquise-400w.webp 400w,
                 assets/images/rampe-et-marquise-800w.webp 800w
-              " sizes="33vw" alt="Marquises"
+              " sizes="33vw" alt="Marquises" loading="lazy"
             class="w-full h-full object-cover brightness-50 group-hover:brightness-75 group-hover:scale-105 transition duration-500" />
           <div class="absolute inset-0 flex flex-col justify-center px-6">
             <h3 class="text-white hidden text-2xl font-light md:black">
@@ -284,38 +285,38 @@
       <div class="flex flex-col gap-4 items-center justify-start">
         <a href="https://www.metiers-art.com/A-L-OREE-DU-FER-Luc-DESESSARTS"
           class="transition duration-300 hover:opacity-50">
-          <img src="./assets/icons/logo-cma.png" srcset="
-                ./assets/icons/logo-cma-400w.png   400w,
-                ./assets/icons/logo-cma-800w.png   800w,
-                ./assets/icons/logo-cma-1200w.png 1200w
-              " sizes="(max-width: 768px) 56px, 80px" alt="logo métiers d'art Nouvelle-Aquitaine"
+          <img src="./assets/icons/logo-cma.webp" srcset="
+                ./assets/icons/logo-cma-400w.webp   400w,
+                ./assets/icons/logo-cma-800w.webp   800w,
+                ./assets/icons/logo-cma-1200w.webp 1200w
+              " sizes="(max-width: 768px) 56px, 80px" alt="logo métiers d'art Nouvelle-Aquitaine" loading="lazy"
             class="w-14 md:w-20" />
         </a>
 
         <a href="https://formation.cma-nouvelleaquitaine.fr/" class="transition duration-300 hover:opacity-50">
-          <img src="./assets/icons/png-clipart-handicraft-logo-chambre-de-metiers-et-artisanat-empresa-artisan.png"
+          <img src="./assets/icons/png-clipart-handicraft-logo-chambre-de-metiers-et-artisanat-empresa-artisan.webp"
             srcset="
-                ./assets/icons/png-clipart-handicraft-logo-chambre-de-metiers-et-artisanat-empresa-artisan-400w.png   400w,
-                ./assets/icons/png-clipart-handicraft-logo-chambre-de-metiers-et-artisanat-empresa-artisan-800w.png   800w,
-                ./assets/icons/png-clipart-handicraft-logo-chambre-de-metiers-et-artisanat-empresa-artisan-1200w.png 1200w
-              " sizes="(max-width: 768px) 56px, 80px" alt="logo chambre des métiers et artisanats"
+                ./assets/icons/png-clipart-handicraft-logo-chambre-de-metiers-et-artisanat-empresa-artisan-400w.webp   400w,
+                ./assets/icons/png-clipart-handicraft-logo-chambre-de-metiers-et-artisanat-empresa-artisan-800w.webp   800w,
+                ./assets/icons/png-clipart-handicraft-logo-chambre-de-metiers-et-artisanat-empresa-artisan-1200w.webp 1200w
+              " sizes="(max-width: 768px) 56px, 80px" alt="logo chambre des métiers et artisanats" loading="lazy"
             class="w-14 md:w-20" />
         </a>
 
         <a href="https://www.facebook.com/aloreedufer?locale=fr_FR" class="transition duration-300 hover:opacity-50">
-          <img src="./assets/icons/square-facebook-brands-solid.png" srcset="
-                ./assets/icons/square-facebook-brands-solid-400w.png   400w,
-                ./assets/icons/square-facebook-brands-solid-800w.png   800w,
-                ./assets/icons/square-facebook-brands-solid-1200w.png 1200w
-              " sizes="(max-width: 768px) 56px, 80px" alt="logo facebook" class="w-14 md:w-20" />
+          <img src="./assets/icons/square-facebook-brands-solidwebpg" srcset="
+                ./assets/icons/square-facebook-brands-solid-400w.webp   400w,
+                ./assets/icons/square-facebook-brands-solid-800w.webp   800w,
+                ./assets/icons/square-facebook-brands-solid-1200w.webp 1200w
+              " sizes="(max-width: 768px) 56px, 80px" alt="logo facebook" loading="lazy" class="w-14 md:w-20" />
         </a>
 
         <a href="https://www.instagram.com/aloreedufer/" class="transition duration-300 hover:opacity-50">
-          <img src="./assets/icons/square-instagram-brands-solid.png" srcset="
-                ./assets/icons/square-instagram-brands-solid-400w.png   400w,
-                ./assets/icons/square-instagram-brands-solid-800w.png   800w,
-                ./assets/icons/square-instagram-brands-solid-1200w.png 1200w
-              " sizes="(max-width: 768px) 56px, 80px" alt="logo instagram" class="w-14 md:w-20" />
+          <img src="./assets/icons/square-instagram-brands-solid.webp" srcset="
+                ./assets/icons/square-instagram-brands-solid-400w.webp   400w,
+                ./assets/icons/square-instagram-brands-solid-800w.webp   800w,
+                ./assets/icons/square-instagram-brands-solid-1200w.webp 1200w
+              " sizes="(max-width: 768px) 56px, 80px" alt="logo instagram" loading="lazy" class="w-14 md:w-20" />
         </a>
       </div>
     </div>

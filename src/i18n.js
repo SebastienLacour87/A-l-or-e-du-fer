@@ -107,7 +107,7 @@ const translations = {
     "gallery.door.figcaption6": "portail réaliser en fer forgé",
     "gallery.door.figcaption7": "porte vitrée en métal",
     //galerie pergolas
-    "gallery.pergoles.title": "Marquises et Pergolas",
+    "gallery.pergolas.title": "Marquises et Pergolas",
     "gallery.pergolas.figcaption": "marquise structure acier banc et verre",
     "gallery.pergolas.figcaption2": "marquise porte d'entrée",
     "gallery.pergolas.figcaption3": "marquise et rampe pour un perron",
@@ -216,6 +216,9 @@ const translations = {
     "privacy.update.content":
       "La présente politique de confidentialité peut être mise à jour à tout moment afin de refléter les évolutions légales ou les changements apportés au site. La date de dernière mise à jour sera indiquée en bas de page.",
     "privacy.update.date": "Dernière mise à jour : avril 2025",
+    //page merci
+    "page.merci":
+      "Merci pour votre message, nous le traiterons le plus rapidement possible",
   },
   en: {
     //navigation
@@ -317,7 +320,7 @@ const translations = {
     "gallery.door.figcaption6": "wrought-iron gate",
     "gallery.door.figcaption7": "metal glass door",
     //galerie pergolas
-    "gallery.pergoles.title": "Awnings and Pergolas",
+    "gallery.pergolas.title": "Awnings and Pergolas",
     "gallery.pergolas.figcaption": "steel-framed pergola with bench and glass",
     "gallery.pergolas.figcaption2": "front door awning",
     "gallery.pergolas.figcaption3": "canopy and handrail for a front porch",
@@ -425,6 +428,8 @@ const translations = {
     "privacy.update.content":
       "This Privacy Policy may be updated at any time to reflect changes in the law or changes to the website. The date of the last update will be indicated at the bottom of the page.",
     "privacy.update.date": "Last updated: April 2025",
+    "page.merci":
+      "Thank you for your message; we will respond as soon as possible.",
   },
 };
 function setLang(lang) {
