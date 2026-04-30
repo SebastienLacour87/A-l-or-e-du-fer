@@ -1,298 +1,455 @@
 <!doctype html>
 <html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>A-l-Oree-du-Fer - Mentions-Légales</title>
+    <meta
+      name="description"
+      content="Mentions légales du site À l'Orée du Fer — informations légales relatives à l'activité de Luc Desessarts, artisan ferronnier à Pierre-Buffière (87)."
+    />
+    <link rel="shortcut icon" href="assets/images/LOGO-tete-seule.webp" />
+    <link
+      rel="preload"
+      href="assets/font/IMFellFrenchCanonSC-Regular.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <link rel="stylesheet" href="output.css" />
+    <script src="i18n.js" defer></script>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>A-l-Oree-du-Fer - Mentions-Légales</title>
-  <meta name="description"
-    content="Mentions légales du site À l'Orée du Fer — informations légales relatives à l'activité de Luc Desessarts, artisan ferronnier à Pierre-Buffière (87)." />
-  <link rel="shortcut icon" href="assets/images/LOGO-tete-seule.webp" />
-  <link rel="preload" href="assets/font/IMFellFrenchCanonSC-Regular.woff2" as="font" type="font/woff2" crossorigin />
-  <link rel="stylesheet" href="output.css" />
-  <script src="i18n.js" defer></script>
-</head>
-
-<body class="bg-bg-color font-display min-h-screen flex flex-col">
-  <header id="main-header" class="top-0 w-full z-50 bg-white/90 backdrop-blur-sm shadow-md">
-    <section class="w-full h-11 bg-black flex justify-end items-center gap-4 px-8">
-      <div>
-        <a href="contact.html"
-          class="text-white font-display text-xl sm:text-2xl font-bold hover:text-primary border-r-2 pr-2"
-          data-i18n="nav.contact">Contact</a>
-      </div>
-      <div class="flex gap-4">
-        <img src="assets/icons/france-svgrepo-com.svg" alt="drapeau français"
-          class="w-8 h-7 cursor-pointer hover:opacity-70 transition" onclick="setLang('fr')" />
-        <img src="assets/icons/united-kingdom-svgrepo-com.svg" alt="drapeau britannique"
-          class="w-8 h-7 cursor-pointer hover:opacity-70 transition" onclick="setLang('en')" />
-      </div>
-    </section>
-    <section class="w-full">
-      <nav class="flex justify-around items-center px-4 md:px-0 my-1 w-full">
-        <ul class="flex gap-8 items-center w-full justify-around">
-          <li>
-            <img src="assets/images/LOGO-tete-seule.webp" srcset="
+  <body class="bg-bg-color font-display min-h-screen flex flex-col">
+    <header
+      id="main-header"
+      class="top-0 w-full z-50 bg-white/90 backdrop-blur-sm shadow-md"
+    >
+      <section
+        class="w-full h-11 bg-black flex justify-end items-center gap-4 px-8"
+      >
+        <div>
+          <a
+            href="contact.html"
+            class="text-white font-display text-xl sm:text-2xl font-bold hover:text-primary border-r-2 pr-2"
+            data-i18n="nav.contact"
+            >Contact</a
+          >
+        </div>
+        <div class="flex gap-4">
+          <img
+            src="assets/icons/france-svgrepo-com.svg"
+            alt="drapeau français"
+            class="w-8 h-7 cursor-pointer hover:opacity-70 transition"
+            onclick="setLang('fr')"
+          />
+          <img
+            src="assets/icons/united-kingdom-svgrepo-com.svg"
+            alt="drapeau britannique"
+            class="w-8 h-7 cursor-pointer hover:opacity-70 transition"
+            onclick="setLang('en')"
+          />
+        </div>
+      </section>
+      <section class="w-full">
+        <nav class="flex justify-around items-center px-4 md:px-0 my-1 w-full">
+          <ul class="flex gap-8 items-center w-full justify-around">
+            <li>
+              <img
+                src="assets/images/LOGO-tete-seule.webp"
+                srcset="
                   assets/images/LOGO-tete-seule-400w.webp 400w,
                   assets/images/LOGO-tete-seule-800w.webp 800w
-                " sizes="80px" alt="Logo A l'orée du fer, portrait de Luc Desessarts stylisé"
-              class="hidden sm:block sm:h-15 sm:w-15" />
+                "
+                sizes="80px"
+                alt="Logo A l'orée du fer, portrait de Luc Desessarts stylisé"
+                class="hidden sm:block sm:h-15 sm:w-15"
+              />
+            </li>
+            <li>
+              <a
+                href="index.html"
+                class="text-xl font-display text-primary font-bold hover:text-black/50 sm:text-2xl md:text-4xl transition"
+                data-i18n="nav.home"
+                >Accueil</a
+              >
+            </li>
+            <li>
+              <a
+                href="index.html#about"
+                class="text-xl font-display text-primary font-bold hover:text-black/50 sm:text-2xl md:text-4xl transition"
+                data-i18n="nav.about"
+                >À propos</a
+              >
+            </li>
+            <li>
+              <a
+                href="index.html#galerie-photo"
+                class="text-xl font-display text-primary font-bold hover:text-black/50 sm:text-2xl md:text-4xl transition"
+                data-i18n="nav.projects"
+                >Mes chantiers</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </section>
+    </header>
+    <main class="flex-1 pt-32 pb-16 px-8 max-w-4xl mx-auto w-full">
+      <h1
+        class="text-4xl font-display-secondary font-thin text-center mb-4"
+        data-i18n="legal.title"
+      >
+        Mentions Légales
+      </h1>
+      <hr class="w-4/5 my-6 mx-auto text-primary" />
+
+      <!-- Éditeur du site -->
+      <section class="mb-10">
+        <h2
+          class="text-2xl font-display font-bold text-primary mb-4"
+          data-i18n="legal.editor.title"
+        >
+          1. Éditeur du site
+        </h2>
+        <p class="text-lg leading-8">
+          <span data-i18n="legal.editor.intro"
+            >Le présent site est édité par :</span
+          ><br />
+          <strong>Luc Desessarts</strong><br />
+          Artisan ferronnier — À l'Orée du Fer<br />
+          71, Allée des Champs<br />
+          87260 Pierre-Buffière<br />
+          France<br />
+          <span data-i18n="legal.editor.phone">Téléphone :</span> 06 80 50 90
+          09<br />
+          Email :
+          <a
+            href="mailto:lucdesessarts@gmail.com"
+            class="text-primary hover:opacity-60 transition"
+            >lucdesessarts@gmail.com</a
+          ><br />
+          SIRET : 835 281 174 200 22<br />
+          Numéro RM : 8352811742 RM 87
+        </p>
+      </section>
+
+      <!-- Directeur de publication -->
+      <section class="mb-10">
+        <h2
+          class="text-2xl font-display font-bold text-primary mb-4"
+          data-i18n="legal.director.title"
+        >
+          2. Directeur de la publication
+        </h2>
+        <p class="text-lg leading-8" data-i18n="legal.director.content">
+          Luc Desessarts, en qualité d'artisan responsable de l'activité À
+          l'Orée du Fer.
+        </p>
+      </section>
+
+      <!-- Hébergeur -->
+      <section class="mb-10">
+        <h2
+          class="text-2xl font-display font-bold text-primary mb-4"
+          data-i18n="legal.host.title"
+        >
+          3. Hébergeur
+        </h2>
+        <p class="text-lg leading-8">
+          <span data-i18n="legal.host.intro">Ce site est hébergé par :</span
+          ><br />
+          <strong>Netlify, Inc.</strong><br />
+          512 2nd Street, Suite 200<br />
+          San Francisco, CA 94107<br />
+          <span data-i18n="legal.host.country">États-Unis</span><br />
+          <a
+            href="https://www.netlify.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="text-primary hover:opacity-60 transition"
+            >www.netlify.com</a
+          >
+        </p>
+      </section>
+
+      <!-- Conception -->
+      <section class="mb-10">
+        <h2
+          class="text-2xl font-display font-bold text-primary mb-4"
+          data-i18n="legal.dev.title"
+        >
+          4. Conception et développement
+        </h2>
+        <p class="text-lg leading-8">
+          <span data-i18n="legal.dev.content">
+            Site conçu et développé par :
+          </span>
+
+          <br />
+          <strong>Sébastien Lacour — TentacleCode</strong><br />
+          <a
+            href="https://www.tentaclecode.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="text-primary hover:opacity-60 transition"
+            >www.tentaclecode.com</a
+          >
+        </p>
+      </section>
+
+      <!-- Propriété intellectuelle -->
+      <section class="mb-10">
+        <h2
+          class="text-2xl font-display font-bold text-primary mb-4"
+          data-i18n="legal.ip.title"
+        >
+          5. Propriété intellectuelle
+        </h2>
+        <p class="text-lg leading-8" data-i18n="legal.ip.content">
+          L'ensemble des contenus présents sur ce site (textes, photographies,
+          illustrations, logo) sont la propriété exclusive de Luc Desessarts — À
+          l'Orée du Fer, sauf mention contraire. Toute reproduction,
+          représentation ou diffusion, totale ou partielle, sans autorisation
+          écrite préalable est strictement interdite et constitue une
+          contrefaçon sanctionnée par le Code de la propriété intellectuelle.
+        </p>
+      </section>
+
+      <!-- Responsabilité -->
+      <section class="mb-10">
+        <h2
+          class="text-2xl font-display font-bold text-primary mb-4"
+          data-i18n="legal.liability.title"
+        >
+          6. Limitation de responsabilité
+        </h2>
+        <p class="text-lg leading-8" data-i18n="legal.liability.content">
+          Luc Desessarts s'efforce d'assurer l'exactitude et la mise à jour des
+          informations diffusées sur ce site. Toutefois, il ne peut garantir
+          l'exactitude, la complétude ou l'actualité des informations publiées
+          et décline toute responsabilité pour toute imprécision ou omission
+          portant sur les informations disponibles sur ce site.
+        </p>
+      </section>
+
+      <!-- Données personnelles -->
+      <section class="mb-10">
+        <h2
+          class="text-2xl font-display font-bold text-primary mb-4"
+          data-i18n="legal.data.title"
+        >
+          7. Données personnelles
+        </h2>
+        <p class="text-lg leading-8">
+          <span data-i18n="legal.data.content">
+            Les informations collectées via le formulaire de contact sont
+            utilisées uniquement dans le cadre de la relation commerciale avec
+            Luc Desessarts. Conformément au Règlement Général sur la Protection
+            des Données (RGPD) et à la loi Informatique et Libertés, vous
+            disposez d'un droit d'accès, de rectification et de suppression de
+            vos données. Pour exercer ce droit, contactez-nous à l'adresse :
+          </span>
+          <a
+            href="mailto:lucdesessarts@gmail.com"
+            class="text-primary hover:opacity-60 transition"
+            >lucdesessarts@gmail.com</a
+          >.<br />
+          <span data-i18n="legal.data.more"
+            >Pour plus d'informations, consultez notre</span
+          >
+          <a
+            href="./politique-de-confidentialitee.html"
+            class="text-primary hover:opacity-60 transition"
+            data-i18n="legal.data.link"
+            >Politique de confidentialité</a
+          >.
+        </p>
+      </section>
+
+      <!-- Cookies -->
+      <section class="mb-10">
+        <h2
+          class="text-2xl font-display font-bold text-primary mb-4"
+          data-i18n="legal.cookies.title"
+        >
+          8. Cookies
+        </h2>
+        <p class="text-lg leading-8" data-i18n="legal.cookies.content">
+          Ce site n'utilise pas de cookies de traçage ou publicitaires. Aucune
+          donnée de navigation n'est collectée à des fins commerciales ou
+          statistiques.
+        </p>
+      </section>
+
+      <!-- Droit applicable -->
+      <section class="mb-10">
+        <h2
+          class="text-2xl font-display font-bold text-primary mb-4"
+          data-i18n="legal.law.title"
+        >
+          9. Droit applicable
+        </h2>
+        <p class="text-lg leading-8" data-i18n="legal.law.content">
+          Le présent site et ses mentions légales sont soumis au droit français.
+          Tout litige relatif à l'utilisation de ce site sera soumis à la
+          compétence exclusive des tribunaux français.
+        </p>
+      </section>
+    </main>
+    <footer
+      class="bg-primary grid grid-cols-1 md:grid-cols-2 py-12 px-6 md:px-16 gap-8 md:gap-0"
+    >
+      <div class="flex flex-col gap-4 justify-start items-center text-center">
+        <h2
+          class="text-xl md:text-2xl font-display text-secondary font-bold tracking-wide"
+          data-i18n="footer.title"
+        >
+          Réalisation architecturale extérieur et intérieur en métal
+        </h2>
+        <a
+          href="mailto:lucdesessarts@gmail.com"
+          class="text-lg md:text-2xl text-bg-color hover:opacity-50"
+        >
+          lucdesessarts@gmail.com
+        </a>
+        <a
+          href="index.html"
+          class="text-lg md:text-2xl text-bg-color hover:opacity-50"
+        >
+          www.aloreedufer.com
+        </a>
+        <a
+          href="contact.html"
+          class="text-lg text-bg-color border-2 border-secondary p-2 rounded-lg hover:bg-secondary hover:text-primary transition"
+        >
+          Contact
+        </a>
+        <hr class="h-1 w-4/5 my-2 text-secondary" />
+        <p class="text-xl md:text-2xl text-bg-color font-black">France</p>
+        <p class="text-lg md:text-xl text-bg-color leading-10 text-center">
+          71, Allée des Champs<br />87260 Pierre-Buffière<br />06 80 50 90 09
+        </p>
+      </div>
+
+      <div class="grid grid-cols-2 items-start justify-start gap-4">
+        <ul>
+          <li
+            class="text-lg md:text-2xl text-bg-color md:text-secondary font-bold pt-4 hover:opacity-50 transition"
+          >
+            <a href="index.html" data-i18n="footer.nav.home">Accueil</a>
           </li>
-          <li>
-            <a href="index.html"
-              class="text-xl font-display text-primary font-bold hover:text-black/50 sm:text-2xl md:text-4xl transition"
-              data-i18n="nav.home">Accueil</a>
+          <li
+            class="text-lg md:text-2xl text-bg-color md:text-secondary font-bold pt-4 hover:opacity-50 transition"
+          >
+            <a href="index.html#about" data-i18n="footer.nav.about">À Propos</a>
           </li>
-          <li>
-            <a href="index.html#about"
-              class="text-xl font-display text-primary font-bold hover:text-black/50 sm:text-2xl md:text-4xl transition"
-              data-i18n="nav.about">À propos</a>
+          <li
+            class="text-lg md:text-2xl text-bg-color md:text-secondary font-bold pt-4 hover:opacity-50 transition"
+          >
+            <a href="index.html#gallery" data-i18n="footer.nav.gallery"
+              >Mes Chantiers</a
+            >
           </li>
-          <li>
-            <a href="index.html#galerie-photo"
-              class="text-xl font-display text-primary font-bold hover:text-black/50 sm:text-2xl md:text-4xl transition"
-              data-i18n="nav.projects">Mes chantiers</a>
+          <li
+            class="text-lg md:text-2xl text-bg-color md:text-secondary font-bold pt-4 hover:opacity-50 transition"
+          >
+            <a href="contact.html" data-i18n="footer.nav.conatct">Contact</a>
+          </li>
+          <li
+            class="mt-8 md:mt-16 text-bg-color text-base md:text-lg hover:opacity-50 transition"
+          >
+            <a href="./mention-legale.html" data-i18n="footer.nav.mention"
+              >Mentions Légales</a
+            >
+          </li>
+          <li
+            class="text-bg-color text-base md:text-lg hover:opacity-50 transition"
+          >
+            <a
+              href="./politique-de-confidentialitee.html"
+              data-i18n="footer.nav.confidentialite"
+            >
+              Politique de Confidentialitée
+            </a>
+          </li>
+          <li
+            class="text-bg-color text-base md:text-lg hover:opacity-50 transition"
+          >
+            <a href="#">www.tentaclecode.com</a>
           </li>
         </ul>
-      </nav>
-    </section>
-  </header>
-  <main class="flex-1 pt-32 pb-16 px-8 max-w-4xl mx-auto w-full">
-    <h1 class="text-4xl font-display-secondary font-thin text-center mb-4" data-i18n="legal.title">
-      Mentions Légales
-    </h1>
-    <hr class="w-4/5 my-6 mx-auto text-primary" />
 
-    <!-- Éditeur du site -->
-    <section class="mb-10">
-      <h2 class="text-2xl font-display font-bold text-primary mb-4" data-i18n="legal.editor.title">
-        1. Éditeur du site
-      </h2>
-      <p class="text-lg leading-8">
-        <span data-i18n="legal.editor.intro">Le présent site est édité par :</span><br />
-        <strong>Luc Desessarts</strong><br />
-        Artisan ferronnier — À l'Orée du Fer<br />
-        71, Allée des Champs<br />
-        87260 Pierre-Buffière<br />
-        France<br />
-        <span data-i18n="legal.editor.phone">Téléphone :</span> 06 80 50 90
-        09<br />
-        Email :
-        <a href="mailto:lucdesessarts@gmail.com"
-          class="text-primary hover:opacity-60 transition">lucdesessarts@gmail.com</a><br />
-        SIRET : 835 281 174 200 22<br />
-        Numéro RM : 8352811742 RM 87
-      </p>
-    </section>
-
-    <!-- Directeur de publication -->
-    <section class="mb-10">
-      <h2 class="text-2xl font-display font-bold text-primary mb-4" data-i18n="legal.director.title">
-        2. Directeur de la publication
-      </h2>
-      <p class="text-lg leading-8" data-i18n="legal.director.content">
-        Luc Desessarts, en qualité d'artisan responsable de l'activité À
-        l'Orée du Fer.
-      </p>
-    </section>
-
-    <!-- Hébergeur -->
-    <section class="mb-10">
-      <h2 class="text-2xl font-display font-bold text-primary mb-4" data-i18n="legal.host.title">
-        3. Hébergeur
-      </h2>
-      <p class="text-lg leading-8">
-        <span data-i18n="legal.host.intro">Ce site est hébergé par :</span><br />
-        <strong>Netlify, Inc.</strong><br />
-        512 2nd Street, Suite 200<br />
-        San Francisco, CA 94107<br />
-        <span data-i18n="legal.host.country">États-Unis</span><br />
-        <a href="https://www.netlify.com" target="_blank" rel="noopener noreferrer"
-          class="text-primary hover:opacity-60 transition">www.netlify.com</a>
-      </p>
-    </section>
-
-    <!-- Conception -->
-    <section class="mb-10">
-      <h2 class="text-2xl font-display font-bold text-primary mb-4" data-i18n="legal.dev.title">
-        4. Conception et développement
-      </h2>
-      <p class="text-lg leading-8">
-        <span data-i18n="legal.dev.content">
-          Site conçu et développé par :
-        </span>
-
-        <br />
-        <strong>Sébastien Lacour — TentacleCode</strong><br />
-        <a href="https://www.tentaclecode.com" target="_blank" rel="noopener noreferrer"
-          class="text-primary hover:opacity-60 transition">www.tentaclecode.com</a>
-      </p>
-    </section>
-
-    <!-- Propriété intellectuelle -->
-    <section class="mb-10">
-      <h2 class="text-2xl font-display font-bold text-primary mb-4" data-i18n="legal.ip.title">
-        5. Propriété intellectuelle
-      </h2>
-      <p class="text-lg leading-8" data-i18n="legal.ip.content">
-        L'ensemble des contenus présents sur ce site (textes, photographies,
-        illustrations, logo) sont la propriété exclusive de Luc Desessarts — À
-        l'Orée du Fer, sauf mention contraire. Toute reproduction,
-        représentation ou diffusion, totale ou partielle, sans autorisation
-        écrite préalable est strictement interdite et constitue une
-        contrefaçon sanctionnée par le Code de la propriété intellectuelle.
-      </p>
-    </section>
-
-    <!-- Responsabilité -->
-    <section class="mb-10">
-      <h2 class="text-2xl font-display font-bold text-primary mb-4" data-i18n="legal.liability.title">
-        6. Limitation de responsabilité
-      </h2>
-      <p class="text-lg leading-8" data-i18n="legal.liability.content">
-        Luc Desessarts s'efforce d'assurer l'exactitude et la mise à jour des
-        informations diffusées sur ce site. Toutefois, il ne peut garantir
-        l'exactitude, la complétude ou l'actualité des informations publiées
-        et décline toute responsabilité pour toute imprécision ou omission
-        portant sur les informations disponibles sur ce site.
-      </p>
-    </section>
-
-    <!-- Données personnelles -->
-    <section class="mb-10">
-      <h2 class="text-2xl font-display font-bold text-primary mb-4" data-i18n="legal.data.title">
-        7. Données personnelles
-      </h2>
-      <p class="text-lg leading-8">
-        <span data-i18n="legal.data.content">
-          Les informations collectées via le formulaire de contact sont
-          utilisées uniquement dans le cadre de la relation commerciale avec
-          Luc Desessarts. Conformément au Règlement Général sur la Protection
-          des Données (RGPD) et à la loi Informatique et Libertés, vous
-          disposez d'un droit d'accès, de rectification et de suppression de
-          vos données. Pour exercer ce droit, contactez-nous à l'adresse :
-        </span>
-        <a href="mailto:lucdesessarts@gmail.com"
-          class="text-primary hover:opacity-60 transition">lucdesessarts@gmail.com</a>.<br />
-        <span data-i18n="legal.data.more">Pour plus d'informations, consultez notre</span>
-        <a href="./politique-de-confidentialitee.html" class="text-primary hover:opacity-60 transition"
-          data-i18n="legal.data.link">Politique de confidentialité</a>.
-      </p>
-    </section>
-
-    <!-- Cookies -->
-    <section class="mb-10">
-      <h2 class="text-2xl font-display font-bold text-primary mb-4" data-i18n="legal.cookies.title">
-        8. Cookies
-      </h2>
-      <p class="text-lg leading-8" data-i18n="legal.cookies.content">
-        Ce site n'utilise pas de cookies de traçage ou publicitaires. Aucune
-        donnée de navigation n'est collectée à des fins commerciales ou
-        statistiques.
-      </p>
-    </section>
-
-    <!-- Droit applicable -->
-    <section class="mb-10">
-      <h2 class="text-2xl font-display font-bold text-primary mb-4" data-i18n="legal.law.title">
-        9. Droit applicable
-      </h2>
-      <p class="text-lg leading-8" data-i18n="legal.law.content">
-        Le présent site et ses mentions légales sont soumis au droit français.
-        Tout litige relatif à l'utilisation de ce site sera soumis à la
-        compétence exclusive des tribunaux français.
-      </p>
-    </section>
-  </main>
-  <footer class="bg-primary grid grid-cols-1 md:grid-cols-2 py-12 px-6 md:px-16 gap-8 md:gap-0">
-    <div class="flex flex-col gap-4 justify-start items-center text-center">
-      <h2 class="text-xl md:text-2xl font-display text-secondary font-bold tracking-wide" data-i18n="footer.title">
-        Réalisation architecturale extérieur et intérieur en métal
-      </h2>
-      <a href="mailto:lucdesessarts@gmail.com" class="text-lg md:text-2xl text-bg-color hover:opacity-50">
-        lucdesessarts@gmail.com
-      </a>
-      <a href="index.html" class="text-lg md:text-2xl text-bg-color hover:opacity-50">
-        www.aloreedufer.com
-      </a>
-      <a href="contact.html"
-        class="text-lg text-bg-color border-2 border-secondary p-2 rounded-lg hover:bg-secondary hover:text-primary transition">
-        Contact
-      </a>
-      <hr class="h-1 w-4/5 my-2 text-secondary" />
-      <p class="text-xl md:text-2xl text-bg-color font-black">France</p>
-      <p class="text-lg md:text-xl text-bg-color leading-10 text-center">
-        71, Allée des Champs<br />87260 Pierre-Buffière<br />06 80 50 90 09
-      </p>
-    </div>
-
-    <div class="grid grid-cols-2 items-start justify-start gap-4">
-      <ul>
-        <li class="text-lg md:text-2xl text-bg-color md:text-secondary font-bold pt-4 hover:opacity-50 transition">
-          <a href="index.html" data-i18n="footer.nav.home">Accueil</a>
-        </li>
-        <li class="text-lg md:text-2xl text-bg-color md:text-secondary font-bold pt-4 hover:opacity-50 transition">
-          <a href="index.html#about" data-i18n="footer.nav.about">À Propos</a>
-        </li>
-        <li class="text-lg md:text-2xl text-bg-color md:text-secondary font-bold pt-4 hover:opacity-50 transition">
-          <a href="index.html#gallery" data-i18n="footer.nav.gallery">Mes Chantiers</a>
-        </li>
-        <li class="text-lg md:text-2xl text-bg-color md:text-secondary font-bold pt-4 hover:opacity-50 transition">
-          <a href="contact.html" data-i18n="footer.nav.conatct">Contact</a>
-        </li>
-        <li class="mt-8 md:mt-16 text-bg-color text-base md:text-lg hover:opacity-50 transition">
-          <a href="./mention-legale.html" data-i18n="footer.nav.mention">Mentions Légales</a>
-        </li>
-        <li class="text-bg-color text-base md:text-lg hover:opacity-50 transition">
-          <a href="./politique-de-confidentialitee.html" data-i18n="footer.nav.confidentialite">
-            Politique de Confidentialitée
-          </a>
-        </li>
-        <li class="text-bg-color text-base md:text-lg hover:opacity-50 transition">
-          <a href="#">www.tentaclecode.com</a>
-        </li>
-      </ul>
-
-      <div class="flex flex-col gap-4 items-center justify-start">
-        <a href="https://www.metiers-art.com/A-L-OREE-DU-FER-Luc-DESESSARTS"
-          class="transition duration-300 hover:opacity-50">
-          <img src="./assets/icons/logo-cma-400w.webp" srcset="
+        <div class="flex flex-col gap-4 items-center justify-start">
+          <a
+            href="https://www.metiers-art.com/A-L-OREE-DU-FER-Luc-DESESSARTS"
+            class="transition duration-300 hover:opacity-50"
+          >
+            <img
+              src="./assets/icons/logo-cma-400w.webp"
+              srcset="
                 ./assets/icons/logo-cma-400w.webp   400w,
                 ./assets/icons/logo-cma-800w.webp   800w,
                 ./assets/icons/logo-cma-1200w.webp 1200w
-              " sizes="(max-width: 768px) 56px, 80px" alt="logo métiers d'art Nouvelle-Aquitaine"
-            class="w-14 md:w-20" />
-        </a>
+              "
+              sizes="(max-width: 768px) 56px, 80px"
+              alt="logo métiers d'art Nouvelle-Aquitaine"
+              class="w-14 md:w-20"
+            />
+          </a>
 
-        <a href="https://formation.cma-nouvelleaquitaine.fr/" class="transition duration-300 hover:opacity-50">
-          <img
-            src="./assets/icons/png-clipart-handicraft-logo-chambre-de-metiers-et-artisanat-empresa-artisan-400w.webp"
-            srcset="
-                ./assets/icons/png-clipart-handicraft-logo-chambre-de-metiers-et-artisanat-empresa-artisan-400w.webp   400w,
-                ./assets/icons/png-clipart-handicraft-logo-chambre-de-metiers-et-artisanat-empresa-artisan-800w.webp   800w,
-                ./assets/icons/png-clipart-handicraft-logo-chambre-de-metiers-et-artisanat-empresa-artisan-1200w.webp 1200w
-              " sizes="(max-width: 768px) 56px, 80px" alt="logo chambre des métiers et artisanats"
-            class="w-14 md:w-20" />
-        </a>
+          <a
+            href="https://formation.cma-nouvelleaquitaine.fr/"
+            class="transition duration-300 hover:opacity-50"
+          >
+            <img
+              src="./assets/icons/logo-artisan-art1.webp"
+              srcset="
+                ./assets/icons/logo-artisan-art1-400w.webp   400w,
+                ./assets/icons/logo-artisan-art1-800w.webp   800w,
+                ./assets/icons/logo-artisan-art1-1200w.webp 1200w
+              "
+              sizes="(max-width: 768px) 56px, 80px"
+              alt="logo artisanat d'art"
+              loading="lazy"
+              class="w-14 md:w-20"
+            />
+          </a>
 
-        <a href="https://www.facebook.com/aloreedufer?locale=fr_FR" class="transition duration-300 hover:opacity-50">
-          <img src="./assets/icons/square-facebook-brands-solid-400w.webp" srcset="
+          <a
+            href="https://www.facebook.com/aloreedufer?locale=fr_FR"
+            class="transition duration-300 hover:opacity-50"
+          >
+            <img
+              src="./assets/icons/square-facebook-brands-solid-400w.webp"
+              srcset="
                 ./assets/icons/square-facebook-brands-solid-400w.webp   400w,
                 ./assets/icons/square-facebook-brands-solid-800w.webp   800w,
                 ./assets/icons/square-facebook-brands-solid-1200w.webp 1200w
-              " sizes="(max-width: 768px) 56px, 80px" alt="logo facebook" class="w-14 md:w-20" />
-        </a>
+              "
+              sizes="(max-width: 768px) 56px, 80px"
+              alt="logo facebook"
+              class="w-14 md:w-20"
+            />
+          </a>
 
-        <a href="https://www.instagram.com/aloreedufer/" class="transition duration-300 hover:opacity-50">
-          <img src="./assets/icons/square-instagram-brands-solid-400w.webp" srcset="
+          <a
+            href="https://www.instagram.com/aloreedufer/"
+            class="transition duration-300 hover:opacity-50"
+          >
+            <img
+              src="./assets/icons/square-instagram-brands-solid-400w.webp"
+              srcset="
                 ./assets/icons/square-instagram-brands-solid-400w.webp   400w,
                 ./assets/icons/square-instagram-brands-solid-800w.webp   800w,
                 ./assets/icons/square-instagram-brands-solid-1200w.webp 1200w
-              " sizes="(max-width: 768px) 56px, 80px" alt="logo instagram" class="w-14 md:w-20" />
-        </a>
+              "
+              sizes="(max-width: 768px) 56px, 80px"
+              alt="logo instagram"
+              class="w-14 md:w-20"
+            />
+          </a>
+        </div>
       </div>
-    </div>
-  </footer>
-</body>
-
+    </footer>
+  </body>
 </html>

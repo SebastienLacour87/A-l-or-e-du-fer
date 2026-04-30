@@ -1,313 +1,556 @@
 <!doctype html>
 <html lang="fr">
+  <head>
+    <meta charset=" UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portes et Fenêtre - Galerie-Photo</title>
+    <meta
+      name="description"
+      content="Galerie portes et fenêtres — Découvrez les réalisations sur mesure de Luc Desessarts : portails, portes vitrées, fenêtres intérieures en fer forgé et métal."
+    />
+    <link rel="shortcut icon" href="assets/images/LOGO-tete-seule.webp" />
+    <link
+      rel="preload"
+      href="assets/font/IMFellFrenchCanonSC-Regular.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <link rel="stylesheet" href="output.css" />
+    <script src="index.js" defer></script>
+    <script src="gallery.js" defer></script>
+    <script src="i18n.js" defer></script>
+  </head>
 
-<head>
-  <meta charset=" UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Portes et Fenêtre - Galerie-Photo</title>
-  <meta name="description"
-    content="Galerie portes et fenêtres — Découvrez les réalisations sur mesure de Luc Desessarts : portails, portes vitrées, fenêtres intérieures en fer forgé et métal." />
-  <link rel="shortcut icon" href="assets/images/LOGO-tete-seule.webp" />
-  <link rel="preload" href="assets/font/IMFellFrenchCanonSC-Regular.woff2" as="font" type="font/woff2" crossorigin />
-  <link rel="stylesheet" href="output.css" />
-  <script src="index.js" defer></script>
-  <script src="gallery.js" defer></script>
-  <script src="i18n.js" defer></script>
-</head>
-
-<body class="bg-bg-color font-display min-h-screen flex flex-col">
-  <header id="main-header" class="top-0 w-full z-50 bg-white/90 backdrop-blur-sm shadow-md">
-    <section class="w-full h-11 bg-black flex justify-end items-center gap-4 px-8">
-      <div>
-        <a href="contact.html"
-          class="text-white font-display text-xl sm:text-2xl font-bold hover:text-primary border-r-2 pr-2"
-          data-i18n="nav.contact">Contact</a>
-      </div>
-      <div class="flex gap-4">
-        <img src="assets/icons/france-svgrepo-com.svg" alt="drapeau français"
-          class="w-8 h-7 cursor-pointer hover:opacity-70 transition" onclick="setLang('fr')" />
-        <img src="assets/icons/united-kingdom-svgrepo-com.svg" alt="drapeau britannique"
-          class="w-8 h-7 cursor-pointer hover:opacity-70 transition" onclick="setLang('en')" />
-      </div>
-    </section>
-    <section class="w-full">
-      <nav class="flex justify-around items-center px-4 md:px-0 my-1 w-full">
-        <ul class="flex gap-8 items-center w-full justify-around">
-          <li>
-            <img src="assets/images/LOGO-tete-seule.webp" srcset="
+  <body class="bg-bg-color font-display min-h-screen flex flex-col">
+    <header
+      id="main-header"
+      class="top-0 w-full z-50 bg-white/90 backdrop-blur-sm shadow-md"
+    >
+      <section
+        class="w-full h-11 bg-black flex justify-end items-center gap-4 px-8"
+      >
+        <div>
+          <a
+            href="contact.html"
+            class="text-white font-display text-xl sm:text-2xl font-bold hover:text-primary border-r-2 pr-2"
+            data-i18n="nav.contact"
+            >Contact</a
+          >
+        </div>
+        <div class="flex gap-4">
+          <img
+            src="assets/icons/france-svgrepo-com.svg"
+            alt="drapeau français"
+            class="w-8 h-7 cursor-pointer hover:opacity-70 transition"
+            onclick="setLang('fr')"
+          />
+          <img
+            src="assets/icons/united-kingdom-svgrepo-com.svg"
+            alt="drapeau britannique"
+            class="w-8 h-7 cursor-pointer hover:opacity-70 transition"
+            onclick="setLang('en')"
+          />
+        </div>
+      </section>
+      <section class="w-full">
+        <nav class="flex justify-around items-center px-4 md:px-0 my-1 w-full">
+          <ul class="flex gap-8 items-center w-full justify-around">
+            <li>
+              <img
+                src="assets/images/LOGO-tete-seule.webp"
+                srcset="
                   assets/images/LOGO-tete-seule-400w.webp 400w,
                   assets/images/LOGO-tete-seule-800w.webp 800w
-                " sizes="80px" alt="Logo A l'orée du fer, portrait de Luc Desessarts stylisé" loading="lazy"
-              class="hidden sm:block sm:h-15 sm:w-15" />
-          </li>
-          <li>
-            <a href="index.html"
-              class="text-xl font-display text-primary font-bold hover:text-black/50 sm:text-2xl md:text-4xl transition"
-              data-i18n="nav.home">Accueil</a>
-          </li>
-          <li>
-            <a href="index.html#about"
-              class="text-xl font-display text-primary font-bold hover:text-black/50 sm:text-2xl md:text-4xl transition"
-              data-i18n="nav.about">À propos</a>
-          </li>
-          <li>
-            <a href="index.html#galerie-photo"
-              class="text-xl font-display text-primary font-bold hover:text-black/50 sm:text-2xl md:text-4xl transition"
-              data-i18n="nav.projects">Mes chantiers</a>
-          </li>
-        </ul>
-      </nav>
-    </section>
-  </header>
-  <main>
-    <section>
-      <h1 class="text-2xl md:text-4xl font-display-secondary font-thin text-center my-10 md:my-40"
-        data-i18n="gallery.door.title">
-        Portes et Fenêtres
-      </h1>
-      <hr class="w-4/5 my-4 mx-auto text-primary" />
-      <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-3 px-8 py-12 auto-rows-[400px]">
-        <figure class="gallery-item overflow-hidden rounded-lg cursor-pointer group" data-lightbox>
-          <img src="assets/images/fenetre.webp" srcset="
+                "
+                sizes="80px"
+                alt="Logo A l'orée du fer, portrait de Luc Desessarts stylisé"
+                loading="lazy"
+                class="hidden sm:block sm:h-15 sm:w-15"
+              />
+            </li>
+            <li>
+              <a
+                href="index.html"
+                class="text-xl font-display text-primary font-bold hover:text-black/50 sm:text-2xl md:text-4xl transition"
+                data-i18n="nav.home"
+                >Accueil</a
+              >
+            </li>
+            <li>
+              <a
+                href="index.html#about"
+                class="text-xl font-display text-primary font-bold hover:text-black/50 sm:text-2xl md:text-4xl transition"
+                data-i18n="nav.about"
+                >À propos</a
+              >
+            </li>
+            <li>
+              <a
+                href="index.html#galerie-photo"
+                class="text-xl font-display text-primary font-bold hover:text-black/50 sm:text-2xl md:text-4xl transition"
+                data-i18n="nav.projects"
+                >Mes chantiers</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </section>
+    </header>
+    <main>
+      <section>
+        <h1
+          class="text-2xl md:text-4xl font-display-secondary font-thin text-center my-10 md:my-40"
+          data-i18n="gallery.door.title"
+        >
+          Portes et Fenêtres
+        </h1>
+        <hr class="w-4/5 my-4 mx-auto text-primary" />
+        <div
+          class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-3 px-8 py-12 auto-rows-[400px]"
+        >
+          <figure
+            class="gallery-item overflow-hidden rounded-lg cursor-pointer group"
+            data-lightbox
+          >
+            <img
+              src="assets/images/fenetre.webp"
+              srcset="
                 assets/images/fenetre-400w.webp   400w,
                 assets/images/fenetre-800w.webp   800w,
                 assets/images/fenetre-1200w.webp 1200w
-              " sizes="(max-width: 640px) 50vw, (max-width: 1024px) 33vw, 25vw"
-            alt="Fenêtre d'intérieur réaliser sur mesure" loading="lazy"
-            class="w-full h-full object-cover group-hover:scale-105 transition duration-300" />
-          <figcaption class="text-sm text-black hidden" data-i18n="gallery.door.figcaption">
-            Fenêtre d'intérieur réaliser sur mesure
-          </figcaption>
-        </figure>
+              "
+              sizes="(max-width: 640px) 50vw, (max-width: 1024px) 33vw, 25vw"
+              alt="Fenêtre d'intérieur réaliser sur mesure"
+              loading="lazy"
+              class="w-full h-full object-cover group-hover:scale-105 transition duration-300"
+            />
+            <figcaption
+              class="text-sm text-black hidden"
+              data-i18n="gallery.door.figcaption"
+            >
+              Fenêtre d'intérieur réaliser sur mesure
+            </figcaption>
+          </figure>
 
-        <figure class="gallery-item overflow-hidden rounded-lg cursor-pointer group" data-lightbox>
-          <img src="assets/images/porte-de-caveau.webp" srcset="
+          <figure
+            class="gallery-item overflow-hidden rounded-lg cursor-pointer group"
+            data-lightbox
+          >
+            <img
+              src="assets/images/porte-de-caveau.webp"
+              srcset="
                 assets/images/porte-de-caveau-400w.webp   400w,
                 assets/images/porte-de-caveau-800w.webp   800w,
                 assets/images/porte-de-caveau-1200w.webp 1200w
-              " sizes="(max-width: 640px) 50vw, (max-width: 1024px) 33vw, 25vw"
-            alt="Porte réaliser en fer forgé pour une chapelle" loading="lazy"
-            class="w-full h-full object-cover group-hover:scale-105 transition duration-300" />
-          <figcaption class="text-sm text-black hidden" data-i18n="gallery.door.figcaption2">
-            Porte réaliser en fer forgé pour une chapelle
-          </figcaption>
-        </figure>
+              "
+              sizes="(max-width: 640px) 50vw, (max-width: 1024px) 33vw, 25vw"
+              alt="Porte réaliser en fer forgé pour une chapelle"
+              loading="lazy"
+              class="w-full h-full object-cover group-hover:scale-105 transition duration-300"
+            />
+            <figcaption
+              class="text-sm text-black hidden"
+              data-i18n="gallery.door.figcaption2"
+            >
+              Porte réaliser en fer forgé pour une chapelle
+            </figcaption>
+          </figure>
 
-        <figure class="gallery-item md:row-span-2 overflow-hidden rounded-lg cursor-pointer group" data-lightbox>
-          <img src="assets/images/porte-vitrail.webp" srcset="
+          <figure
+            class="gallery-item md:row-span-2 overflow-hidden rounded-lg cursor-pointer group"
+            data-lightbox
+          >
+            <img
+              src="assets/images/porte-vitrail.webp"
+              srcset="
                 assets/images/porte-vitrail-400w.webp   400w,
                 assets/images/porte-vitrail-800w.webp   800w,
                 assets/images/porte-vitrail-1200w.webp 1200w
-              " sizes="(max-width: 640px) 50vw, (max-width: 1024px) 33vw, 25vw"
-            alt="porte vitrail dont la partie basse s'ouvre indépendamment de la partie haute" loading="lazy"
-            class="w-full h-full object-cover group-hover:scale-105 transition duration-300" />
-          <figcaption class="text-sm text-black hidden" data-i18n="gallery.door.figcaption3">
-            porte vitrail dont la partie basse s'ouvre indépendamment de la
-            partie haute
-          </figcaption>
-        </figure>
+              "
+              sizes="(max-width: 640px) 50vw, (max-width: 1024px) 33vw, 25vw"
+              alt="porte vitrail dont la partie basse s'ouvre indépendamment de la partie haute"
+              loading="lazy"
+              class="w-full h-full object-cover group-hover:scale-105 transition duration-300"
+            />
+            <figcaption
+              class="text-sm text-black hidden"
+              data-i18n="gallery.door.figcaption3"
+            >
+              porte vitrail dont la partie basse s'ouvre indépendamment de la
+              partie haute
+            </figcaption>
+          </figure>
 
-        <figure class="gallery-item overflow-hidden rounded-lg cursor-pointer group" data-lightbox>
-          <img src="assets/images/realisation-finale.webp" srcset="
+          <figure
+            class="gallery-item overflow-hidden rounded-lg cursor-pointer group"
+            data-lightbox
+          >
+            <img
+              src="assets/images/realisation-finale.webp"
+              srcset="
                 assets/images/realisation-finale-400w.webp  400w,
                 assets/images/realisation-finale-800w.webp  800w,
                 assets/images/realisation-final-1200w.webp 1200w
-              " sizes="(max-width: 640px) 50vw, (max-width: 1024px) 33vw, 25vw"
-            alt="grille de porte d'entrée dont la forme rappel le soleil" loading="lazy"
-            class="w-full h-full object-cover group-hover:scale-105 transition duration-300" />
-          <figcaption class="text-sm text-black hidden" data-i18n="gallery.door.figcaption4">
-            grille de porte d'entrée dont la forme rappel le soleil
-          </figcaption>
-        </figure>
+              "
+              sizes="(max-width: 640px) 50vw, (max-width: 1024px) 33vw, 25vw"
+              alt="grille de porte d'entrée dont la forme rappel le soleil"
+              loading="lazy"
+              class="w-full h-full object-cover group-hover:scale-105 transition duration-300"
+            />
+            <figcaption
+              class="text-sm text-black hidden"
+              data-i18n="gallery.door.figcaption4"
+            >
+              grille de porte d'entrée dont la forme rappel le soleil
+            </figcaption>
+          </figure>
 
-        <figure class="gallery-item overflow-hidden rounded-lg cursor-pointer group" data-lightbox>
-          <img src="assets/images/struture-vitree.webp" srcset="
+          <figure
+            class="gallery-item overflow-hidden rounded-lg cursor-pointer group"
+            data-lightbox
+          >
+            <img
+              src="assets/images/struture-vitree.webp"
+              srcset="
                 assets/images/struture-vitree-400w.webp   400w,
                 assets/images/struture-vitree-800w.webp   800w,
                 assets/images/struture-vitree-1200w.webp 1200w
-              " sizes="(max-width: 640px) 50vw, (max-width: 1024px) 33vw, 25vw"
-            alt="structure métallique pour fenêtre intérieur" loading="lazy"
-            class="w-full h-full object-cover group-hover:scale-105 transition duration-300" />
-          <figcaption class="text-sm text-black hidden" data-i18n="gallery.door.figcaption5">
-            structure métallique pour fenêtre intérieur
-          </figcaption>
-        </figure>
+              "
+              sizes="(max-width: 640px) 50vw, (max-width: 1024px) 33vw, 25vw"
+              alt="structure métallique pour fenêtre intérieur"
+              loading="lazy"
+              class="w-full h-full object-cover group-hover:scale-105 transition duration-300"
+            />
+            <figcaption
+              class="text-sm text-black hidden"
+              data-i18n="gallery.door.figcaption5"
+            >
+              structure métallique pour fenêtre intérieur
+            </figcaption>
+          </figure>
 
-        <figure class="gallery-item overflow-hidden rounded-lg cursor-pointer group" data-lightbox>
-          <img src="assets/images/portail.webp" srcset="
+          <figure
+            class="gallery-item overflow-hidden rounded-lg cursor-pointer group"
+            data-lightbox
+          >
+            <img
+              src="assets/images/portail.webp"
+              srcset="
                 assets/images/portail-400w.webp   400w,
                 assets/images/portail-800w.webp   800w,
                 assets/images/portail-1200w.webp 1200w
-              " sizes="(max-width: 640px) 50vw, (max-width: 1024px) 33vw, 25vw" alt="portail réaliser en fer forgé"
-            loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition duration-300" />
-          <figcaption class="text-sm text-black hidden" data-i18n="gallery.door.figcaption6">
-            portail réaliser en fer forgé
-          </figcaption>
-        </figure>
+              "
+              sizes="(max-width: 640px) 50vw, (max-width: 1024px) 33vw, 25vw"
+              alt="portail réaliser en fer forgé"
+              loading="lazy"
+              class="w-full h-full object-cover group-hover:scale-105 transition duration-300"
+            />
+            <figcaption
+              class="text-sm text-black hidden"
+              data-i18n="gallery.door.figcaption6"
+            >
+              portail réaliser en fer forgé
+            </figcaption>
+          </figure>
 
-        <figure class="gallery-item overflow-hidden rounded-lg cursor-pointer group" data-lightbox>
-          <img src="assets/images/porte-vitree-metal.webp" srcset="
+          <figure
+            class="gallery-item overflow-hidden rounded-lg cursor-pointer group"
+            data-lightbox
+          >
+            <img
+              src="assets/images/porte-vitree-metal.webp"
+              srcset="
                 assets/images/porte-vitree-metal-400w.webp   400w,
                 assets/images/porte-vitree-metal-800w.webp   800w,
                 assets/images/porte-vitree-metal-1200w.webp 1200w
-              " sizes="(max-width: 640px) 50vw, (max-width: 1024px) 33vw, 25vw" alt="porte vitrée en métal"
-            loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition duration-300" />
-          <figcaption class="text-sm text-black hidden" data-i18n="gallery.door.figcaption7">
-            porte vitrée en métal
-          </figcaption>
-        </figure>
-      </div>
-    </section>
+              "
+              sizes="(max-width: 640px) 50vw, (max-width: 1024px) 33vw, 25vw"
+              alt="porte vitrée en métal"
+              loading="lazy"
+              class="w-full h-full object-cover group-hover:scale-105 transition duration-300"
+            />
+            <figcaption
+              class="text-sm text-black hidden"
+              data-i18n="gallery.door.figcaption7"
+            >
+              porte vitrée en métal
+            </figcaption>
+          </figure>
+        </div>
+      </section>
 
-    <!-- Voir aussi -->
-    <section class="bg-black py-8 px-8">
-      <p class="text-white font-bold text-sm tracking-widest uppercase mb-4">
-        Voir Aussi
-      </p>
-      <div class="grid grid-cols-3 gap-1">
-        <a href="galerie-rampe.html" class="relative overflow-hidden group h-30 md:h-40  cursor-pointer">
-          <img src="assets/images/esalier-rampe.webp" srcset="
+      <!-- Voir aussi -->
+      <section class="bg-black py-8 px-8">
+        <p class="text-white font-bold text-sm tracking-widest uppercase mb-4">
+          Voir Aussi
+        </p>
+        <div class="grid grid-cols-3 gap-1">
+          <a
+            href="galerie-rampe.html"
+            class="relative overflow-hidden group h-30 md:h-40 cursor-pointer"
+          >
+            <img
+              src="assets/images/esalier-rampe.webp"
+              srcset="
                 assets/images/esalier-rampe-400w.webp 400w,
                 assets/images/esalier-rampe-800w.webp 800w
-              " sizes="33vw" alt="escalier en métal avec sa rampe" loading="lazy"
-            class="w-full h-full object-cover brightness-50 group-hover:brightness-75 group-hover:scale-105 transition duration-500" />
-          <div class="absolute inset-0 flex flex-col justify-center px-6">
-            <h3 class="text-white hidden text-2xl font-light md:block" data-i18n="btn.rampe">
-              Rampes et Escaliers
-            </h3>
-            <span class="text-white/70 text-sm">voir +</span>
-          </div>
-        </a>
+              "
+              sizes="33vw"
+              alt="escalier en métal avec sa rampe"
+              loading="lazy"
+              class="w-full h-full object-cover brightness-50 group-hover:brightness-75 group-hover:scale-105 transition duration-500"
+            />
+            <div class="absolute inset-0 flex flex-col justify-center px-6">
+              <h3
+                class="text-white hidden text-2xl font-light md:block"
+                data-i18n="btn.rampe"
+              >
+                Rampes et Escaliers
+              </h3>
+              <span class="text-white/70 text-sm" data-i18n="voir.plus"
+                >voir +</span
+              >
+            </div>
+          </a>
 
-        <a href="galerie-mobilier.html" class="relative overflow-hidden group h-30 md:h-40  cursor-pointer">
-          <img src="assets/images/tete-de-lit.webp" srcset="
+          <a
+            href="galerie-mobilier.html"
+            class="relative overflow-hidden group h-30 md:h-40 cursor-pointer"
+          >
+            <img
+              src="assets/images/tete-de-lit.webp"
+              srcset="
                 assets/images/tete-de-lit-400w.webp 400w,
                 assets/images/tete-de-lit-800w.webp 800w
-              " sizes="33vw" alt="porte en forme de soleil" loading="lazy"
-            class="w-full h-full object-cover brightness-50 group-hover:brightness-75 group-hover:scale-105 transition duration-500" />
-          <div class="absolute inset-0 flex flex-col justify-center px-6">
-            <h3 class="text-white hidden text-2xl font-light md:block" data-i18n="btn.mobilier">
-              Mobilier et Objets d'art
-            </h3>
-            <span class="text-white/70 text-sm">voir +</span>
-          </div>
-        </a>
+              "
+              sizes="33vw"
+              alt="porte en forme de soleil"
+              loading="lazy"
+              class="w-full h-full object-cover brightness-50 group-hover:brightness-75 group-hover:scale-105 transition duration-500"
+            />
+            <div class="absolute inset-0 flex flex-col justify-center px-6">
+              <h3
+                class="text-white hidden text-2xl font-light md:block"
+                data-i18n="btn.mobilier"
+              >
+                Mobilier et Objets d'art
+              </h3>
+              <span class="text-white/70 text-sm" data-i18n="voir.plus"
+                >voir +</span
+              >
+            </div>
+          </a>
 
-        <a href="galerie-marquise.html" class="relative overflow-hidden group h-30 md:h-40  cursor-pointer">
-          <img src="assets/images/rampe-et-marquise.webp" srcset="
+          <a
+            href="galerie-marquise.html"
+            class="relative overflow-hidden group h-30 md:h-40 cursor-pointer"
+          >
+            <img
+              src="assets/images/rampe-et-marquise.webp"
+              srcset="
                 assets/images/rampe-et-marquise-400w.webp 400w,
                 assets/images/rampe-et-marquise-800w.webp 800w
-              " sizes="33vw" alt="Marquises" loading="lazy"
-            class="w-full h-full object-cover brightness-50 group-hover:brightness-75 group-hover:scale-105 transition duration-500" />
-          <div class="absolute inset-0 flex flex-col justify-center px-6">
-            <h3 class="text-white hidden text-2xl font-light md:block" data-i18n="btn.pergolas">
-              Marquises et Pergolas
-            </h3>
-            <span class="text-white/70 text-sm">voir +</span>
-          </div>
-        </a>
-      </div>
-    </section>
-  </main>
-  <footer class="bg-primary grid grid-cols-1 md:grid-cols-2 py-12 px-6 md:px-16 gap-8 md:gap-0">
-    <div class="flex flex-col gap-4 justify-start items-center text-center">
-      <h2 class="text-xl md:text-2xl font-display text-secondary font-bold tracking-wide" data-i18n="footer.title">
-        Réalisation architecturale extérieur et intérieur en métal
-      </h2>
-      <a href="mailto:lucdesessarts@gmail.com" class="text-lg md:text-2xl text-bg-color hover:opacity-50">
-        lucdesessarts@gmail.com
-      </a>
-      <a href="index.html" class="text-lg md:text-2xl text-bg-color hover:opacity-50">
-        www.aloreedufer.com
-      </a>
-      <a href="contact.html"
-        class="text-lg text-bg-color border-2 border-secondary p-2 rounded-lg hover:bg-secondary hover:text-primary transition">
-        Contact
-      </a>
-      <hr class="h-1 w-4/5 my-2 text-secondary" />
-      <p class="text-xl md:text-2xl text-bg-color font-black">France</p>
-      <p class="text-lg md:text-xl text-bg-color leading-10 text-center">
-        71, Allée des Champs<br />87260 Pierre-Buffière<br />06 80 50 90 09
-      </p>
-    </div>
-
-    <div class="grid grid-cols-2 items-start justify-start gap-4">
-      <ul>
-        <li class="text-lg md:text-2xl text-bg-color md:text-secondary font-bold pt-4 hover:opacity-50 transition">
-          <a href="index.html" data-i18n="footer.nav.home">Accueil</a>
-        </li>
-        <li class="text-lg md:text-2xl text-bg-color md:text-secondary font-bold pt-4 hover:opacity-50 transition">
-          <a href="index.html#about" data-i18n="footer.nav.about">À Propos</a>
-        </li>
-        <li class="text-lg md:text-2xl text-bg-color md:text-secondary font-bold pt-4 hover:opacity-50 transition">
-          <a href="index.html#gallery" data-i18n="footer.nav.gallery">Mes Chantiers</a>
-        </li>
-        <li class="text-lg md:text-2xl text-bg-color md:text-secondary font-bold pt-4 hover:opacity-50 transition">
-          <a href="contact.html" data-i18n="footer.nav.conatct">Contact</a>
-        </li>
-        <li class="mt-8 md:mt-16 text-bg-color text-base md:text-lg hover:opacity-50 transition">
-          <a href="./mention-legale.html" data-i18n="footer.nav.mention">Mentions Légales</a>
-        </li>
-        <li class="text-bg-color text-base md:text-lg hover:opacity-50 transition">
-          <a href="./politique-de-confidentialitee.html" data-i18n="footer.nav.confidentialite">
-            Politique de Confidentialitée
+              "
+              sizes="33vw"
+              alt="Marquises"
+              loading="lazy"
+              class="w-full h-full object-cover brightness-50 group-hover:brightness-75 group-hover:scale-105 transition duration-500"
+            />
+            <div class="absolute inset-0 flex flex-col justify-center px-6">
+              <h3
+                class="text-white hidden text-2xl font-light md:block"
+                data-i18n="btn.pergolas"
+              >
+                Marquises et Pergolas
+              </h3>
+              <span class="text-white/70 text-sm" data-i18n="voir.plus"
+                >voir +</span
+              >
+            </div>
           </a>
-        </li>
-        <li class="text-bg-color text-base md:text-lg hover:opacity-50 transition">
-          <a href="#">www.tentaclecode.com</a>
-        </li>
-      </ul>
+        </div>
+      </section>
+    </main>
+    <footer
+      class="bg-primary grid grid-cols-1 md:grid-cols-2 py-12 px-6 md:px-16 gap-8 md:gap-0"
+    >
+      <div class="flex flex-col gap-4 justify-start items-center text-center">
+        <h2
+          class="text-xl md:text-2xl font-display text-secondary font-bold tracking-wide"
+          data-i18n="footer.title"
+        >
+          Réalisation architecturale extérieur et intérieur en métal
+        </h2>
+        <a
+          href="mailto:lucdesessarts@gmail.com"
+          class="text-lg md:text-2xl text-bg-color hover:opacity-50"
+        >
+          lucdesessarts@gmail.com
+        </a>
+        <a
+          href="index.html"
+          class="text-lg md:text-2xl text-bg-color hover:opacity-50"
+        >
+          www.aloreedufer.com
+        </a>
+        <a
+          href="contact.html"
+          class="text-lg text-bg-color border-2 border-secondary p-2 rounded-lg hover:bg-secondary hover:text-primary transition"
+        >
+          Contact
+        </a>
+        <hr class="h-1 w-4/5 my-2 text-secondary" />
+        <p class="text-xl md:text-2xl text-bg-color font-black">France</p>
+        <p class="text-lg md:text-xl text-bg-color leading-10 text-center">
+          71, Allée des Champs<br />87260 Pierre-Buffière<br />06 80 50 90 09
+        </p>
+      </div>
 
-      <div class="flex flex-col gap-4 items-center justify-start">
-        <a href="https://www.metiers-art.com/A-L-OREE-DU-FER-Luc-DESESSARTS"
-          class="transition duration-300 hover:opacity-50">
-          <img src="./assets/icons/logo-cma.webp" srcset="
+      <div class="grid grid-cols-2 items-start justify-start gap-4">
+        <ul>
+          <li
+            class="text-lg md:text-2xl text-bg-color md:text-secondary font-bold pt-4 hover:opacity-50 transition"
+          >
+            <a href="index.html" data-i18n="footer.nav.home">Accueil</a>
+          </li>
+          <li
+            class="text-lg md:text-2xl text-bg-color md:text-secondary font-bold pt-4 hover:opacity-50 transition"
+          >
+            <a href="index.html#about" data-i18n="footer.nav.about">À Propos</a>
+          </li>
+          <li
+            class="text-lg md:text-2xl text-bg-color md:text-secondary font-bold pt-4 hover:opacity-50 transition"
+          >
+            <a href="index.html#gallery" data-i18n="footer.nav.gallery"
+              >Mes Chantiers</a
+            >
+          </li>
+          <li
+            class="text-lg md:text-2xl text-bg-color md:text-secondary font-bold pt-4 hover:opacity-50 transition"
+          >
+            <a href="contact.html" data-i18n="footer.nav.conatct">Contact</a>
+          </li>
+          <li
+            class="mt-8 md:mt-16 text-bg-color text-base md:text-lg hover:opacity-50 transition"
+          >
+            <a href="./mention-legale.html" data-i18n="footer.nav.mention"
+              >Mentions Légales</a
+            >
+          </li>
+          <li
+            class="text-bg-color text-base md:text-lg hover:opacity-50 transition"
+          >
+            <a
+              href="./politique-de-confidentialitee.html"
+              data-i18n="footer.nav.confidentialite"
+            >
+              Politique de Confidentialitée
+            </a>
+          </li>
+          <li
+            class="text-bg-color text-base md:text-lg hover:opacity-50 transition"
+          >
+            <a href="#">www.tentaclecode.com</a>
+          </li>
+        </ul>
+
+        <div class="flex flex-col gap-4 items-center justify-start">
+          <a
+            href="https://www.metiers-art.com/A-L-OREE-DU-FER-Luc-DESESSARTS"
+            class="transition duration-300 hover:opacity-50"
+          >
+            <img
+              src="./assets/icons/logo-cma.webp"
+              srcset="
                 ./assets/icons/logo-cma-400w.webp   400w,
                 ./assets/icons/logo-cma-800w.webp   800w,
                 ./assets/icons/logo-cma-1200w.webp 1200w
-              " sizes="(max-width: 768px) 56px, 80px" alt="logo métiers d'art Nouvelle-Aquitaine" loading="lazy"
-            class="w-14 md:w-20" />
-        </a>
+              "
+              sizes="(max-width: 768px) 56px, 80px"
+              alt="logo métiers d'art Nouvelle-Aquitaine"
+              loading="lazy"
+              class="w-14 md:w-20"
+            />
+          </a>
 
-        <a href="https://formation.cma-nouvelleaquitaine.fr/" class="transition duration-300 hover:opacity-50">
-          <img src="./assets/icons/png-clipart-handicraft-logo-chambre-de-metiers-et-artisanat-empresa-artisan.webp"
-            srcset="
-                ./assets/icons/png-clipart-handicraft-logo-chambre-de-metiers-et-artisanat-empresa-artisan-400w.webp   400w,
-                ./assets/icons/png-clipart-handicraft-logo-chambre-de-metiers-et-artisanat-empresa-artisan-800w.webp   800w,
-                ./assets/icons/png-clipart-handicraft-logo-chambre-de-metiers-et-artisanat-empresa-artisan-1200w.webp 1200w
-              " sizes="(max-width: 768px) 56px, 80px" alt="logo chambre des métiers et artisanats" loading="lazy"
-            class="w-14 md:w-20" />
-        </a>
+          <a
+            href="https://formation.cma-nouvelleaquitaine.fr/"
+            class="transition duration-300 hover:opacity-50"
+          >
+            <img
+              src="./assets/icons/logo-artisan-art1.webp"
+              srcset="
+                ./assets/icons/logo-artisan-art1-400w.webp   400w,
+                ./assets/icons/logo-artisan-art1-800w.webp   800w,
+                ./assets/icons/logo-artisan-art1-1200w.webp 1200w
+              "
+              sizes="(max-width: 768px) 56px, 80px"
+              alt="logo artisanat d'art"
+              loading="lazy"
+              class="w-14 md:w-20"
+            />
+          </a>
 
-        <a href="https://www.facebook.com/aloreedufer?locale=fr_FR" class="transition duration-300 hover:opacity-50">
-          <img src="./assets/icons/square-facebook-brands-solid.webp" srcset="
+          <a
+            href="https://www.facebook.com/aloreedufer?locale=fr_FR"
+            class="transition duration-300 hover:opacity-50"
+          >
+            <img
+              src="./assets/icons/square-facebook-brands-solid.webp"
+              srcset="
                 ./assets/icons/square-facebook-brands-solid-400w.webp   400w,
                 ./assets/icons/square-facebook-brands-solid-800w.webp   800w,
                 ./assets/icons/square-facebook-brands-solid-1200w.webp 1200w
-              " sizes="(max-width: 768px) 56px, 80px" alt="logo facebook" loading="lazy" class="w-14 md:w-20" />
-        </a>
+              "
+              sizes="(max-width: 768px) 56px, 80px"
+              alt="logo facebook"
+              loading="lazy"
+              class="w-14 md:w-20"
+            />
+          </a>
 
-        <a href="https://www.instagram.com/aloreedufer/" class="transition duration-300 hover:opacity-50">
-          <img src="./assets/icons/square-instagram-brands-solid.webp" srcset="
+          <a
+            href="https://www.instagram.com/aloreedufer/"
+            class="transition duration-300 hover:opacity-50"
+          >
+            <img
+              src="./assets/icons/square-instagram-brands-solid.webp"
+              srcset="
                 ./assets/icons/square-instagram-brands-solid-400w.webp   400w,
                 ./assets/icons/square-instagram-brands-solid-800w.webp   800w,
                 ./assets/icons/square-instagram-brands-solid-1200w.webp 1200w
-              " sizes="(max-width: 768px) 56px, 80px" alt="logo instagram" loading="lazy" class="w-14 md:w-20" />
-        </a>
+              "
+              sizes="(max-width: 768px) 56px, 80px"
+              alt="logo instagram"
+              loading="lazy"
+              class="w-14 md:w-20"
+            />
+          </a>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Lightbox -->
+    <div
+      id="lightbox"
+      class="fixed inset-0 bg-black/80 z-50 hidden items-center justify-center p-8"
+    >
+      <button
+        id="lightbox-close"
+        class="absolute top-4 right-6 text-white text-4xl leading-none"
+      >
+        &times;
+      </button>
+      <div class="flex flex-col items-center gap-3">
+        <img
+          id="lightbox-img"
+          src=""
+          alt=""
+          class="max-h-[80vh] max-w-full rounded-lg object-contain"
+        />
+        <p id="lightbox-caption" class="text-white text-sm"></p>
       </div>
     </div>
-  </footer>
-
-  <!-- Lightbox -->
-  <div id="lightbox" class="fixed inset-0 bg-black/80 z-50 hidden items-center justify-center p-8">
-    <button id="lightbox-close" class="absolute top-4 right-6 text-white text-4xl leading-none">
-      &times;
-    </button>
-    <div class="flex flex-col items-center gap-3">
-      <img id="lightbox-img" src="" alt="" class="max-h-[80vh] max-w-full rounded-lg object-contain" />
-      <p id="lightbox-caption" class="text-white text-sm"></p>
-    </div>
-  </div>
-</body>
-
+  </body>
 </html>

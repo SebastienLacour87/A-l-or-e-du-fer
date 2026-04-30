@@ -1,166 +1,269 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="fr">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>A-l-Oree-du-Fer - Merci</title>
-    <meta name="description"
-        content="À l'Orée du Fer — Luc Desessarts, artisan ferronnier à Pierre-Buffière (87). Création sur mesure de portails, rampes, mobilier et structures métalliques en fer forgé." />
+    <meta
+      name="description"
+      content="À l'Orée du Fer — Luc Desessarts, artisan ferronnier à Pierre-Buffière (87). Création sur mesure de portails, rampes, mobilier et structures métalliques en fer forgé."
+    />
     <link rel="shortcut icon" href="assets/images/LOGO-tete-seule.webp" />
-    <link rel="preload" href="assets/font/IMFellFrenchCanonSC-Regular.woff2" as="font" type="font/woff2" crossorigin />
+    <link
+      rel="preload"
+      href="assets/font/IMFellFrenchCanonSC-Regular.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
     <link rel="stylesheet" href="output.css" />
 
     <script src="i18n.js" defer></script>
-</head>
+  </head>
 
-<body class="bg-bg-color font-display min-h-screen min-w-screen flex flex-col">
-    <header id="main-header" class="top-0 w-full z-50 bg-white/90 backdrop-blur-sm shadow-md">
-        <section class="w-full h-11 bg-black flex justify-end items-center gap-4 px-8">
-            <div>
-                <a href="contact.html"
-                    class="text-white font-display text-xl sm:text-2xl font-bold hover:text-primary border-r-2 pr-2"
-                    data-i18n="nav.contact">Contact</a>
-            </div>
-            <div class="flex gap-4">
-                <img src="assets/icons/france-svgrepo-com.svg" alt="drapeau français"
-                    class="w-8 h-7 cursor-pointer hover:opacity-70 transition" onclick="setLang('fr')" />
-                <img src="assets/icons/united-kingdom-svgrepo-com.svg" alt="drapeau britannique"
-                    class="w-8 h-7 cursor-pointer hover:opacity-70 transition" onclick="setLang('en')" />
-            </div>
-        </section>
-        <section class="w-full">
-            <nav class="flex justify-around items-center px-4 md:px-0 my-1 w-full">
-                <ul class="flex gap-8 items-center w-full justify-around">
-                    <li>
-                        <img src="assets/images/LOGO-tete-seule.webp" srcset="
+  <body
+    class="bg-bg-color font-display min-h-screen min-w-screen flex flex-col"
+  >
+    <header
+      id="main-header"
+      class="top-0 w-full z-50 bg-white/90 backdrop-blur-sm shadow-md"
+    >
+      <section
+        class="w-full h-11 bg-black flex justify-end items-center gap-4 px-8"
+      >
+        <div>
+          <a
+            href="contact.html"
+            class="text-white font-display text-xl sm:text-2xl font-bold hover:text-primary border-r-2 pr-2"
+            data-i18n="nav.contact"
+            >Contact</a
+          >
+        </div>
+        <div class="flex gap-4">
+          <img
+            src="assets/icons/france-svgrepo-com.svg"
+            alt="drapeau français"
+            class="w-8 h-7 cursor-pointer hover:opacity-70 transition"
+            onclick="setLang('fr')"
+          />
+          <img
+            src="assets/icons/united-kingdom-svgrepo-com.svg"
+            alt="drapeau britannique"
+            class="w-8 h-7 cursor-pointer hover:opacity-70 transition"
+            onclick="setLang('en')"
+          />
+        </div>
+      </section>
+      <section class="w-full">
+        <nav class="flex justify-around items-center px-4 md:px-0 my-1 w-full">
+          <ul class="flex gap-8 items-center w-full justify-around">
+            <li>
+              <img
+                src="assets/images/LOGO-tete-seule.webp"
+                srcset="
                   assets/images/LOGO-tete-seule-400w.webp 400w,
                   assets/images/LOGO-tete-seule-800w.webp 800w
-                " sizes="80px" alt="Logo A l'orée du fer, portrait de Luc Desessarts stylisé" loading="lazy"
-                            class="hidden sm:block sm:h-15 sm:w-15" />
-                    </li>
-                    <li>
-                        <a href="index.html"
-                            class="text-xl font-display text-primary font-bold hover:text-black/50 sm:text-2xl md:text-4xl transition"
-                            data-i18n="nav.home">Accueil</a>
-                    </li>
-                    <li>
-                        <a href="index.html#about"
-                            class="text-xl font-display text-primary font-bold hover:text-black/50 sm:text-2xl md:text-4xl transition"
-                            data-i18n="nav.about">À propos</a>
-                    </li>
-                    <li>
-                        <a href="index.html#galerie-photo"
-                            class="text-xl font-display text-primary font-bold hover:text-black/50 sm:text-2xl md:text-4xl transition"
-                            data-i18n="nav.projects">Mes chantiers</a>
-                    </li>
-                </ul>
-            </nav>
-        </section>
+                "
+                sizes="80px"
+                alt="Logo A l'orée du fer, portrait de Luc Desessarts stylisé"
+                loading="lazy"
+                class="hidden sm:block sm:h-15 sm:w-15"
+              />
+            </li>
+            <li>
+              <a
+                href="index.html"
+                class="text-xl font-display text-primary font-bold hover:text-black/50 sm:text-2xl md:text-4xl transition"
+                data-i18n="nav.home"
+                >Accueil</a
+              >
+            </li>
+            <li>
+              <a
+                href="index.html#about"
+                class="text-xl font-display text-primary font-bold hover:text-black/50 sm:text-2xl md:text-4xl transition"
+                data-i18n="nav.about"
+                >À propos</a
+              >
+            </li>
+            <li>
+              <a
+                href="index.html#galerie-photo"
+                class="text-xl font-display text-primary font-bold hover:text-black/50 sm:text-2xl md:text-4xl transition"
+                data-i18n="nav.projects"
+                >Mes chantiers</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </section>
     </header>
     <main class="flex-1 overflow-hidden">
-        <section class="px-10 py-25 flex items-center justify-center">
-            <h1 class="text-xl md:text-5xl font-display text-primary font-bold text-center" data-i18n="page.merci">Merci
-                pour votre message,
-                nous le traiterons le plus rapidement possible
-            </h1>
-        </section>
+      <section class="px-10 py-25 flex items-center justify-center">
+        <h1
+          class="text-xl md:text-5xl font-display text-primary font-bold text-center"
+          data-i18n="page.merci"
+        >
+          Merci pour votre message, nous le traiterons le plus rapidement
+          possible
+        </h1>
+      </section>
     </main>
-    <footer class="bg-primary grid grid-cols-1 md:grid-cols-2 py-12 px-6 md:px-16 gap-8 md:gap-0">
-        <div class="flex flex-col gap-4 justify-start items-center text-center">
-            <h2 class="text-xl md:text-2xl font-display text-secondary font-bold tracking-wide"
-                data-i18n="footer.title">
-                Réalisation architecturale extérieur et intérieur en métal
-            </h2>
-            <a href="mailto:lucdesessarts@gmail.com" class="text-lg md:text-2xl text-bg-color hover:opacity-50">
-                lucdesessarts@gmail.com
-            </a>
-            <a href="index.html" class="text-lg md:text-2xl text-bg-color hover:opacity-50">
-                www.aloreedufer.com
-            </a>
-            <a href="contact.html"
-                class="text-lg text-bg-color border-2 border-secondary p-2 rounded-lg hover:bg-secondary hover:text-primary transition">
-                Contact
-            </a>
-            <hr class="h-1 w-4/5 my-2 text-secondary" />
-            <p class="text-xl md:text-2xl text-bg-color font-black">France</p>
-            <p class="text-lg md:text-xl text-bg-color leading-10 text-center">
-                71, Allée des Champs<br />87260 Pierre-Buffière<br />06 80 50 90 09
-            </p>
-        </div>
+    <footer
+      class="bg-primary grid grid-cols-1 md:grid-cols-2 py-12 px-6 md:px-16 gap-8 md:gap-0"
+    >
+      <div class="flex flex-col gap-4 justify-start items-center text-center">
+        <h2
+          class="text-xl md:text-2xl font-display text-secondary font-bold tracking-wide"
+          data-i18n="footer.title"
+        >
+          Réalisation architecturale extérieur et intérieur en métal
+        </h2>
+        <a
+          href="mailto:lucdesessarts@gmail.com"
+          class="text-lg md:text-2xl text-bg-color hover:opacity-50"
+        >
+          lucdesessarts@gmail.com
+        </a>
+        <a
+          href="index.html"
+          class="text-lg md:text-2xl text-bg-color hover:opacity-50"
+        >
+          www.aloreedufer.com
+        </a>
+        <a
+          href="contact.html"
+          class="text-lg text-bg-color border-2 border-secondary p-2 rounded-lg hover:bg-secondary hover:text-primary transition"
+        >
+          Contact
+        </a>
+        <hr class="h-1 w-4/5 my-2 text-secondary" />
+        <p class="text-xl md:text-2xl text-bg-color font-black">France</p>
+        <p class="text-lg md:text-xl text-bg-color leading-10 text-center">
+          71, Allée des Champs<br />87260 Pierre-Buffière<br />06 80 50 90 09
+        </p>
+      </div>
 
-        <div class="grid grid-cols-2 items-start justify-start gap-4">
-            <ul>
-                <li
-                    class="text-lg md:text-2xl text-bg-color md:text-secondary font-bold pt-4 hover:opacity-50 transition">
-                    <a href="#" data-i18n="footer.nav.home">Accueil</a>
-                </li>
-                <li
-                    class="text-lg md:text-2xl text-bg-color md:text-secondary font-bold pt-4 hover:opacity-50 transition">
-                    <a href="#about" data-i18n="footer.nav.about">À Propos</a>
-                </li>
-                <li
-                    class="text-lg md:text-2xl text-bg-color md:text-secondary font-bold pt-4 hover:opacity-50 transition">
-                    <a href="#gallery" data-i18n="footer.nav.gallery">Mes Chantiers</a>
-                </li>
-                <li
-                    class="text-lg md:text-2xl text-bg-color md:text-secondary font-bold pt-4 hover:opacity-50 transition">
-                    <a href="contact.html" data-i18n="footer.nav.conatct">Contact</a>
-                </li>
-                <li class="mt-8 md:mt-16 text-bg-color text-base md:text-lg hover:opacity-50 transition">
-                    <a href="./mention-legale.html" data-i18n="footer.nav.mention">Mentions Légales</a>
-                </li>
-                <li class="text-bg-color text-base md:text-lg hover:opacity-50 transition">
-                    <a href="./politique-de-confidentialitee.html" data-i18n="footer.nav.confidentialite">
-                        Politique de Confidentialitée
-                    </a>
-                </li>
-                <li class="text-bg-color text-base md:text-lg hover:opacity-50 transition">
-                    <a href="#">www.tentaclecode.com</a>
-                </li>
-            </ul>
+      <div class="grid grid-cols-2 items-start justify-start gap-4">
+        <ul>
+          <li
+            class="text-lg md:text-2xl text-bg-color md:text-secondary font-bold pt-4 hover:opacity-50 transition"
+          >
+            <a href="#" data-i18n="footer.nav.home">Accueil</a>
+          </li>
+          <li
+            class="text-lg md:text-2xl text-bg-color md:text-secondary font-bold pt-4 hover:opacity-50 transition"
+          >
+            <a href="#about" data-i18n="footer.nav.about">À Propos</a>
+          </li>
+          <li
+            class="text-lg md:text-2xl text-bg-color md:text-secondary font-bold pt-4 hover:opacity-50 transition"
+          >
+            <a href="#gallery" data-i18n="footer.nav.gallery">Mes Chantiers</a>
+          </li>
+          <li
+            class="text-lg md:text-2xl text-bg-color md:text-secondary font-bold pt-4 hover:opacity-50 transition"
+          >
+            <a href="contact.html" data-i18n="footer.nav.conatct">Contact</a>
+          </li>
+          <li
+            class="mt-8 md:mt-16 text-bg-color text-base md:text-lg hover:opacity-50 transition"
+          >
+            <a href="./mention-legale.html" data-i18n="footer.nav.mention"
+              >Mentions Légales</a
+            >
+          </li>
+          <li
+            class="text-bg-color text-base md:text-lg hover:opacity-50 transition"
+          >
+            <a
+              href="./politique-de-confidentialitee.html"
+              data-i18n="footer.nav.confidentialite"
+            >
+              Politique de Confidentialitée
+            </a>
+          </li>
+          <li
+            class="text-bg-color text-base md:text-lg hover:opacity-50 transition"
+          >
+            <a href="#">www.tentaclecode.com</a>
+          </li>
+        </ul>
 
-            <div class="flex flex-col gap-4 items-center justify-start">
-                <a href="https://www.metiers-art.com/A-L-OREE-DU-FER-Luc-DESESSARTS"
-                    class="transition duration-300 hover:opacity-50">
-                    <img src="./assets/icons/logo-cma.webp" srcset="
+        <div class="flex flex-col gap-4 items-center justify-start">
+          <a
+            href="https://www.metiers-art.com/A-L-OREE-DU-FER-Luc-DESESSARTS"
+            class="transition duration-300 hover:opacity-50"
+          >
+            <img
+              src="./assets/icons/logo-cma.webp"
+              srcset="
                 ./assets/icons/logo-cma-400w.webp   400w,
                 ./assets/icons/logo-cma-800w.webp   800w,
                 ./assets/icons/logo-cma-1200w.webp 1200w
-              " sizes="(max-width: 768px) 56px, 80px" alt="logo métiers d'art Nouvelle-Aquitaine" loading="lazy"
-                        class="w-14 md:w-20" />
-                </a>
+              "
+              sizes="(max-width: 768px) 56px, 80px"
+              alt="logo métiers d'art Nouvelle-Aquitaine"
+              loading="lazy"
+              class="w-14 md:w-20"
+            />
+          </a>
 
-                <a href="https://formation.cma-nouvelleaquitaine.fr/" class="transition duration-300 hover:opacity-50">
-                    <img src="./assets/icons/png-clipart-handicraft-logo-chambre-de-metiers-et-artisanat-empresa-artisan.webp"
-                        srcset="
-                ./assets/icons/png-clipart-handicraft-logo-chambre-de-metiers-et-artisanat-empresa-artisan-400w.webp   400w,
-                ./assets/icons/png-clipart-handicraft-logo-chambre-de-metiers-et-artisanat-empresa-artisan-800w.webp   800w,
-                ./assets/icons/png-clipart-handicraft-logo-chambre-de-metiers-et-artisanat-empresa-artisan-1200w.webp 1200w
-              " sizes="(max-width: 768px) 56px, 80px" alt="logo chambre des métiers et artisanats" loading="lazy"
-                        class="w-14 md:w-20" />
-                </a>
+          <a
+            href="https://formation.cma-nouvelleaquitaine.fr/"
+            class="transition duration-300 hover:opacity-50"
+          >
+            <img
+              src="./assets/icons/logo-artisan-art1.webp"
+              srcset="
+                ./assets/icons/logo-artisan-art1-400w.webp   400w,
+                ./assets/icons/logo-artisan-art1-800w.webp   800w,
+                ./assets/icons/logo-artisan-art1-1200w.webp 1200w
+              "
+              sizes="(max-width: 768px) 56px, 80px"
+              alt="logo artisanat d'art"
+              loading="lazy"
+              class="w-14 md:w-20"
+            />
+          </a>
 
-                <a href="https://www.facebook.com/aloreedufer?locale=fr_FR"
-                    class="transition duration-300 hover:opacity-50">
-                    <img src="./assets/icons/square-facebook-brands-solid.webp" srcset="
+          <a
+            href="https://www.facebook.com/aloreedufer?locale=fr_FR"
+            class="transition duration-300 hover:opacity-50"
+          >
+            <img
+              src="./assets/icons/square-facebook-brands-solid.webp"
+              srcset="
                 ./assets/icons/square-facebook-brands-solid-400w.webp   400w,
                 ./assets/icons/square-facebook-brands-solid-800w.webp   800w,
                 ./assets/icons/square-facebook-brands-solid-1200w.webp 1200w
-              " sizes="(max-width: 768px) 56px, 80px" alt="logo facebook" loading="lazy" class="w-14 md:w-20" />
-                </a>
+              "
+              sizes="(max-width: 768px) 56px, 80px"
+              alt="logo facebook"
+              loading="lazy"
+              class="w-14 md:w-20"
+            />
+          </a>
 
-                <a href="https://www.instagram.com/aloreedufer/" class="transition duration-300 hover:opacity-50">
-                    <img src="./assets/icons/square-instagram-brands-solid.webp" srcset="
+          <a
+            href="https://www.instagram.com/aloreedufer/"
+            class="transition duration-300 hover:opacity-50"
+          >
+            <img
+              src="./assets/icons/square-instagram-brands-solid.webp"
+              srcset="
                 ./assets/icons/square-instagram-brands-solid-400w.webp   400w,
                 ./assets/icons/square-instagram-brands-solid-800w.webp   800w,
                 ./assets/icons/square-instagram-brands-solid-1200w.webp 1200w
-              " sizes="(max-width: 768px) 56px, 80px" alt="logo instagram" loading="lazy" class="w-14 md:w-20" />
-                </a>
-            </div>
+              "
+              sizes="(max-width: 768px) 56px, 80px"
+              alt="logo instagram"
+              loading="lazy"
+              class="w-14 md:w-20"
+            />
+          </a>
         </div>
+      </div>
     </footer>
-
-</body>
-
+  </body>
 </html>

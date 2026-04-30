@@ -1,490 +1,823 @@
 <!doctype html>
 <html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>A-l-Oree-du-Fer</title>
+    <meta
+      name="description"
+      content="À l'Orée du Fer — Luc Desessarts, artisan ferronnier à Pierre-Buffière (87). Création sur mesure de portails, rampes, mobilier et structures métalliques en fer forgé."
+    />
+    <link rel="shortcut icon" href="assets/images/LOGO-tete-seule.webp" />
+    <link rel="preload" as="image" href="assets/images/hero-image-800w.webp" />
+    <link
+      rel="preload"
+      href="assets/font/IMFellFrenchCanonSC-Regular.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <link rel="stylesheet" href="output.css" />
+    <script src="index.js" defer></script>
+    <script src="i18n.js" defer></script>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>A-l-Oree-du-Fer</title>
-  <meta name="description"
-    content="À l'Orée du Fer — Luc Desessarts, artisan ferronnier à Pierre-Buffière (87). Création sur mesure de portails, rampes, mobilier et structures métalliques en fer forgé." />
-  <link rel="shortcut icon" href="assets/images/LOGO-tete-seule.webp" />
-  <link rel="preload" as="image" href="assets/images/hero-image-800w.webp" />
-  <link rel="preload" href="assets/font/IMFellFrenchCanonSC-Regular.woff2" as="font" type="font/woff2" crossorigin />
-  <link rel="stylesheet" href="output.css" />
-  <script src="index.js" defer></script>
-  <script src="i18n.js" defer></script>
-</head>
-
-<body class="bg-bg-color font-display min-h-screen min-w-screen flex flex-col">
-  <header id="main-header" class="top-0 w-full z-50 bg-white/90 backdrop-blur-sm shadow-md">
-    <section class="w-full h-11 bg-black flex justify-end items-center gap-4 px-8">
-      <div>
-        <a href="contact.html"
-          class="text-white font-display text-xl sm:text-2xl font-bold hover:text-primary border-r-2 pr-2"
-          data-i18n="nav.contact">Contact</a>
-      </div>
-      <div class="flex gap-4">
-        <img src="assets/icons/france-svgrepo-com.svg" alt="drapeau français"
-          class="w-8 h-7 cursor-pointer hover:opacity-70 transition" onclick="setLang('fr')" />
-        <img src="assets/icons/united-kingdom-svgrepo-com.svg" alt="drapeau britannique"
-          class="w-8 h-7 cursor-pointer hover:opacity-70 transition" onclick="setLang('en')" />
-      </div>
-    </section>
-    <section class="w-full">
-      <nav class="flex justify-around items-center px-4 md:px-0 my-1 w-full">
-        <ul class="flex gap-8 items-center w-full justify-around">
-          <li>
-            <img src="assets/images/LOGO-tete-seule.webp" srcset="
+  <body
+    class="bg-bg-color font-display min-h-screen min-w-screen flex flex-col"
+  >
+    <header
+      id="main-header"
+      class="top-0 w-full z-50 bg-white/90 backdrop-blur-sm shadow-md"
+    >
+      <section
+        class="w-full h-11 bg-black flex justify-end items-center gap-4 px-8"
+      >
+        <div>
+          <a
+            href="contact.html"
+            class="text-white font-display text-xl sm:text-2xl font-bold hover:text-primary border-r-2 pr-2"
+            data-i18n="nav.contact"
+            >Contact</a
+          >
+        </div>
+        <div class="flex gap-4">
+          <img
+            src="assets/icons/france-svgrepo-com.svg"
+            alt="drapeau français"
+            class="w-8 h-7 cursor-pointer hover:opacity-70 transition"
+            onclick="setLang('fr')"
+          />
+          <img
+            src="assets/icons/united-kingdom-svgrepo-com.svg"
+            alt="drapeau britannique"
+            class="w-8 h-7 cursor-pointer hover:opacity-70 transition"
+            onclick="setLang('en')"
+          />
+        </div>
+      </section>
+      <section class="w-full">
+        <nav class="flex justify-around items-center px-4 md:px-0 my-1 w-full">
+          <ul class="flex gap-8 items-center w-full justify-around">
+            <li>
+              <img
+                src="assets/images/LOGO-tete-seule.webp"
+                srcset="
                   assets/images/LOGO-tete-seule-400w.webp 400w,
                   assets/images/LOGO-tete-seule-800w.webp 800w
-                " sizes="80px" alt="Logo A l'orée du fer, portrait de Luc Desessarts stylisé" loading="lazy"
-              class="hidden sm:block sm:h-15 sm:w-15" />
-          </li>
-          <li>
-            <a href="#"
-              class="text-xl font-display text-primary font-bold hover:text-black/50 sm:text-2xl md:text-4xl transition"
-              data-i18n="nav.home">Accueil</a>
-          </li>
-          <li>
-            <a href="#about"
-              class="text-xl font-display text-primary font-bold hover:text-black/50 sm:text-2xl md:text-4xl transition"
-              data-i18n="nav.about">À propos</a>
-          </li>
-          <li>
-            <a href="#galerie-photo"
-              class="text-xl font-display text-primary font-bold hover:text-black/50 sm:text-2xl md:text-4xl transition"
-              data-i18n="nav.projects">Mes chantiers</a>
-          </li>
-        </ul>
-      </nav>
-    </section>
-  </header>
+                "
+                sizes="80px"
+                alt="Logo A l'orée du fer, portrait de Luc Desessarts stylisé"
+                loading="lazy"
+                class="hidden sm:block sm:h-15 sm:w-15"
+              />
+            </li>
+            <li>
+              <a
+                href="#"
+                class="text-xl font-display text-primary font-bold hover:text-black/50 sm:text-2xl md:text-4xl transition"
+                data-i18n="nav.home"
+                >Accueil</a
+              >
+            </li>
+            <li>
+              <a
+                href="#about"
+                class="text-xl font-display text-primary font-bold hover:text-black/50 sm:text-2xl md:text-4xl transition"
+                data-i18n="nav.about"
+                >À propos</a
+              >
+            </li>
+            <li>
+              <a
+                href="#galerie-photo"
+                class="text-xl font-display text-primary font-bold hover:text-black/50 sm:text-2xl md:text-4xl transition"
+                data-i18n="nav.projects"
+                >Mes chantiers</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </section>
+    </header>
 
-  <main class="flex-1 overflow-hidden">
-    <h1 class="sr-only">À l'orée du fer - Artisan ferronnier à Limoges</h1>
+    <main class="flex-1 overflow-hidden">
+      <h1 class="sr-only">À l'orée du fer - Artisan ferronnier à Limoges</h1>
 
-    <!-- Hero Carousel -->
-    <section class="relative overflow-hidden h-[calc(100vh-100px)] md:h-screen">
-      <div class="absolute inset-0 bg-primary bg-cover bg-center scale-100"></div>
-      <div class="relative z-10 h-full flex items-center justify-center">
-        <div id="carousel-track"
-          class="flex h-full w-full transition-transform duration-1000 ease-in-out will-change-transform">
-          <!-- Slide 1 - image en background, pas de srcset possible -->
+      <!-- Hero Carousel -->
+      <section
+        class="relative overflow-hidden h-[calc(100vh-100px)] md:h-screen"
+      >
+        <div
+          class="absolute inset-0 bg-primary bg-cover bg-center scale-100"
+        ></div>
+        <div class="relative z-10 h-full flex items-center justify-center">
           <div
-            class="min-w-full h-full overflow-hidden flex flex-col md:flex-row items-center px-4 md:px-12 gap-4 md:gap-8">
+            id="carousel-track"
+            class="flex h-full w-full transition-transform duration-1000 ease-in-out will-change-transform"
+          >
+            <!-- Slide 1 - image en background, pas de srcset possible -->
             <div
-              class="w-full md:w-1/2 h-1/2 md:h-full mt-4 md:mt-0 rounded-xl md:rounded-none bg-[url(assets/images/hero-image-800w.webp)] bg-cover bg-center cursor-pointer"
-              data-lightbox="assets/images/hero-image.webp"></div>
-            <div class="w-full md:w-1/2 flex flex-col items-center gap-2 md:gap-6">
-              <h2 class="text-3xl md:text-6xl font-display text-secondary text-center">
-                A l'Orée du Fer
-              </h2>
-              <p class="text-white text-sm md:text-2xl tracking-widest uppercase text-center" data-i18n="title.pres">
-                Atelier de ferronnerie spécialisé
-              </p>
-              <h2 class="text-bg-color text-xl md:text-4xl font-medium leading-tight text-center" data-i18n="text.pres">
-                Architecture intérieur et extérieur
-              </h2>
-              <p class="text-bg-color text-sm md:text-xl text-center" data-i18n="text.lineup">
-                Découvrez des créations uniques faites à la main avec passion.
-              </p>
-              <a href="#about"
-                class="md:mt-2 px-6 md:px-8 py-2 md:py-3 bg-bg-color text-primary font-medium rounded-lg hover:bg-black/90 hover:text-secondary transition text-sm md:text-base"
-                data-i18n="btn.discover" aria-label="bouton lien vers la section a propos">Découvrir →</a>
+              class="min-w-full h-full overflow-hidden flex flex-col md:flex-row items-center px-4 md:px-12 gap-4 md:gap-8"
+            >
+              <div
+                class="w-full md:w-1/2 h-1/2 md:h-full mt-4 md:mt-0 rounded-xl md:rounded-none bg-[url(assets/images/hero-image-800w.webp)] bg-cover bg-center cursor-pointer"
+                data-lightbox="assets/images/hero-image.webp"
+              ></div>
+              <div
+                class="w-full md:w-1/2 flex flex-col items-center gap-2 md:gap-6"
+              >
+                <img
+                  src="assets/images/banniere-sans-fond-cta.webp"
+                  alt="Bannière À l'orée du fer avec son logo"
+                  srcset="
+                    assets/images/banniere-sans-fond-cta-400w.webp   400w,
+                    assets/images/banniere-sans-fond-cta-800w.webp   800w,
+                    assets/images/banniere-sans-fond-cta-1200w.webp 1200w
+                  "
+                  class="w-1/2 h-3/4 mx-auto"
+                />
+                <p
+                  class="text-white text-sm md:text-2xl tracking-widest uppercase text-center"
+                  data-i18n="title.pres"
+                >
+                  Atelier de ferronnerie spécialisé
+                </p>
+                <h2
+                  class="text-bg-color text-xl md:text-4xl font-medium leading-tight text-center"
+                  data-i18n="text.pres"
+                >
+                  Architecture intérieur et extérieur
+                </h2>
+                <p
+                  class="text-bg-color text-sm md:text-xl text-center"
+                  data-i18n="text.lineup"
+                >
+                  Découvrez des créations uniques faites à la main avec passion.
+                </p>
+                <a
+                  href="#about"
+                  class="md:mt-2 px-6 md:px-8 py-2 md:py-3 bg-bg-color text-primary font-medium rounded-lg hover:bg-black/90 hover:text-secondary transition text-sm md:text-base"
+                  data-i18n="btn.discover"
+                  aria-label="bouton lien vers la section a propos"
+                  >Découvrir →</a
+                >
+              </div>
             </div>
-          </div>
 
-          <!-- Slide 2 -->
-          <div
-            class="min-w-full h-full overflow-hidden flex flex-col-reverse md:flex-row items-center px-4 md:px-12 gap-4 md:gap-8 -mt-10 md:mt-0">
-            <div class="w-full md:w-1/2 flex flex-col items-center gap-2 md:gap-6">
-              <h2 class="text-3xl md:text-6xl font-display text-secondary text-center">
-                A l'Orée du Fer
-              </h2>
-              <p class="text-white text-sm md:text-2xl tracking-widest uppercase text-center" data-i18n="title.pres.2">
-                Pièces de décoration, Mobilier sur-mesure en métal
-              </p>
-              <h2 class="text-bg-color text-lg md:text-4xl font-medium leading-tight text-center"
-                data-i18n="text.pres.2">
-                Bienvenue dans notre atelier
-              </h2>
-              <p class="text-bg-color text-lg md:text-4xl font-medium leading-tight text-center"
-                data-i18n="text.lineup.2">
-                Un savoir faire ancestral au service de vos projets.
-              </p>
-              <a href="#gallery"
-                class="md:mt-2 px-6 md:px-8 py-2 md:py-3 bg-bg-color text-primary font-medium rounded-lg hover:bg-black/90 hover:text-secondary transition text-sm md:text-base"
-                data-i18n="btn.collection" aria-label="lien vers la section galerie">Voir la collection →</a>
+            <!-- Slide 2 -->
+            <div
+              class="min-w-full h-full overflow-hidden flex flex-col-reverse md:flex-row items-center px-4 md:px-12 gap-4 md:gap-8 -mt-10 md:mt-0"
+            >
+              <div
+                class="w-full md:w-1/2 flex flex-col items-center gap-2 md:gap-6"
+              >
+                <img
+                  src="assets/images/banniere-sans-fond-cta.webp"
+                  alt="Bannière À l'orée du fer avec son logo"
+                  srcset="
+                    assets/images/banniere-sans-fond-cta-400w.webp   400w,
+                    assets/images/banniere-sans-fond-cta-800w.webp   800w,
+                    assets/images/banniere-sans-fond-cta-1200w.webp 1200w
+                  "
+                  class="w-1/2 h-3/4 mx-auto"
+                />
+                <p
+                  class="text-white text-sm md:text-2xl tracking-widest uppercase text-center"
+                  data-i18n="title.pres.2"
+                >
+                  Pièces de décoration, Mobilier sur-mesure en métal
+                </p>
+                <h2
+                  class="text-bg-color text-lg md:text-4xl font-medium leading-tight text-center"
+                  data-i18n="text.pres.2"
+                >
+                  Bienvenue dans notre atelier
+                </h2>
+                <p
+                  class="text-bg-color text-lg md:text-4xl font-medium leading-tight text-center"
+                  data-i18n="text.lineup.2"
+                >
+                  Un savoir faire ancestral au service de vos projets.
+                </p>
+                <a
+                  href="#gallery"
+                  class="md:mt-2 px-6 md:px-8 py-2 md:py-3 bg-bg-color text-primary font-medium rounded-lg hover:bg-black/90 hover:text-secondary transition text-sm md:text-base"
+                  data-i18n="btn.collection"
+                  aria-label="lien vers la section galerie"
+                  >Voir la collection →</a
+                >
+              </div>
+              <div
+                class="w-full md:w-1/2 h-1/2 md:h-full rounded-xl md:rounded-none bg-[url(assets/images/tete-de-lit-800w.webp)] bg-cover bg-center cursor-pointer"
+                data-lightbox="assets/images/tete-de-lit.webp"
+              ></div>
             </div>
-            <div
-              class="w-full md:w-1/2 h-1/2 md:h-full rounded-xl md:rounded-none bg-[url(assets/images/tete-de-lit-800w.webp)] bg-cover bg-center cursor-pointer"
-              data-lightbox="assets/images/tete-de-lit.webp"></div>
-          </div>
 
-          <!-- Slide 3 -->
-          <div
-            class="min-w-full h-full overflow-hidden flex flex-col md:flex-row items-center px-4 md:px-12 gap-4 md:gap-8">
+            <!-- Slide 3 -->
             <div
-              class="w-full md:w-1/2 h-1/2 md:h-full mt-4 md:mt-0 rounded-xl md:rounded-none bg-[url(assets/images/marquise-rampe-800w.webp)] bg-cover bg-center cursor-pointer"
-              data-lightbox="assets/images/marquise-rampe.webp"></div>
-            <div class="w-full md:w-1/2 flex flex-col items-center gap-2 md:gap-6">
-              <h2 class="text-3xl md:text-6xl font-display text-secondary text-center">
-                A l'Orée du Fer
-              </h2>
-              <p class="text-white text-sm md:text-2xl tracking-widest uppercase text-center" data-i18n="title.pres.3">
-                Artisant créateur en serrurerie d'art
-              </p>
-              <h2 class="text-bg-color text-lg md:text-4xl font-medium leading-tight text-center"
-                data-i18n="text.pres.3">
-                Concevoir des créations contemporaines dans le respect des
-                techniques ancestrales
-              </h2>
-              <p class="text-bg-color text-lg md:text-4xl font-medium leading-tight text-center"
-                data-i18n="text.lineup.3">
-                Contactez nous pour un devis personnaliser.
-              </p>
-              <a href="contact.html"
-                class="md:mt-2 px-6 md:px-8 py-2 md:py-3 bg-bg-color text-primary font-medium rounded-lg hover:bg-black/90 hover:text-secondary transition text-sm md:text-base"
-                data-i18n="btn.contact" aria-label="lien vers la page de contact">Nous contacter →</a>
+              class="min-w-full h-full overflow-hidden flex flex-col md:flex-row items-center px-4 md:px-12 gap-4 md:gap-8"
+            >
+              <div
+                class="w-full md:w-1/2 h-1/2 md:h-full mt-4 md:mt-0 rounded-xl md:rounded-none bg-[url(assets/images/marquise-rampe-800w.webp)] bg-cover bg-center cursor-pointer"
+                data-lightbox="assets/images/marquise-rampe.webp"
+              ></div>
+              <div
+                class="w-full md:w-1/2 flex flex-col items-center gap-2 md:gap-6"
+              >
+                <img
+                  src="assets/images/banniere-sans-fond-cta.webp"
+                  alt="Bannière À l'orée du fer avec son logo"
+                  srcset="
+                    assets/images/banniere-sans-fond-cta-400w.webp   400w,
+                    assets/images/banniere-sans-fond-cta-800w.webp   800w,
+                    assets/images/banniere-sans-fond-cta-1200w.webp 1200w
+                  "
+                  class="w-1/2 h-3/4 mx-auto"
+                />
+                <p
+                  class="text-white text-sm md:text-2xl tracking-widest uppercase text-center"
+                  data-i18n="title.pres.3"
+                >
+                  Artisant créateur en serrurerie d'art
+                </p>
+                <h2
+                  class="text-bg-color text-lg md:text-4xl font-medium leading-tight text-center"
+                  data-i18n="text.pres.3"
+                >
+                  Concevoir des créations contemporaines dans le respect des
+                  techniques ancestrales
+                </h2>
+                <p
+                  class="text-bg-color text-lg md:text-4xl font-medium leading-tight text-center"
+                  data-i18n="text.lineup.3"
+                >
+                  Contactez nous pour un devis personnaliser.
+                </p>
+                <a
+                  href="contact.html"
+                  class="md:mt-2 px-6 md:px-8 py-2 md:py-3 bg-bg-color text-primary font-medium rounded-lg hover:bg-black/90 hover:text-secondary transition text-sm md:text-base"
+                  data-i18n="btn.contact"
+                  aria-label="lien vers la page de contact"
+                  >Nous contacter →</a
+                >
+              </div>
             </div>
           </div>
         </div>
-      </div>
-      <div id="dots-button-slider" class="absolute bottom-6 left-1/2 -translate-x-1/2 flex gap-2 z-10"
-        aria-label="button" role="button"></div>
-    </section>
+        <div
+          id="dots-button-slider"
+          class="absolute bottom-6 left-1/2 -translate-x-1/2 flex gap-2 z-10"
+          aria-label="button"
+          role="button"
+        ></div>
+      </section>
 
-    <hr class="w-[90%] mt-10 mx-auto text-primary" />
+      <hr class="w-[90%] mt-10 mx-auto text-primary" />
 
-    <!-- Section about -->
-    <section id="about" class="grid grid-cols-1 md:grid-cols-2 my-10 w-full px-4 md:px-16 gap-8">
-      <div class="flex justify-center items-center">
-        <figure data-lightbox class="w-full">
-          <img src="assets/images/luc-au-travail.webp" srcset="
+      <!-- Section about -->
+      <section
+        id="about"
+        class="grid grid-cols-1 md:grid-cols-2 my-10 w-full px-4 md:px-16 gap-8"
+      >
+        <div class="flex justify-center items-center">
+          <figure data-lightbox class="w-full">
+            <img
+              src="assets/images/luc-au-travail.webp"
+              srcset="
                 assets/images/luc-au-travail-400w.webp   400w,
                 assets/images/luc-au-travail-800w.webp   800w,
                 assets/images/luc-au-travail-1200w.webp 1200w
-              " sizes="(max-width: 768px) 95vw, 50vw" alt="Luc Desessarts en plein travail" loading="lazy"
-            class="w-auto h-55 md:h-110 object-cover rounded-lg mx-auto" />
-          <figcaption class="text-base md:text-2xl font-display text-primary font-bold mt-2 text-center"
-            data-i18n="fig.caption">
-            Luc Desessarts en plein travail
-          </figcaption>
-        </figure>
-      </div>
-      <div class="flex flex-col items-center justify-center">
-        <h2 class="text-lg md:text-4xl py-10 font-display font-bold text-primary" data-i18n="about.title">
-          LA FERRONNERIE D'ART
-        </h2>
-        <p class="text-sm md:text-xl leading-8 font-display font-normal tracking-wide" data-i18n="about.p">
-          La Ferronnerie d'Art est l'art et la technique du travail du fer à
-          la forge, à l'étampe ou au marteau dans un but décoratif et/ou
-          architectural. C'est un savoir-faire ancestral qui permet
-          d'imaginer, de créer et de concevoir des ferronneries : escaliers,
-          rampes de style, grilles et portails, mobilier, gardecorps,
-          structures métalliques, marquises... Elle nécessite un grand
-          savoir-faire et de nombreuses années d'expérience.
-        </p>
-      </div>
-    </section>
-
-    <hr class="w-[60%] mt-10 mb-10 mx-auto text-primary" />
-
-    <!-- Section prise en charge + matériaux -->
-    <section class="w-full grid grid-cols-1 md:grid-cols-2 md:divide-x divide-primary mx-auto">
-      <div class="flex flex-col items-center px-4 md:px-16 py-6 md:py-10 text-center">
-        <h2 class="text-2xl md:text-4xl text-primary font-display uppercase font-bold py-4" data-i18n="working.title">
-          Une prise en charge globale : de la conception à la pose
-        </h2>
-        <h3 class="text-lg md:text-2xl font-display font-semibold py-4" data-i18n="working.subtitle">
-          Mon travail en 4 étapes au service de vos envies :
-        </h3>
-        <p class="text-base md:text-xl font-display py-4" data-i18n="working.p">
-          ❈ Etape 1 : Tout commence par un premier rendez-vous afin d'écouter,
-          comprendre et cerner les souhaits de mes clients. Dans le but
-          d'établir un devis au plus juste. Devis que je présente en personne,
-          car il s'accompagne en général d'explication esthétique et
-          technique, ainsi que d'échantillons pour m'assurer que nous nous
-          comprenons.
-        </p>
-        <p class="text-base md:text-xl font-display py-4" data-i18n="working.p2">
-          ❈ Etape 2 : Après acceptation du devis, commence la phase de
-          création et de conception. Je propose une esthétique que nous
-          affinons ensemble pour être au plus près de vos attentes.
-        </p>
-
-        <div class="flex gap-4 justify-center my-4">
-          <figure data-lightbox class="flex flex-col items-center gap-2">
-            <div class="w-24 h-36 md:w-44 md:h-64 overflow-hidden rounded-lg">
-              <img src="assets/images/concception.webp" srcset="
-                    assets/images/concception-400w.webp 400w,
-                    assets/images/concception-800w.webp 800w
-                  " sizes="(max-width: 768px) 96px, 176px" alt="base de travail" loading="lazy"
-                class="w-full h-full object-cover" />
-            </div>
-            <figcaption class="text-xs md:text-sm text-black" data-i18n="working.figcaption">
-              étape 3
-            </figcaption>
-          </figure>
-          <figure data-lightbox class="flex flex-col items-center gap-2">
-            <div class="w-24 h-36 md:w-44 md:h-64 overflow-hidden rounded-lg">
-              <img src="assets/images/travail-artistique.webp" srcset="
-                    assets/images/travail-artistique-400w.webp 400w,
-                    assets/images/travail-artistique-800w.webp 800w
-                  " sizes="(max-width: 768px) 96px, 176px" alt="conceptualisation du projet" loading="lazy"
-                class="w-full h-full object-cover" />
-            </div>
-            <figcaption class="text-xs md:text-sm text-black" data-i18n="working.figcaption2">
-              étape 3 bis
-            </figcaption>
-          </figure>
-          <figure data-lightbox class="flex flex-col items-center gap-2">
-            <div class="w-24 h-36 md:w-44 md:h-64 overflow-hidden rounded-lg">
-              <img src="assets/images/realisation-finale.webp" srcset="
-                    assets/images/realisation-finale-400w.webp 400w,
-                    assets/images/realisation-finale-800w.webp 800w
-                  " sizes="(max-width: 768px) 96px, 176px" alt="réalisation finale" loading="lazy"
-                class="w-full h-full object-cover" />
-            </div>
-            <figcaption class="text-xs md:text-sm text-black" data-i18n="working.figcaption3">
-              étape 4
+              "
+              sizes="(max-width: 768px) 95vw, 50vw"
+              alt="Luc Desessarts en plein travail"
+              loading="lazy"
+              class="w-auto h-55 md:h-110 object-cover rounded-lg mx-auto"
+            />
+            <figcaption
+              class="text-base md:text-2xl font-display text-primary font-bold mt-2 text-center"
+              data-i18n="fig.caption"
+            >
+              Luc Desessarts en plein travail
             </figcaption>
           </figure>
         </div>
+        <div class="flex flex-col items-center justify-center">
+          <h2
+            class="text-lg md:text-4xl py-10 font-display font-bold text-primary"
+            data-i18n="about.title"
+          >
+            LA FERRONNERIE D'ART
+          </h2>
+          <p
+            class="text-sm md:text-xl leading-8 font-display font-normal tracking-wide"
+            data-i18n="about.p"
+          >
+            La Ferronnerie d'Art est l'art et la technique du travail du fer à
+            la forge, à l'étampe ou au marteau dans un but décoratif et/ou
+            architectural. C'est un savoir-faire ancestral qui permet
+            d'imaginer, de créer et de concevoir des ferronneries : escaliers,
+            rampes de style, grilles et portails, mobilier, gardecorps,
+            structures métalliques, marquises... Elle nécessite un grand
+            savoir-faire et de nombreuses années d'expérience.
+          </p>
+        </div>
+      </section>
 
-        <p class="text-base md:text-xl font-display py-4" data-i18n="working.p3">
-          ❈ Etape 3 : Une fois validé par vos soins, vient le moment de la
-          fabrication dans le respect des règles techniques. Le dessin prend
-          vie et passe de l'imaginaire au réel.
-        </p>
-        <p class="text-base md:text-xl font-display py-4" data-i18n="working.p4">
-          ❈ Etape 4 : Pour finir, je me charge en personne de l'installation
-          sur site. Vous découvrez alors votre ouvrage tel que vous l'avez
-          imaginé en lieu et place.
-        </p>
-      </div>
+      <hr class="w-[60%] mt-10 mb-10 mx-auto text-primary" />
 
-      <div
-        class="flex flex-col items-center px-4 md:px-16 py-6 md:py-10 text-center border-t md:border-t-0 border-primary">
-        <h2 class="text-2xl md:text-4xl text-primary font-display uppercase font-bold pb-6 md:pb-10"
-          data-i18n="material.title">
-          Les matériaux
-        </h2>
-        <div class="w-full h-52 md:h-80 overflow-hidden rounded-lg">
-          <img src="assets/images/fer-chaud.webp" srcset="
+      <!-- Section prise en charge + matériaux -->
+      <section
+        class="w-full grid grid-cols-1 md:grid-cols-2 md:divide-x divide-primary mx-auto"
+      >
+        <div
+          class="flex flex-col items-center px-4 md:px-16 py-6 md:py-10 text-center"
+        >
+          <h2
+            class="text-2xl md:text-4xl text-primary font-display uppercase font-bold py-4"
+            data-i18n="working.title"
+          >
+            Une prise en charge globale : de la conception à la pose
+          </h2>
+          <h3
+            class="text-lg md:text-2xl font-display font-semibold py-4"
+            data-i18n="working.subtitle"
+          >
+            Mon travail en 4 étapes au service de vos envies :
+          </h3>
+          <p
+            class="text-base md:text-xl font-display py-4"
+            data-i18n="working.p"
+          >
+            ❈ Etape 1 : Tout commence par un premier rendez-vous afin d'écouter,
+            comprendre et cerner les souhaits de mes clients. Dans le but
+            d'établir un devis au plus juste. Devis que je présente en personne,
+            car il s'accompagne en général d'explication esthétique et
+            technique, ainsi que d'échantillons pour m'assurer que nous nous
+            comprenons.
+          </p>
+          <p
+            class="text-base md:text-xl font-display py-4"
+            data-i18n="working.p2"
+          >
+            ❈ Etape 2 : Après acceptation du devis, commence la phase de
+            création et de conception. Je propose une esthétique que nous
+            affinons ensemble pour être au plus près de vos attentes.
+          </p>
+
+          <div class="flex gap-4 justify-center my-4">
+            <figure data-lightbox class="flex flex-col items-center gap-2">
+              <div class="w-24 h-36 md:w-44 md:h-64 overflow-hidden rounded-lg">
+                <img
+                  src="assets/images/concception.webp"
+                  srcset="
+                    assets/images/concception-400w.webp 400w,
+                    assets/images/concception-800w.webp 800w
+                  "
+                  sizes="(max-width: 768px) 96px, 176px"
+                  alt="base de travail"
+                  loading="lazy"
+                  class="w-full h-full object-cover"
+                />
+              </div>
+              <figcaption
+                class="text-xs md:text-sm text-black"
+                data-i18n="working.figcaption"
+              >
+                étape 3
+              </figcaption>
+            </figure>
+            <figure data-lightbox class="flex flex-col items-center gap-2">
+              <div class="w-24 h-36 md:w-44 md:h-64 overflow-hidden rounded-lg">
+                <img
+                  src="assets/images/travail-artistique.webp"
+                  srcset="
+                    assets/images/travail-artistique-400w.webp 400w,
+                    assets/images/travail-artistique-800w.webp 800w
+                  "
+                  sizes="(max-width: 768px) 96px, 176px"
+                  alt="conceptualisation du projet"
+                  loading="lazy"
+                  class="w-full h-full object-cover"
+                />
+              </div>
+              <figcaption
+                class="text-xs md:text-sm text-black"
+                data-i18n="working.figcaption2"
+              >
+                étape 3 bis
+              </figcaption>
+            </figure>
+            <figure data-lightbox class="flex flex-col items-center gap-2">
+              <div class="w-24 h-36 md:w-44 md:h-64 overflow-hidden rounded-lg">
+                <img
+                  src="assets/images/realisation-finale.webp"
+                  srcset="
+                    assets/images/realisation-finale-400w.webp 400w,
+                    assets/images/realisation-finale-800w.webp 800w
+                  "
+                  sizes="(max-width: 768px) 96px, 176px"
+                  alt="réalisation finale"
+                  loading="lazy"
+                  class="w-full h-full object-cover"
+                />
+              </div>
+              <figcaption
+                class="text-xs md:text-sm text-black"
+                data-i18n="working.figcaption3"
+              >
+                étape 4
+              </figcaption>
+            </figure>
+          </div>
+
+          <p
+            class="text-base md:text-xl font-display py-4"
+            data-i18n="working.p3"
+          >
+            ❈ Etape 3 : Une fois validé par vos soins, vient le moment de la
+            fabrication dans le respect des règles techniques. Le dessin prend
+            vie et passe de l'imaginaire au réel.
+          </p>
+          <p
+            class="text-base md:text-xl font-display py-4"
+            data-i18n="working.p4"
+          >
+            ❈ Etape 4 : Pour finir, je me charge en personne de l'installation
+            sur site. Vous découvrez alors votre ouvrage tel que vous l'avez
+            imaginé en lieu et place.
+          </p>
+        </div>
+
+        <div
+          class="flex flex-col items-center px-4 md:px-16 py-6 md:py-10 text-center border-t md:border-t-0 border-primary"
+        >
+          <h2
+            class="text-2xl md:text-4xl text-primary font-display uppercase font-bold pb-6 md:pb-10"
+            data-i18n="material.title"
+          >
+            Les matériaux
+          </h2>
+          <div class="w-full h-52 md:h-80 overflow-hidden rounded-lg">
+            <img
+              src="assets/images/fer-chaud.webp"
+              srcset="
                 assets/images/fer-chaud-400w.webp   400w,
                 assets/images/fer-chaud-800w.webp   800w,
                 assets/images/fer-chaud-1200w.webp 1200w
-              " sizes="(max-width: 768px) 95vw, 50vw" alt="fer chaud pendant que l'artisan le travaille" loading="lazy"
-            class="w-full h-full object-cover" />
+              "
+              sizes="(max-width: 768px) 95vw, 50vw"
+              alt="fer chaud pendant que l'artisan le travaille"
+              loading="lazy"
+              class="w-full h-full object-cover"
+            />
+          </div>
+          <p
+            class="text-base md:text-xl font-display py-4 mt-4 md:mt-8 text-left"
+            data-i18n="material.p"
+          >
+            Le ferronnier d'art est connu pour ses ouvrages en fer mais en
+            fonction du rendu recherché il pourra travailler également d'autres
+            matériaux :
+          </p>
+          <ul
+            class="text-base md:text-xl font-display text-left w-full list-none space-y-2"
+          >
+            <li data-i18n="material.li1">• La feuille d'or</li>
+            <li data-i18n="material.li2">
+              • Le bronze (alliance étain et cuivre)
+            </li>
+            <li data-i18n="material.li3">
+              • L'acier (alliance fer et carbone)
+            </li>
+            <li data-i18n="material.li4">• Les aciers inoxydables</li>
+            <li data-i18n="material.li5">
+              • Les métaux non ferreux (cuivre, aluminium, laiton)
+            </li>
+            <li data-i18n="material.li6">• Le plomb</li>
+          </ul>
         </div>
-        <p class="text-base md:text-xl font-display py-4 mt-4 md:mt-8 text-left" data-i18n="material.p">
-          Le ferronnier d'art est connu pour ses ouvrages en fer mais en
-          fonction du rendu recherché il pourra travailler également d'autres
-          matériaux :
-        </p>
-        <ul class="text-base md:text-xl font-display text-left w-full list-none space-y-2">
-          <li data-i18n="material.li1">• La feuille d'or</li>
-          <li data-i18n="material.li2">
-            • Le bronze (alliance étain et cuivre)
-          </li>
-          <li data-i18n="material.li3">
-            • L'acier (alliance fer et carbone)
-          </li>
-          <li data-i18n="material.li4">• Les aciers inoxydables</li>
-          <li data-i18n="material.li5">
-            • Les métaux non ferreux (cuivre, aluminium, laiton)
-          </li>
-          <li data-i18n="material.li6">• Le plomb</li>
-        </ul>
-      </div>
-    </section>
+      </section>
 
-    <hr class="w-[60%] my-10 mx-auto text-primary" />
+      <hr class="w-[60%] my-10 mx-auto text-primary" />
 
-    <!-- Section galerie -->
-    <section id="galerie-photo" class="my-8">
-      <div>
-        <h2 class="text-3xl md:text-5xl font-display text-primary pb-4 mx-4 md:mx-40 text-center"
-          data-i18n="gallery.title">
-          Nos réalisations
-        </h2>
-      </div>
-      <div id="gallery" class="flex flex-col mx-4 md:mx-40 lg:mx-100 gap-3">
-        <a href="galerie-rampe.html" class="transition duration-1000 hover:scale-101 slide-in" data-delay="0">
-          <div class="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-24 items-center mx-auto">
-            <h3 class="text-2xl md:text-4xl font-extralight font-display-secondary text-center md:text-left"
-              data-i18n="gallery1.title">
-              Rampes et escaliers
-            </h3>
-            <figure class="overflow-hidden rounded-lg cursor-pointer group">
-              <img src="assets/images/esalier-rampe.webp" srcset="
+      <!-- Section galerie -->
+      <section id="galerie-photo" class="my-8">
+        <div>
+          <h2
+            class="text-3xl md:text-5xl font-display text-primary pb-4 mx-4 md:mx-40 text-center"
+            data-i18n="gallery.title"
+          >
+            Nos réalisations
+          </h2>
+        </div>
+        <div id="gallery" class="flex flex-col mx-4 md:mx-40 lg:mx-100 gap-3">
+          <a
+            href="galerie-rampe.html"
+            class="transition duration-1000 hover:scale-101 slide-in"
+            data-delay="0"
+          >
+            <div
+              class="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-24 items-center mx-auto"
+            >
+              <h3
+                class="text-2xl md:text-4xl font-extralight font-display-secondary text-center md:text-left"
+                data-i18n="gallery1.title"
+              >
+                Rampes et escaliers
+              </h3>
+              <figure class="overflow-hidden rounded-lg cursor-pointer group">
+                <img
+                  src="assets/images/esalier-rampe.webp"
+                  srcset="
                     assets/images/esalier-rampe-400w.webp 400w,
                     assets/images/esalier-rampe-800w.webp 800w
-                  " sizes="(max-width: 768px) 95vw, 50vw" alt="escalier forgé" loading="lazy"
-                class="w-full h-40 md:h-52 object-cover" />
-            </figure>
-          </div>
-        </a>
+                  "
+                  sizes="(max-width: 768px) 95vw, 50vw"
+                  alt="escalier forgé"
+                  loading="lazy"
+                  class="w-full h-40 md:h-52 object-cover"
+                />
+              </figure>
+            </div>
+          </a>
 
-        <hr class="w-full my-4 mx-auto text-primary" />
+          <hr class="w-full my-4 mx-auto text-primary" />
 
-        <a href="galerie-mobilier.html" class="transition duration-1000 hover:scale-101 slide-in" data-delay="600">
-          <div class="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-24 items-center mx-auto">
-            <h3 class="text-2xl md:text-4xl font-thin font-display-secondary text-center md:text-left"
-              data-i18n="gallery2.title">
-              Mobiliers et Objets d'art
-            </h3>
-            <figure class="overflow-hidden rounded-lg cursor-pointer group">
-              <img src="assets/images/tete-de-lit.webp" srcset="
+          <a
+            href="galerie-mobilier.html"
+            class="transition duration-1000 hover:scale-101 slide-in"
+            data-delay="600"
+          >
+            <div
+              class="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-24 items-center mx-auto"
+            >
+              <h3
+                class="text-2xl md:text-4xl font-thin font-display-secondary text-center md:text-left"
+                data-i18n="gallery2.title"
+              >
+                Mobiliers et Objets d'art
+              </h3>
+              <figure class="overflow-hidden rounded-lg cursor-pointer group">
+                <img
+                  src="assets/images/tete-de-lit.webp"
+                  srcset="
                     assets/images/tete-de-lit-400w.webp 400w,
                     assets/images/tete-de-lit-800w.webp 800w
-                  " sizes="(max-width: 768px) 95vw, 50vw" alt="Meuble en fer forgé" loading="lazy"
-                class="w-full h-40 md:h-52 object-cover" />
-            </figure>
-          </div>
-        </a>
+                  "
+                  sizes="(max-width: 768px) 95vw, 50vw"
+                  alt="Meuble en fer forgé"
+                  loading="lazy"
+                  class="w-full h-40 md:h-52 object-cover"
+                />
+              </figure>
+            </div>
+          </a>
 
-        <hr class="w-full my-4 mx-auto text-primary" />
+          <hr class="w-full my-4 mx-auto text-primary" />
 
-        <a href="galerie-porte.html" class="transition duration-1000 hover:scale-101 slide-in" data-delay="1200">
-          <div class="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-24 items-center mx-auto">
-            <h3 class="text-2xl md:text-4xl font-thin font-display-secondary text-center md:text-left"
-              data-i18n="gallery3.title">
-              Portes et Fenêtres
-            </h3>
-            <figure class="overflow-hidden rounded-lg cursor-pointer group">
-              <img src="assets/images/realisation-finale.webp" srcset="
+          <a
+            href="galerie-porte.html"
+            class="transition duration-1000 hover:scale-101 slide-in"
+            data-delay="1200"
+          >
+            <div
+              class="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-24 items-center mx-auto"
+            >
+              <h3
+                class="text-2xl md:text-4xl font-thin font-display-secondary text-center md:text-left"
+                data-i18n="gallery3.title"
+              >
+                Portes et Fenêtres
+              </h3>
+              <figure class="overflow-hidden rounded-lg cursor-pointer group">
+                <img
+                  src="assets/images/realisation-finale.webp"
+                  srcset="
                     assets/images/realisation-finale-400w.webp 400w,
                     assets/images/realisation-finale-800w.webp 800w
-                  " sizes="(max-width: 768px) 95vw, 50vw" alt="marquise de porte en forme de soleil" loading="lazy"
-                class="w-full h-40 md:h-52 object-cover" />
-            </figure>
-          </div>
-        </a>
+                  "
+                  sizes="(max-width: 768px) 95vw, 50vw"
+                  alt="marquise de porte en forme de soleil"
+                  loading="lazy"
+                  class="w-full h-40 md:h-52 object-cover"
+                />
+              </figure>
+            </div>
+          </a>
 
-        <hr class="w-full my-4 mx-auto text-primary" />
+          <hr class="w-full my-4 mx-auto text-primary" />
 
-        <a href="galerie-marquise.html" class="transition duration-1000 hover:scale-101 slide-in" data-delay="1400">
-          <div class="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-24 items-center mx-auto">
-            <h3 class="text-2xl md:text-4xl font-thin font-display-secondary text-center md:text-left"
-              data-i18n="gallery4.title">
-              Marquises et Pergolas
-            </h3>
-            <figure class="overflow-hidden rounded-lg cursor-pointer group">
-              <img src="assets/images/rampe-et-marquise.webp" srcset="
+          <a
+            href="galerie-marquise.html"
+            class="transition duration-1000 hover:scale-101 slide-in"
+            data-delay="1400"
+          >
+            <div
+              class="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-24 items-center mx-auto"
+            >
+              <h3
+                class="text-2xl md:text-4xl font-thin font-display-secondary text-center md:text-left"
+                data-i18n="gallery4.title"
+              >
+                Marquises et Pergolas
+              </h3>
+              <figure class="overflow-hidden rounded-lg cursor-pointer group">
+                <img
+                  src="assets/images/rampe-et-marquise.webp"
+                  srcset="
                     assets/images/rampe-et-marquise-400w.webp 400w,
                     assets/images/rampe-et-marquise-800w.webp 800w
-                  " sizes="(max-width: 768px) 95vw, 50vw" alt="marquise en fer forgé" loading="lazy"
-                class="w-full h-40 md:h-52 object-cover" />
-            </figure>
-          </div>
-        </a>
-
-        <hr class="w-full my-4 mx-auto text-primary" />
-      </div>
-    </section>
-  </main>
-
-  <footer class="bg-primary grid grid-cols-1 md:grid-cols-2 py-12 px-6 md:px-16 gap-8 md:gap-0">
-    <div class="flex flex-col gap-4 justify-start items-center text-center">
-      <h2 class="text-xl md:text-2xl font-display text-secondary font-bold tracking-wide" data-i18n="footer.title">
-        Réalisation architecturale extérieur et intérieur en métal
-      </h2>
-      <a href="mailto:lucdesessarts@gmail.com" class="text-lg md:text-2xl text-bg-color hover:opacity-50">
-        lucdesessarts@gmail.com
-      </a>
-      <a href="index.html" class="text-lg md:text-2xl text-bg-color hover:opacity-50">
-        www.aloreedufer.com
-      </a>
-      <a href="contact.html"
-        class="text-lg text-bg-color border-2 border-secondary p-2 rounded-lg hover:bg-secondary hover:text-primary transition">
-        Contact
-      </a>
-      <hr class="h-1 w-4/5 my-2 text-secondary" />
-      <p class="text-xl md:text-2xl text-bg-color font-black">France</p>
-      <p class="text-lg md:text-xl text-bg-color leading-10 text-center">
-        71, Allée des Champs<br />87260 Pierre-Buffière<br />06 80 50 90 09
-      </p>
-    </div>
-
-    <div class="grid grid-cols-2 items-start justify-start gap-4">
-      <ul>
-        <li class="text-lg md:text-2xl text-bg-color md:text-secondary font-bold pt-4 hover:opacity-50 transition">
-          <a href="#" data-i18n="footer.nav.home">Accueil</a>
-        </li>
-        <li class="text-lg md:text-2xl text-bg-color md:text-secondary font-bold pt-4 hover:opacity-50 transition">
-          <a href="#about" data-i18n="footer.nav.about">À Propos</a>
-        </li>
-        <li class="text-lg md:text-2xl text-bg-color md:text-secondary font-bold pt-4 hover:opacity-50 transition">
-          <a href="#gallery" data-i18n="footer.nav.gallery">Mes Chantiers</a>
-        </li>
-        <li class="text-lg md:text-2xl text-bg-color md:text-secondary font-bold pt-4 hover:opacity-50 transition">
-          <a href="contact.html" data-i18n="footer.nav.conatct">Contact</a>
-        </li>
-        <li class="mt-8 md:mt-16 text-bg-color text-base md:text-lg hover:opacity-50 transition">
-          <a href="./mention-legale.html" data-i18n="footer.nav.mention">Mentions Légales</a>
-        </li>
-        <li class="text-bg-color text-base md:text-lg hover:opacity-50 transition">
-          <a href="./politique-de-confidentialitee.html" data-i18n="footer.nav.confidentialite">
-            Politique de Confidentialitée
+                  "
+                  sizes="(max-width: 768px) 95vw, 50vw"
+                  alt="marquise en fer forgé"
+                  loading="lazy"
+                  class="w-full h-40 md:h-52 object-cover"
+                />
+              </figure>
+            </div>
           </a>
-        </li>
-        <li class="text-bg-color text-base md:text-lg hover:opacity-50 transition">
-          <a href="#">www.tentaclecode.com</a>
-        </li>
-      </ul>
 
-      <div class="flex flex-col gap-4 items-center justify-start">
-        <a href="https://www.metiers-art.com/A-L-OREE-DU-FER-Luc-DESESSARTS"
-          class="transition duration-300 hover:opacity-50">
-          <img src="./assets/icons/logo-cma-400w.webp" srcset="
+          <hr class="w-full my-4 mx-auto text-primary" />
+        </div>
+      </section>
+    </main>
+
+    <footer
+      class="bg-primary grid grid-cols-1 md:grid-cols-2 py-12 px-6 md:px-16 gap-8 md:gap-0"
+    >
+      <div class="flex flex-col gap-4 justify-start items-center text-center">
+        <h2
+          class="text-xl md:text-2xl font-display text-secondary font-bold tracking-wide"
+          data-i18n="footer.title"
+        >
+          Réalisation architecturale extérieur et intérieur en métal
+        </h2>
+        <a
+          href="mailto:lucdesessarts@gmail.com"
+          class="text-lg md:text-2xl text-bg-color hover:opacity-50"
+        >
+          lucdesessarts@gmail.com
+        </a>
+        <a
+          href="index.html"
+          class="text-lg md:text-2xl text-bg-color hover:opacity-50"
+        >
+          www.aloreedufer.com
+        </a>
+        <a
+          href="contact.html"
+          class="text-lg text-bg-color border-2 border-secondary p-2 rounded-lg hover:bg-secondary hover:text-primary transition"
+        >
+          Contact
+        </a>
+        <hr class="h-1 w-4/5 my-2 text-secondary" />
+        <p class="text-xl md:text-2xl text-bg-color font-black">France</p>
+        <p class="text-lg md:text-xl text-bg-color leading-10 text-center">
+          71, Allée des Champs<br />87260 Pierre-Buffière<br />06 80 50 90 09
+        </p>
+      </div>
+
+      <div class="grid grid-cols-2 items-start justify-start gap-4">
+        <ul>
+          <li
+            class="text-lg md:text-2xl text-bg-color md:text-secondary font-bold pt-4 hover:opacity-50 transition"
+          >
+            <a href="#" data-i18n="footer.nav.home">Accueil</a>
+          </li>
+          <li
+            class="text-lg md:text-2xl text-bg-color md:text-secondary font-bold pt-4 hover:opacity-50 transition"
+          >
+            <a href="#about" data-i18n="footer.nav.about">À Propos</a>
+          </li>
+          <li
+            class="text-lg md:text-2xl text-bg-color md:text-secondary font-bold pt-4 hover:opacity-50 transition"
+          >
+            <a href="#gallery" data-i18n="footer.nav.gallery">Mes Chantiers</a>
+          </li>
+          <li
+            class="text-lg md:text-2xl text-bg-color md:text-secondary font-bold pt-4 hover:opacity-50 transition"
+          >
+            <a href="contact.html" data-i18n="footer.nav.conatct">Contact</a>
+          </li>
+          <li
+            class="mt-8 md:mt-16 text-bg-color text-base md:text-lg hover:opacity-50 transition"
+          >
+            <a href="./mention-legale.html" data-i18n="footer.nav.mention"
+              >Mentions Légales</a
+            >
+          </li>
+          <li
+            class="text-bg-color text-base md:text-lg hover:opacity-50 transition"
+          >
+            <a
+              href="./politique-de-confidentialitee.html"
+              data-i18n="footer.nav.confidentialite"
+            >
+              Politique de Confidentialitée
+            </a>
+          </li>
+          <li
+            class="text-bg-color text-base md:text-lg hover:opacity-50 transition"
+          >
+            <a href="#">www.tentaclecode.com</a>
+          </li>
+        </ul>
+
+        <div class="flex flex-col gap-4 items-center justify-start">
+          <a
+            href="https://www.metiers-art.com/A-L-OREE-DU-FER-Luc-DESESSARTS"
+            class="transition duration-300 hover:opacity-50"
+          >
+            <img
+              src="./assets/icons/logo-cma-400w.webp"
+              srcset="
                 ./assets/icons/logo-cma-400w.webp   400w,
                 ./assets/icons/logo-cma-800w.webp   800w,
                 ./assets/icons/logo-cma-1200w.webp 1200w
-              " sizes="(max-width: 768px) 56px, 80px" alt="logo métiers d'art Nouvelle-Aquitaine" loading="lazy"
-            class="w-14 md:w-20" />
-        </a>
+              "
+              sizes="(max-width: 768px) 56px, 80px"
+              alt="logo métiers d'art Nouvelle-Aquitaine"
+              loading="lazy"
+              class="w-14 md:w-20"
+            />
+          </a>
 
-        <a href="https://formation.cma-nouvelleaquitaine.fr/" class="transition duration-300 hover:opacity-50">
-          <img
-            src="./assets/icons/png-clipart-handicraft-logo-chambre-de-metiers-et-artisanat-empresa-artisan-400w.webp"
-            srcset="
-                ./assets/icons/png-clipart-handicraft-logo-chambre-de-metiers-et-artisanat-empresa-artisan-400w.webp   400w,
-                ./assets/icons/png-clipart-handicraft-logo-chambre-de-metiers-et-artisanat-empresa-artisan-800w.webp   800w,
-                ./assets/icons/png-clipart-handicraft-logo-chambre-de-metiers-et-artisanat-empresa-artisan-1200w.webp 1200w
-              " sizes="(max-width: 768px) 56px, 80px" alt="logo chambre des métiers et artisanats" loading="lazy"
-            class="w-14 md:w-20" />
-        </a>
+          <a
+            href="https://formation.cma-nouvelleaquitaine.fr/"
+            class="transition duration-300 hover:opacity-50"
+          >
+            <img
+              src="./assets/icons/logo-artisan-art1.webp"
+              srcset="
+                ./assets/icons/logo-artisan-art1-400w.webp   400w,
+                ./assets/icons/logo-artisan-art1-800w.webp   800w,
+                ./assets/icons/logo-artisan-art1-1200w.webp 1200w
+              "
+              sizes="(max-width: 768px) 56px, 80px"
+              alt="logo artisanat d'art"
+              loading="lazy"
+              class="w-14 md:w-20"
+            />
+          </a>
 
-        <a href="https://www.facebook.com/aloreedufer?locale=fr_FR" class="transition duration-300 hover:opacity-50">
-          <img src="./assets/icons/square-facebook-brands-solid-400w.webp" srcset="
+          <a
+            href="https://www.facebook.com/aloreedufer?locale=fr_FR"
+            class="transition duration-300 hover:opacity-50"
+          >
+            <img
+              src="./assets/icons/square-facebook-brands-solid-400w.webp"
+              srcset="
                 ./assets/icons/square-facebook-brands-solid-400w.webp   400w,
                 ./assets/icons/square-facebook-brands-solid-800w.webp   800w,
                 ./assets/icons/square-facebook-brands-solid-1200w.webp 1200w
-              " sizes="(max-width: 768px) 56px, 80px" alt="logo facebook" loading="lazy" class="w-14 md:w-20" />
-        </a>
+              "
+              sizes="(max-width: 768px) 56px, 80px"
+              alt="logo facebook"
+              loading="lazy"
+              class="w-14 md:w-20"
+            />
+          </a>
 
-        <a href="https://www.instagram.com/aloreedufer/" class="transition duration-300 hover:opacity-50">
-          <img src="./assets/icons/square-instagram-brands-solid-400w.webp" srcset="
+          <a
+            href="https://www.instagram.com/aloreedufer/"
+            class="transition duration-300 hover:opacity-50"
+          >
+            <img
+              src="./assets/icons/square-instagram-brands-solid-400w.webp"
+              srcset="
                 ./assets/icons/square-instagram-brands-solid-400w.webp   400w,
                 ./assets/icons/square-instagram-brands-solid-800w.webp   800w,
                 ./assets/icons/square-instagram-brands-solid-1200w.webp 1200w
-              " sizes="(max-width: 768px) 56px, 80px" alt="logo instagram" loading="lazy" class="w-14 md:w-20" />
-        </a>
+              "
+              sizes="(max-width: 768px) 56px, 80px"
+              alt="logo instagram"
+              loading="lazy"
+              class="w-14 md:w-20"
+            />
+          </a>
+        </div>
+      </div>
+    </footer>
+    <!-- Lightbox -->
+    <div
+      id="lightbox"
+      class="fixed inset-0 bg-black/80 z-50 hidden items-center justify-center p-8"
+    >
+      <button
+        id="lightbox-close"
+        class="absolute top-4 right-6 text-white text-4xl leading-none"
+      >
+        &times;
+      </button>
+      <div class="flex flex-col items-center gap-3">
+        <img
+          id="lightbox-img"
+          src=""
+          alt=""
+          class="max-h-[80vh] max-w-full rounded-lg object-contain"
+        />
+        <p id="lightbox-caption" class="text-white text-sm"></p>
       </div>
     </div>
-  </footer>
-  <!-- Lightbox -->
-  <div id="lightbox" class="fixed inset-0 bg-black/80 z-50 hidden items-center justify-center p-8">
-    <button id="lightbox-close" class="absolute top-4 right-6 text-white text-4xl leading-none">
-      &times;
-    </button>
-    <div class="flex flex-col items-center gap-3">
-      <img id="lightbox-img" src="" alt="" class="max-h-[80vh] max-w-full rounded-lg object-contain" />
-      <p id="lightbox-caption" class="text-white text-sm"></p>
-    </div>
-  </div>
-</body>
-
+  </body>
 </html>

@@ -82,6 +82,7 @@ const translations = {
     "btn.mobilier": "Mobiliers et Objets d'art",
     "btn.porte": "Portes et Fenêtres",
     "btn.pergolas": "Marquises et Pergolas",
+    "voir.plus": "voir +",
     // galerie mobilier
     "btn.rampe": "Rampes et Escaliers",
     "gallery.furniture.title": "Mobilier et objet d'art réaliser sur mesure",
@@ -297,6 +298,7 @@ const translations = {
     "btn.mobilier": "Furniture and Art Objects",
     "btn.porte": "Doors and Windows",
     "btn.pergolas": "Awnings and Pergolas",
+    "voir.plus": "see more",
     // galerie-mobilier
     "btn.rampe": "Ramps and Stairs",
     "gallery.furniture.title": "Custom-made furniture and art objects",
