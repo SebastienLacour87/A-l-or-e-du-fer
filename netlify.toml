@@ -1,0 +1,20 @@
+# Seul le dossier src/ est publié : package.json, node_modules et
+# les outils de dev ne doivent pas être accessibles en ligne.
+[build]
+  publish = "src"
+
+# Anciennes URL en /src/... (si le site a déjà été publié depuis la racine)
+[[redirects]]
+  from = "/src/*"
+  to = "/:splat"
+  status = 301
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    Content-Security-Policy = "default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:; font-src 'self'; connect-src 'self'; form-action 'self'; frame-ancestors 'none'; base-uri 'self'; object-src 'none'; upgrade-insecure-requests"
+    Strict-Transport-Security = "max-age=31536000"
+    X-Frame-Options = "DENY"
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+    Permissions-Policy = "camera=(), microphone=(), geolocation=(), payment=()"

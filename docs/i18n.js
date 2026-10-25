@@ -443,3 +443,8 @@ function setLang(lang) {
     }
   });
 }
+
+// Drapeaux de langue (pas d'onclick inline : bloqué par la CSP)
+document.querySelectorAll("[data-lang]").forEach((flag) => {
+  flag.addEventListener("click", () => setLang(flag.dataset.lang));
+});
