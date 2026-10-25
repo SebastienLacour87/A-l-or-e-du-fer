@@ -137,6 +137,8 @@ const translations = {
       "En cochant cette case et en soumettant ce formulaire,   j'accepte que mes données personnelles soient utilisées pour           me recontacter dans le cadre de ma demande indiquée dans ce            formulaire. Aucun autre traitement ne sera effectué avec mes           informations.",
     "contact.rgpd.error":
       "Vous devez accepter les conditions pour envoyer le formulaire.",
+    "contact.envoi.error":
+      "Votre message n'a pas pu être envoyé. Vérifiez les champs ou écrivez-nous directement à lucdesessarts@gmail.com.",
     "contact.submit": "Envoyer",
     // page mentions légales
     "legal.editor.title": "1. Éditeur du site",
@@ -351,6 +353,8 @@ const translations = {
       "By checking this box and submitting this form, I consent to the use of my personal data to contact me regarding the request I have made in this form. My information will not be used for any other purpose.",
     "contact.rgpd.error":
       "You must agree to the terms and conditions to submit the form.",
+    "contact.envoi.error":
+      "Your message could not be sent. Please check the fields or email us directly at lucdesessarts@gmail.com.",
     "contact.submit": "Send",
     //page mentions légales
     "legal.editor.title": "1. Website Publisher",
