@@ -1,3 +1,8 @@
+// Retour d'erreur de contact.php
+if (new URLSearchParams(location.search).has("erreur")) {
+  document.getElementById("envoi-error").classList.remove("hidden");
+}
+
 // Validation formulaire contact
 const contactForm = document.getElementById("contact-form");
 if (contactForm) {
